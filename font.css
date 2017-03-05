@@ -1,0 +1,12 @@
+@media (max-width: 480px) {
+  body { font-size: 20px; }
+}
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+}
+
+.row { font-family: 'Proza Libre', sans-serif; color: #0D1F30 }
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+h1 { color: #3B6670 }
+h2, h3 { color: #DB6C0F }
+body { background-color: #F0E3C0; }
