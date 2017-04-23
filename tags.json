@@ -28477,13 +28477,14 @@
       "time" : 1241278259
    },
    {
-      "year" : 2009,
-      "tags" : "illustrator",
-      "page" : "305",
-      "time" : 1241276801,
-      "month" : 5,
-      "url" : "http://veerle.duoh.com/",
-      "item" : "6"
+       "year" : 2009,
+       "tags" : "illustrator",
+       "page" : "305",
+       "time" : 1241276801,
+       "month" : 5,
+       "title": "some title",
+       "url" : "http://veerle.duoh.com/",
+       "item" : "6"
    },
    {
       "url" : "http://www.attitudedesign.co.uk/7-things-you-didnt-know-adobe-illustrator-could-do/",
@@ -37686,7 +37687,8 @@
       "month" : 2,
       "time" : 1203978852,
       "tags" : "hack; camera; Canon",
-      "year" : 2008,
+       "year" : 2008,
+       "title": "CHDK Wiki | Fandom powered by Wikia",
       "page" : "405"
    },
    {
@@ -37695,7 +37697,8 @@
       "url" : "http://www.boxesandarrows.com/",
       "page" : "405",
       "year" : 2008,
-      "tags" : "temp",
+       "tags" : "temp",
+       "title": "Boxes and Arrows",
       "time" : 1203923903
    },
    {
