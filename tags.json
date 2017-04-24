@@ -656,7 +656,7 @@
       "item" : "5"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "month" : 2,
       "page" : "7",
       "time" : "1456092878",
@@ -724,7 +724,7 @@
       "time" : "1456092877",
       "page" : "8",
       "month" : 2,
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "title" : "Tavmjong Bah's Blog | A blog about Inkscape, SVG, and other worldly matters…",
@@ -885,7 +885,7 @@
       "month" : 2,
       "year" : 2016,
       "url" : "http://smallmr.com/wordpress/author/admin/",
-      "tags" : "",
+      "tags" : "none",
       "title" : "Marshall Stull | Small Model Railroads",
       "item" : "8"
    },
@@ -1663,7 +1663,7 @@
       "page" : "17",
       "year" : 2015,
       "url" : "http://www.iuav.it/Ateneo1/docenti/design-e-a/docenti-st/Massimilia/index.htm",
-      "tags" : "",
+      "tags" : "none",
       "title" : "Università Iuav di Venezia",
       "item" : "4"
    },
@@ -3867,7 +3867,7 @@
       "page" : "39",
       "year" : 2015,
       "url" : "https://www.airbnb.com/rooms/5148843?checkin=02%2F16%2F2015&checkout=02%2F18%2F2015&guests=2&s=4b0w",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "item" : "3",
@@ -5053,7 +5053,7 @@
       "url" : "http://www.smb.museum/ausstellungen/detail.html?tx_smb_pi1%5Blocation%5D=37&tx_smb_pi1%5Bevent_id%5D=80673&tx_smb_pi1%5BexhibitionUid%5D=1091&cHash=04302932355c7a980da629ae354115cc",
       "year" : 2014,
       "item" : "10",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "tags" : "check",
@@ -6439,7 +6439,7 @@
       "month" : 9,
       "year" : 2014,
       "url" : "http://www.amazon.de/Peugeot-900809-Pfefferm%C3%BChle-Nancy/dp/B000S075NC/?ie=UTF8&qid=1411308856&sr=8-8&keywords=peugeot+pfefferm%C3%BChle+nancy",
-      "tags" : "",
+      "tags" : "none",
       "title" : "Peugeot 900809 Nancy Pfeffermühle Acryl, 5,3 x 5,3 x 9 cm, transparent: Amazon.de: Küche & Haushalt",
       "item" : "8"
    },
@@ -6979,7 +6979,7 @@
       "item" : "1"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "time" : "1406968236",
       "page" : "70",
       "month" : 8,
@@ -9113,7 +9113,7 @@
       "page" : "91",
       "time" : "1383379595",
       "month" : 11,
-      "tags" : "",
+      "tags" : "none",
       "item" : "5",
       "title" : "HP LaserJet Pro 200 M276n e-All-in-One Farblaser: Amazon.de: Computer & Zubehör"
    },
@@ -9807,7 +9807,7 @@
    {
       "item" : "5",
       "title" : "Introducing Responsive Web Typography With FlowType.JS – Smashing Magazine",
-      "tags" : "",
+      "tags" : "none",
       "url" : "http://coding.smashingmagazine.com/2013/09/18/introducing-flowtype-js/?utm_source=javascriptweekly&utm_medium=email",
       "year" : 2013,
       "month" : 9,
@@ -11452,7 +11452,7 @@
       "item" : "7"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "item" : "8",
       "url" : "http://www.immobilienscout24.de/expose/68531551?ftc=5072&_s_cclid=1365417018",
       "year" : 2013,
@@ -12404,7 +12404,7 @@
       "title" : "New to perl: what's the best setup for emacs/perl? : perl"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "year" : 2013,
       "url" : "http://blog.factual.com/introducing-drake-a-kind-of-make-for-data",
       "month" : 1,
@@ -12414,7 +12414,7 @@
       "title" : " Factual | Introducing Drake, a Kind of ‘Make for Data’ "
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "time" : "1359094270",
       "page" : "124",
       "month" : 1,
@@ -13495,7 +13495,7 @@
       "time" : "1353446031",
       "page" : "135",
       "month" : 11,
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "month" : 11,
@@ -14437,7 +14437,7 @@
       "url" : "http://delicious.com/tools#title2",
       "year" : 2012,
       "item" : "7",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "year" : 2012,
@@ -15308,7 +15308,7 @@
       "item" : "4"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "month" : 5,
       "time" : "1337266308",
       "page" : "153",
@@ -15944,7 +15944,7 @@
       "page" : "159",
       "year" : 2012,
       "url" : "http://www.tecnomoda.it/xhtml/modellismo.htm",
-      "tags" : "",
+      "tags" : "none",
       "title" : "Tecnomoda Stilismo e modellismo per l' industria della confazione uomo - donna",
       "item" : "9"
    },
@@ -15955,7 +15955,7 @@
       "month" : 4,
       "time" : "1334250966",
       "page" : "159",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "url" : "http://www.paginegialle.it/produzioneabbigliamento",
@@ -19399,7 +19399,7 @@
       "month" : 6,
       "page" : "194",
       "time" : "1308989323",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "tags" : "covers",
@@ -21409,7 +21409,7 @@
       "item" : "2"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "month" : 1,
       "page" : "214",
       "time" : "1294357319",
@@ -22873,7 +22873,7 @@
       "item" : "1",
       "url" : "http://pintday.org/downloads/netcat/",
       "year" : 2010,
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "tags" : "linux",
@@ -38935,7 +38935,7 @@
       "url" : "http://www.spreadshirt.net/en/GB/T-Shirt/Spreadshirt-1342/"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "time" : "1208377633",
       "page" : "391",
       "month" : 4,
@@ -40465,7 +40465,7 @@
       "item" : "2"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "year" : 2008,
       "url" : "http://www.duarte.com/#0.0.0",
       "month" : 2,
@@ -40610,7 +40610,7 @@
       "month" : 2,
       "year" : 2008,
       "url" : "http://opencalais.com/",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "url" : "http://llg.cubic.org/tools/htmltable2latex.html",
@@ -40922,7 +40922,7 @@
       "item" : "9"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "url" : "http://www.arsgeek.com.nyud.net/?p=3340",
       "year" : 2008,
       "item" : "10",
@@ -41102,7 +41102,7 @@
       "item" : "8",
       "year" : 2007,
       "url" : "http://forum.jurathek.de/archive/index.php/t-28753.html",
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "month" : 12,
@@ -41110,7 +41110,7 @@
       "page" : "413",
       "url" : "http://www.uigarden.net/english/infographics-being-and-doing-part-ii",
       "year" : 2007,
-      "tags" : "",
+      "tags" : "none",
       "title" : "uigarden.net",
       "item" : "9"
    },
@@ -41346,7 +41346,7 @@
       "tags" : "game"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "year" : 2007,
       "url" : "http://solutoire.com/plotr/",
       "page" : "416",
@@ -41375,7 +41375,7 @@
       "tags" : "svg"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "year" : 2007,
       "url" : "http://www.thinkvitamin.com/features/design/create-cross-browser-vector-graphics",
       "item" : "7",
@@ -41471,7 +41471,7 @@
       "url" : "http://osdir.com/ml/gnome.gtk+.perl/2002-04/msg00031.html"
    },
    {
-      "tags" : "",
+      "tags" : "none",
       "month" : 10,
       "page" : "417",
       "time" : "1193494122",
@@ -41486,7 +41486,7 @@
       "page" : "417",
       "time" : "1193298596",
       "month" : 10,
-      "tags" : ""
+      "tags" : "none"
    },
    {
       "title" : "viiron",
