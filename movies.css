@@ -1,0 +1,6 @@
+td, th { vertical-align: top; padding: 6px  }
+
+td:nth-child(2) { text-align: right; padding-right: 1em }
+
+tr { border-top: 0.2px solid hsl(27, 87%, 72%) }
+tr:first-child { border-top: none }

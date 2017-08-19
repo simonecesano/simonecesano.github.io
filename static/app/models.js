@@ -5,10 +5,11 @@
 var Bookmark = Backbone.Model.extend({
     initialize: function(e){
 	this.attributes.host = (new URI(this.get('url'))).host();
-	this.attributes.title = this.attributes.title ? this.attributes.title : this.attributes.host
-	this.attributes.tagString = this.attributes.tags
-	this.attributes.tags = this.attributes.tags.split(/; /)
-	this.attributes.date = moment(parseFloat(this.attributes.time) * 1000).format('DD-MM-YYYY')
+	console.log(this.attributes.title);
+	this.attributes.title = ( this.attributes.title ) ? this.attributes.title : this.attributes.host;
+	this.attributes.tagString = this.attributes.tags;
+	this.attributes.tags = this.attributes.tags.split(/; /);
+	this.attributes.date = moment(parseFloat(this.attributes.time) * 1000).format('DD-MM-YYYY');
     }
 })
 
@@ -16,7 +17,7 @@ var Bookmarks = Backbone.Collection.extend({
     model: Bookmark,
     filterBy: function(attr, filter){
 	var r = new RegExp('\\b' + filter + '\\b');
-	console.log(r);
+	// console.log(r);
 	var arr = this.filter(function(e) { return e.attributes[attr].match(r) })
 	// console.log(arr.length)
 	return new Bookmarks(arr);

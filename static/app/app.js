@@ -1,7 +1,7 @@
 var bs; var ts; var tv; var bv;
     
 $.get('tags.json', function(d){
-    console.log(d);
+    // console.log(d);
     var t = new TagsDict;
     _.each(d, function(e){ t.addBookmark(e) })
     ts = new Tags(t.tags())
