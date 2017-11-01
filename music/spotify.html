@@ -25,7 +25,7 @@
 	var s = new SpotifyWebApi();
 	console.log(s);
 	var token = 'BQDFOYxY26Ef3jjPR2h8qF_2gZeR6a_cUVJCHEu93zrRfYxyslTVg5c3h5hsf8VAWQH0-sqk80lo4rt_CRf8vr9bQYzSbd0Hqf-GSvj7stpLfVmcO5tlkUy4yyioBO71DLmzGISOUPVsqwQ';
-	spotifyApi.setAccessToken(token);
+	s.setAccessToken(token);
 	s.getArtist('2hazSY4Ef3aB9ATXW7F5w3')
 	    .then(function(data) {
 		console.log('Artist information', data);
