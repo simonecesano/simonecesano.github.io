@@ -4,10 +4,18 @@
 <head>
   <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org" />
   <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" /> 
+    <meta charset="utf-8" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="./spotify-web-api.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.fragmentURI.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.fragmentQuery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  <script src="../js/jquery.handlebars.js"></script>
   
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" media="screen" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
@@ -16,31 +24,78 @@
   <link href="../font.css" rel="stylesheet" type="text/css" />
   <link href="../movies.css" rel="stylesheet" type="text/css" />
   <title>Albums I added recently</title>
-</head>
-
-<body>
     <script>
     $(function(){
 	console.log(document.referrer);
 	var s = new SpotifyWebApi();
-	console.log(s);
-	var token = 'BQDFOYxY26Ef3jjPR2h8qF_2gZeR6a_cUVJCHEu93zrRfYxyslTVg5c3h5hsf8VAWQH0-sqk80lo4rt_CRf8vr9bQYzSbd0Hqf-GSvj7stpLfVmcO5tlkUy4yyioBO71DLmzGISOUPVsqwQ';
+	var uri = new URI();
+	uri.fragmentPrefix("");
+	var token = uri.fragment(true).access_token;
+
 	s.setAccessToken(token);
-	s.getArtist('2hazSY4Ef3aB9ATXW7F5w3')
-	    .then(function(data) {
-		console.log('Artist information', data);
-	    }, function(err) {
-		console.error(err);
-	    });
+	$('#list').toggle()
+	var albums = $('#list').html().split(/\n/);
+	console.log(albums)
+	_.each(albums, function(e, i){
+	    e = e.replace(/^\s*|\s*$/g, '');
+	    console.log(e)
+	    var album_id = (new URI(e)).filename();
+	    console.log(album_id)
+	    s.getAlbums([album_id])
+		.then(function(data) {
+		    var a = data.albums[0]
+		    var album = {
+			name: a.name,
+			artists: a.artists[0].name,
+			image: a.images[1].url,
+			play: a.external_urls.spotify,
+			release_date: a.release_date
+		    };
+		    var a = $('<div class="album">' + album.name + '</div>')
+		    console.log(a);
+		    $('#albums').append(a);
+		    console.log('Albums information', data);
+		    a.fromTemplate('data', album)
+		}, function(err) {
+		    console.error(err);
+		});
+	})
     })
-</script>
+    </script>
+    <style>
+      .album { display: inline-block; margin: 2em }
+    </style>
+</head>
+
+<body>
     <div class="container-fluid">
     <div class="row">
       <div class="col-md-9 col-md-offset-1 col-sm-12">
-	<a href="https://open.spotify.com/album/4XrOBWbnNDKxqvgh5WjlmZ">I'm an inline-style link</a>
+	<h1>Albums I added to spotify</h1>
+	<div id="albums">
+	  <pre id="list">
+	  https://open.spotify.com/album/4XrOBWbnNDKxqvgh5WjlmZ
+	  https://open.spotify.com/album/6iY6dGWklw6jfVGhEczCiC
+	  https://open.spotify.com/album/7l9NpFno0zbzj2JcEeknIg
+	  https://open.spotify.com/album/1HTYaUbM9suWw0DYeFBD8p
+	  https://open.spotify.com/album/4n36X2GMJ84BKh9D9zMRVI
+	  https://open.spotify.com/album/6QIibOKpY9g6XH4WmSDoXP
+	  https://open.spotify.com/album/1P3B7c85W4mTXHk0fafGw2
+	  https://open.spotify.com/album/5sCsfubNchaI9RCpP7K7aB
+	  https://open.spotify.com/album/2negjodS7ksoI1xH61BWva
+	  https://open.spotify.com/album/1jWRxIUR3ERw6w4JmP6xCt
+	  https://open.spotify.com/album/1lZeuZHmv7Mzngg8UEIRPo
+	  </pre>
+	</div>
       </div>
     </div>
   </div>
+    <script id="data-template" type="text/x-handlebars-template">
+      <div id="image" ><img style="height:150px;width:150px;" src="{{ image }}"></div>
+      <div id="name">{{ name }}</div><div id="artists">{{ artists }}</div>
+      <div id="release_date">{{ release_date }}</div>
+      <div id="play"><a href="{{ play }}">play</a></div>
+    </script>
 </body>
 </html>
 
