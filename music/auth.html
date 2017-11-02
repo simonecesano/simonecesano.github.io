@@ -4,10 +4,15 @@
 <head>
   <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org" />
   <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" /> 
+  <meta charset="utf-8" /> 
   <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="./spotify-web-api.js" type="text/javascript"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.fragmentURI.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.fragmentQuery.js"></script>
+
   
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" media="screen" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
@@ -20,8 +25,15 @@
 
 <body>
   <script>
-      $(function(){
-          window.location.replace("https://accounts.spotify.com/authorize?client_id=ddac05cfee8c4834b0e2702d6369763a&response_type=token&redirect_uri=https%3A%2F%2Fsimonecesano.github.io%2Fmusic%2Fspotify");
+    $(function(){
+	var uri = new URI();
+	var redirect_uri = uri.clone().path('/music/spotify').toString() + '.' + uri.suffix()
+	var spotify_uri = new URI('https://accounts.spotify.com/authorize?client_id=ddac05cfee8c4834b0e2702d6369763a&response_type=token')
+
+	spotify_uri.addSearch('redirect_uri', redirect_uri);
+	console.log(spotify_uri.toString());
+	window.location.replace(spotify_uri.toString());
+	// "https://accounts.spotify.com/authorize?client_id=ddac05cfee8c4834b0e2702d6369763a&response_type=token&redirect_uri=https%3A%2F%2Fsimonecesano.github.io%2Fmusic%2Fspotify");
       })
   </script>
   <div class="container-fluid">
