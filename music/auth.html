@@ -27,7 +27,12 @@
   <script>
     $(function(){
 	var uri = new URI();
-	var redirect_uri = [ uri.clone().path('/music/spotify').toString(), uri.suffix() ].join('.')
+	var redirect_uri;
+	if (uri.suffix().length) {
+	    redirect_uri = [ uri.clone().path('/music/spotify').toString(), uri.suffix() ].join('.')
+	} else {
+	    redirect_uri = uri.clone().path('/music/spotify').toString()
+	}
 	var spotify_uri = new URI('https://accounts.spotify.com/authorize?client_id=ddac05cfee8c4834b0e2702d6369763a&response_type=token')
 
 	spotify_uri.addSearch('redirect_uri', redirect_uri);
