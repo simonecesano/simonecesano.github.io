@@ -33,35 +33,34 @@
 	var token = uri.fragment(true).access_token;
 
 	s.setAccessToken(token);
-	$('#list').toggle()
-	var albums = $('#list').html().split(/\n/);
-	console.log(albums)
-	_.each(albums, function(e, i){
-	    e = e.replace(/^\s*|\s*$/g, '');
-	    console.log(e)
-	    var album_id = (new URI(e)).filename();
-	    console.log(album_id)
-	    s.getAlbums([album_id])
-		.then(function(data) {
-		    var a = data.albums[0]
-		    var album = {
-			name: a.name,
-			artists: a.artists[0].name,
-			image: a.images[1].url,
-			play: a.external_urls.spotify,
-			release_date: a.release_date
-		    };
-		    var a = $('<div class="album">' + album.name + '</div>')
-		    console.log(a);
-		    $('#albums').append(a);
-		    console.log('Albums information', data);
-		    a.fromTemplate('data', album)
-		}, function(err) {
-		    console.error(err);
-		});
+
+	$('.list').each(function(i, e){
+	    var list = $(e);
+	    var albums = $(e).html().split(/\n/);
+	    albums = _.chain(albums).map(function(e, i){
+		e = e.replace(/\s#.+/, '').replace(/^\s*|\s*$/g, '');
+		var album_id = (new URI(e)).filename();
+		return album_id;
+	    }).filter(function(e, i){ return e.length > 0 }).value()
+
+	    Promise.all(_.map(albums, function(e, i){ return s.getAlbums([ e ]) }))
+		.then(function(albums){
+		    albums = _.map(albums, function(e, i){
+			var a = e.albums[0]
+			return {
+		    	    name: a.name,
+		    	    artists: a.artists[0].name,
+		    	    image: a.images[1].url,
+			    play: a.external_urls.spotify,
+			    id: a.id,
+		    	    release_date: a.release_date
+			};
+		    });
+		    list.fromTemplate('albums', { albums: albums })
+	    })
 	})
     })
-    </script>
+</script>
     <style>
       .album { display: inline-block; margin: 2em }
     </style>
@@ -72,29 +71,79 @@
     <div class="row">
       <div class="col-md-9 col-md-offset-1 col-sm-12">
 	<h1>Albums I added to spotify</h1>
-	<div id="albums">
-	  <pre id="list">
+	<div class="md">
+	  <h2>Bucketfull of Brains</h2>
+	  I went through a list of recent <a href="http://www.bucketfullofbrains.com/">Bucketfull of
+	    Brains</a>
+	  covers, and checked out some of the artists I did not know
+	</div>
+	<div class="list">
 	  https://open.spotify.com/album/4XrOBWbnNDKxqvgh5WjlmZ
 	  https://open.spotify.com/album/6iY6dGWklw6jfVGhEczCiC
 	  https://open.spotify.com/album/7l9NpFno0zbzj2JcEeknIg
 	  https://open.spotify.com/album/1HTYaUbM9suWw0DYeFBD8p
+	  https://open.spotify.com/album/2negjodS7ksoI1xH61BWva
+	</div>
+	<div class="md">
+	<h2>Paste Magazine's '90s list</h2>
+	  I found Paste
+	  Magazine's <a href="https://www.pastemagazine.com/blogs/lists/2012/02/the-90-best-albums-of-the-1990s.html">list
+	    of the best albums of the '90s</a> and here is what I found. Not everything's included - only what I liked
+	  and did not know already.
+	</div>
+	<div class="list">
+	  https://open.spotify.com/album/0wsRyM7gcmbN5l0RiOArGc
+	  https://open.spotify.com/album/3jKdxSwYf8UkDhIOIXbwku
+	  https://open.spotify.com/album/2mwUmDzFVzwlgibfYH38GR
+	  https://open.spotify.com/album/4aHfdntnrglDiXle1SIaUz
+	  https://open.spotify.com/album/7t0diHfsasHG5xyLnO4ySl
+	  https://open.spotify.com/album/0KacpFBqMd5ZtCbEwyQbnF
+	  https://open.spotify.com/album/6c7gEp8KqjMsTmvloivm59
+	  https://open.spotify.com/album/5GBPnIYc6qMXwp6n1cW5TT
+	  https://open.spotify.com/album/1SV1Fh8rLes7MeTYTXznKd
+	  https://open.spotify.com/album/6FOUdn1ZEuJkgfcTt1fQnz
+	  https://open.spotify.com/album/0yTmT1i6yHb5EVyJOmIwGw
+	  https://open.spotify.com/album/4gy64TkuOWP2Uuu1DuDeZK
+	  https://open.spotify.com/album/5DQRAlGAFTpHsXGEg5zw9V
+	  https://open.spotify.com/album/1JpaFJzzcsiulO6MdIcQdK
+	  https://open.spotify.com/album/5hryhrT7wEdLnZCbJX9F6L
+	  https://open.spotify.com/album/0HjEJRTWuP2qkKLlRDH2gg
+	</div>
+	<div class="md">
+	  <h2>Female voices</h2>
+	  Stuff my kids hate
+	</div>
+
+	<div class="list">
 	  https://open.spotify.com/album/4n36X2GMJ84BKh9D9zMRVI
-	  https://open.spotify.com/album/6QIibOKpY9g6XH4WmSDoXP
 	  https://open.spotify.com/album/1P3B7c85W4mTXHk0fafGw2
 	  https://open.spotify.com/album/5sCsfubNchaI9RCpP7K7aB
-	  https://open.spotify.com/album/2negjodS7ksoI1xH61BWva
 	  https://open.spotify.com/album/1jWRxIUR3ERw6w4JmP6xCt
+	  https://open.spotify.com/album/4KerqbIPBSPn5S2YTKwKys
+	  https://open.spotify.com/album/1vz94WpXDVYIEGja8cjFNa
+	  https://open.spotify.com/album/55FP2ypQcghszSqylyBRbp
+	  https://open.spotify.com/album/2ZAcLWdHBHrdybwws1PVuA
+	  https://open.spotify.com/album/3UCpl2Q6HdjHV7LBWswhlx
+	  https://open.spotify.com/album/44ylMXOuL1RTKsP3kqWHmw
 	  https://open.spotify.com/album/1lZeuZHmv7Mzngg8UEIRPo
 	  </pre>
 	</div>
       </div>
     </div>
   </div>
-    <script id="data-template" type="text/x-handlebars-template">
+    <script id="albums-template" type="text/x-handlebars-template">
+    {{#each albums }}
+    <div class="album">
       <div id="image" ><img style="height:150px;width:150px;" src="{{ image }}"></div>
       <div id="name">{{ name }}</div><div id="artists">{{ artists }}</div>
       <div id="release_date">{{ release_date }}</div>
-      <div id="play"><a href="{{ play }}">play</a></div>
+      <div id="play">
+	<a href="https://open.spotify.com/album/{{ id }}">web</a>
+	<a href="spotify:album:{{ id }}">spotify</a>
+      </div>
+    </div>
+    {{/each}}
+    <hr />
     </script>
 </body>
 </html>
