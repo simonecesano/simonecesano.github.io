@@ -134,10 +134,10 @@
     <script id="albums-template" type="text/x-handlebars-template">
     {{#each albums }}
     <div class="album">
-      <div id="image" ><img style="height:150px;width:150px;" src="{{ image }}"></div>
-      <div id="name">{{ name }}</div><div id="artists">{{ artists }}</div>
-      <div id="release_date">{{ release_date }}</div>
-      <div id="play">play: 
+      <div class="image" ><img style="height:150px;width:150px;" src="{{ image }}"></div>
+      <div style="white-space: nowrap;text-overflow: ellipsis;width:150px;overflow:hidden" class="name">{{ name }}</div><div class="artists">{{ artists }}</div>
+      <div class="release_date">{{ release_date }}</div>
+      <div class="play">play: 
 	<a href="https://open.spotify.com/album/{{ id }}">web</a> | 
 	<a href="spotify:album:{{ id }}">spotify</a>
       </div>
