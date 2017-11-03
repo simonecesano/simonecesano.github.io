@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.18.1), see www.w3.org">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" media="screen" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <title></title>
+</head>
+<style>
+  .nav { display: inline-block }
+  i.fa {
+      display: inline-block;
+      border-radius: 30px;
+      padding: 0em 0em;
+      color: grey;
+  }
+  #menu {
+      color: white;
+      font-size: 36pt;
+      font-family: courier;
+      position:relative;
+      top: -480px;
+      left: 175px;
+      line-height: 1.2em;
+      display: none;
+      background-color: rgba(110, 110, 110, 0.5);
+      width: 12em;
+      padding-left: 12px;
+  }
+  #menu li {
+      list-style: square outside none;
+  }
+  #page {
+      color: red;
+      position:relative;
+      top: -132px;
+      right: 200px;
+      font-size: 48pt;
+      font-family: courier;
+      font-weight: bold;
+      text-align: right;
+  }
+</style>
+<body>
+  <img id="slide" src="pg_0001.svg">
+  <div>
+    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
+      <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    </div>&emsp;
+    <div class="nav home" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
+      <i class="fa fa-home"></i>
+    </div>&emsp;
+    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>&emsp;
+    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li data-page="5">consumers</li>
+      <li data-page="17">materials</li>
+      <li data-page="32">colors</li>
+      <li data-page="45">silhouettes</li>
+    </ul>
+  </div>
+</body>
+<script>
+    $(function(){
+	var page = 1;
+	var max_page = 84;
+	$('.fa-bars').on('click', function(e){
+	    $('#menu').toggle()
+	})
+	$('.fa-home').on('click', function(e){
+	    page = 1;
+	    var slide = 'pg_' + numeral(page).format('0000') + '.svg';
+	    $('#slide').attr('src', slide);
+	    $('#page').html(page)
+	    if (page <= 1) { $('.fa-arrow-circle-left').hide() } else { $('.fa-arrow-circle-left').show() }
+	    if (page >= max_page) { $('.fa-arrow-circle-right').hide() } else { $('.fa-arrow-circle-right').show() }
+	})
+	$('.fa-arrow-circle-right').on('click', function(e){
+	    page++;
+	    var slide = 'pg_' + numeral(page).format('0000') + '.svg';
+	    $('#slide').attr('src', slide);
+	    console.log(slide);
+
+	    if (page >= 1) { $('.fa-arrow-circle-left').show() }
+	    if (page >= max_page) {
+		$('.fa-arrow-circle-right').hide();
+	    } else {
+		$('.fa-arrow-circle-right').show();
+	    }
+	    $('#page').html(page)
+	})
+	$('.fa-arrow-circle-left').on('click', function(e){
+	    page--;
+	    var slide = 'pg_' + numeral(page).format('0000') + '.svg';
+	    $('#slide').attr('src', slide);
+	    console.log(slide);
+	    if (page <= 1) { $('.fa-arrow-circle-left').hide() } else { $('.fa-arrow-circle-left').show() }
+	    if (page >= max_page) { $('.fa-arrow-circle-right').hide() } else { $('.fa-arrow-circle-right').show() }
+	    $('#page').html(page)
+	})
+	$('#menu li').on('click', function(e){
+	    page = $(this).data('page');
+	    var slide = 'pg_' + numeral(page).format('0000') + '.svg';
+	    $('#slide').attr('src', slide);
+	    $('#menu').toggle()
+	})
+    })
+</script>
+</html>
