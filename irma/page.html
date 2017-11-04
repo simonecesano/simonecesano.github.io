@@ -13,20 +13,39 @@
   <title></title>
 </head>
 <style>
-  .nav { display: inline-block }
+body {
+    margin: 0;
+    padding: 0;
+background-color: black;
+}
+#slide {
+    margin: 0;
+    padding: 0;
+    width:100vw; /* you can use % */
+height: auto;
+border: none;
+}
+.nav {
+    display: inline-block;
+    position:relative;
+    top:-72px;
+    left:20px;
+    color:white;
+    font-size:2vw;
+     }
+
   i.fa {
-      display: inline-block;
       border-radius: 30px;
       padding: 0em 0em;
-      color: grey;
+      color: CornflowerBlue;
   }
   #menu {
       color: white;
-      font-size: 36pt;
+      font-size: 2vw;
       font-family: courier;
-      position:relative;
-      top: -480px;
-      left: 175px;
+      position:absolute;
+      top: 60px;
+      left: 84px;
       line-height: 1.2em;
       display: none;
       background-color: rgba(110, 110, 110, 0.5);
@@ -45,32 +64,56 @@
       font-family: courier;
       font-weight: bold;
       text-align: right;
-  }
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100vw;
+}
 </style>
 <body>
-  <img id="slide" src="pg_0001.svg">
-  <div>
-    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
-      <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-    </div>&emsp;
-    <div class="nav home" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
-      <i class="fa fa-home"></i>
-    </div>&emsp;
-    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>&emsp;
-    <div class="nav" style="position:relative;top:-72px;left:20px;color:white;font-size:48pt">
-      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+      <img id="slide" src="pg_0001.svg">
+      <div style="position:absolute;left:0;top:80px;width:100vw">
+	<div class="nav">
+	  <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+	</div>&emsp;
+	<div class="nav home">
+	  <i class="fa fa-home"></i>
+	</div>&emsp;
+	<div class="nav" style="">
+	  <i class="fa fa-bars" aria-hidden="true"></i>
+	</div>&emsp;
+	<div class="nav" style="">
+	  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+	</div>
+      </div>
+      <div id="menu">
+	<ul>
+	  <li data-page="5">consumers</li>
+	  <li data-page="17">materials</li>
+	  <li data-page="32">colors</li>
+	  <li data-page="45">silhouettes</li>
+	</ul>
+      </div>
     </div>
   </div>
-  <div id="menu">
-    <ul>
-      <li data-page="5">consumers</li>
-      <li data-page="17">materials</li>
-      <li data-page="32">colors</li>
-      <li data-page="45">silhouettes</li>
-    </ul>
-  </div>
+</div>
 </body>
 <script>
     $(function(){
