@@ -11,26 +11,39 @@
 </body>
 <script>
 
-console.log(new p5(null, document.getElementById("canvas")))
-console.log(SVG);
+// console.log(new p5(null, document.getElementById("canvas")))
+// console.log(SVG);
+// for red, green, and blue color values
+var r, g, b;
 
 function setup() {
-    createCanvas(600, 200, SVG); // Create SVG Canvas
-    fill('#ED225D');
-    noStroke();
+    createCanvas(720, 400, SVG);
+  // Pick colors randomly
+  r = random(255);
+  g = random(255);
+  b = random(255);
 }
 
 function draw() {
-    clear();
-    var a = min(frameCount, 1200);
-    var b = min(frameCount, 400);
-    ellipse(0, 0, a, b);
-    // console.log(a, b)
-    if (frameCount > 1200) {
-        noLoop();
-    } else {
-	// console.log(new Date())
-    }
+  background(127);
+  // Draw a circle
+  strokeWeight(2);
+  stroke(r, g, b);
+  fill(r, g, b, 127);
+  ellipse(360, 200, 200, 200);
 }
+
+// When the user clicks the mouse
+function mousePressed() {
+  // Check if mouse is inside the circle
+  var d = dist(mouseX, mouseY, 360, 200);
+  if (d < 100) {
+    // Pick new random color values
+    r = random(255);
+    g = random(255);
+    b = random(255);
+  }
+}
+
 </script>
 </html>
