@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta charset="utf-8">
+  <title></title>
+  <script src="./p5.js"></script>
+  <script src="./p5.svg.js"></script>
+</head>
+
+<body>
+</body>
+<script>
+
+console.log(new p5(null, document.getElementById("canvas")))
+console.log(SVG);
+
+function setup() {
+    createCanvas(600, 200, SVG); // Create SVG Canvas
+    fill('#ED225D');
+    noStroke();
+}
+
+function draw() {
+    clear();
+    var a = min(frameCount, 1200);
+    var b = min(frameCount, 400);
+    ellipse(0, 0, a, b);
+    // console.log(a, b)
+    if (frameCount > 1200) {
+        noLoop();
+    } else {
+	// console.log(new Date())
+    }
+}
+</script>
+</html>
