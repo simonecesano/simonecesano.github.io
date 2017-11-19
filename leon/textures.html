@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="./jquery-3.2.1.js"</script>
+    <script src="./chroma.js"></script>
+    <script src="./p5.js"></script>
+    <script src="./p5.svg.js"></script>
+    <script src="./textures.js"></script>
+    <script src="./grid.js"></script>    
+    <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.js"></script>
+    
+    <link rel="stylesheet" type="text/css"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-dark.css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/keypress/2.1.4/keypress.js"></script>
+    <style>
+      body { background-color: white }
+      #top_menu { margin: 12px; margin-bottom: 0; background-color: grey; padding: 8px 12px 8px 12px }
+      #top_menu span { color: white }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="top_menu">
+      <span href="#save" id="save">save</span>
+    </div>
+    <div id="defaultCanvas">
+    </div>
+  </body>
+  <script>
+
+var st = {}
+$(function(){
+    var listener = new window.keypress.Listener();
+
+    listener.simple_combo("p", function() {
+	if (typeof st.painting === "undefined") {
+	    console.log(typeof st.painting)
+	    st.painting = true
+	} else {
+	    st.painting = st.painting ? false : true;
+	}
+	console.log(st.painting)
+    });
+
+    listener.simple_combo("alt s", function(e) {
+	console.log("command s")
+	console.log(e)
+    });
+    
+    $('#save').click(function(){
+	var svg = $('#defaultCanvas').html()
+	var blob = new Blob([svg], {type: "image/svg+xml"});
+	saveAs(blob, "foobar.svg");
+    })
+})
+$('body').height('100vh');
+    </script>
+<script id="variable_part">
+    $(function(){
+	var svg = d3.select("#defaultCanvas")
+	    .append("svg")
+	    .attr("width", $('body').width())
+	    .attr("height", $('body').height() - $('#top_menu').height())
+	;
+
+
+	var g = new Grid(120, 120, 8, 3, 10, 10);
+	var p = g.positions(100, 100);
+	var t = [
+	    textures.lines(),
+	    textures.lines().thicker(),
+	    textures.lines().lighter(),
+	    textures.lines().orientation("3/8", "7/8"),
+	    textures.lines().orientation("3/8"),
+	    textures.lines().orientation("3/8", "6/8", "9/8"),
+	    textures.lines()
+		.orientation("vertical", "horizontal")
+		.size(4)
+		.strokeWidth(1)
+		.shapeRendering("crispEdges"),
+	    textures.circles()
+		.heavier(),
+	    textures.circles()
+		.thicker()
+		.heavier(),
+	    textures.circles()
+		.thicker()
+		.complement(),
+	    textures.circles()
+		.radius(3)
+		.thicker()
+		.fill("transparent")
+		.strokeWidth(1),
+	    textures.paths()
+		.d("hexagons")
+		.size(6)
+		.strokeWidth(1),
+	    textures.paths()
+		.d("crosses")
+		.lighter()
+		.strokeWidth(1.5)	    
+		.thicker(),
+	    textures.paths()
+		.d("caps")
+		.lighter()
+		.thicker()
+		.strokeWidth(1.5),
+	    textures.paths()
+		.d("woven")
+		.lighter()
+		.thicker(),
+	    textures.paths()
+		.d("waves")
+		.lighter()
+		.thicker(),
+	    textures.paths()
+		.d("nylon")
+		.lighter()
+		.shapeRendering("crispEdges"),
+	    textures.paths()
+		.d("nylon")
+		.lighter()
+		.thicker()
+		.shapeRendering("crispEdges"),
+	    textures.paths()
+		.d("squares"),
+	    textures.paths()
+		.d("squares")
+		.thicker(),
+	    textures.paths()
+		.d("squares")
+		.lighter()
+		.thicker()
+	    
+	];
+
+	t.forEach(function(e, i){
+	    svg.call(e);
+	    
+	    svg.append("circle")
+		.attr("r", 60)
+		.attr("cx", p[i][0])
+		.attr("cy", p[i][1])
+		.style("fill", e.url());
+	})
+    })
+</script>
+    </html>
+    

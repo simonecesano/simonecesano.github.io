@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="./chroma.js"></script>
+    <script src="./p5.js"></script>
+    <script src="./p5.svg.js"></script>
+
+    <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/keypress/2.1.4/keypress.js"></script>
+    
+    <link rel="stylesheet" type="text/css"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-dark.css" media="screen" />
+    <style>
+      body { background-color: white }
+      #top_menu { margin: 12px; margin-bottom: 0; background-color: grey; padding: 8px 12px 8px 12px }
+      #top_menu span { color: white }
+      
+      #defaultCanvas { margin: 12px }
+    </style>
+  </head>
+
+  <body>
+    <div id="top_menu">
+      <span href="#save" id="save">save</span>
+    </div>
+  </body>
+  <script>
+    $(function(){
+	$('#save').click(function(){
+	    console.log('save')
+	    var svg = $('#defaultCanvas').html()
+	    var blob = new Blob([svg], {type: "image/svg+xml"});
+	    saveAs(blob, "foobar.svg");
+	})
+
+    })
+    $('body').height('100vh');
+    
+    console.log($('body').width());
+    console.log($('body').height() - $('#top_menu').height());
+
+    var segLength = 80, x, y, x2, y2;
+    
+    function setup() {
+	createCanvas($('body').width(), $('body').height(), SVG);
+	background(250);
+	strokeWeight(4);
+    }
+
+
+function draw() {
+    var speed = abs(mouseX-pmouseX) + abs(mouseY-pmouseY);
+    var c = chroma.hsl(mouseX / 1200 * 360, Math.random() + .5, speed / 200)
+    console.log(c.hex())
+    stroke(c.hex());
+    line(mouseX, mouseY, pmouseX, pmouseY);
+}
+
+
+var p = 0;
+
+function variableEllipse(x, y, px, py) {
+    var speed = abs(x-px) + abs(y-py);
+    // var m = (Math.random() * 2) - 1
+    // console.log(m)
+    // if (m > 0) { c = c.darken(m) } else { c = c.brighten(m) }
+    var c = chroma.hsl(x / 1200 * 360, Math.random() + .5, speed / 200)
+    fill(c.hex());
+    if (speed > p) {
+	// console.log(speed);
+	p = speed;
+    }
+    
+    // stroke(speed);
+    ellipse(x, y, speed, speed);
+}
+</script>
+</html>
