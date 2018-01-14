@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
   <link href="../font.css" rel="stylesheet" type="text/css" />
   <link href="../movies.css" rel="stylesheet" type="text/css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
@@ -164,7 +165,7 @@
     <table>
       <tbody>
 	{{#each dates}}
-	<tr><td>{{ this.trash }}</td><td>{{ this.day }}</td><td>{{ this.date }}</td></tr>
+	<tr><td class="type">{{ this.trash }}</td><td>{{ this.day }}</td><td class="date">{{ this.date }}</td></tr>
 	{{/each}}
       </tbody>
     </table>
@@ -185,6 +186,15 @@
 	      var template = Handlebars.compile(source);
 	      var html     = template({ dates: cal });
 	      $('#cal').html(html)
+	      var today = moment().startOf('day');
+	      console.log(today);
+	      $('.date').each(function(i, e){
+		  var date = moment($(e).html(), "MM.DD.YYYY");
+		  if (date >= today ) {
+		      $(e).parent().css('color', 'grey').hide()
+		  }
+	      })
+	      
 	      $('pre').hide()
 	  })
   </script>
