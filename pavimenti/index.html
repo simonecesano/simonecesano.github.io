@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" /> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+  <style>
+    table { border-collapse: collapse; }
+td { border: 1px solid white; min-width:50px; white-space: nowrap; }
+input.decor { margin-left: 1em }
+    tr { line-height:50px }
+  </style>
+  
+  <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+	</ul>
+	<form class="form-inline my-2 my-lg-0">
+	  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form>
+      </div>
+    </nav>
+
+    
+    <div class="row">
+      <div class="col-md-10 col-md-offset-0">
+	<form>
+	  <h3>Set room dimensions</h3>
+	  <div class="form-group row">
+	    <label for="width" class="col-sm-2 col-form-label">Width (meters):</label>
+	    <div class="col-sm-2"><input type="text" class="form-control" id="width"></div>
+	    <label for="length" class="col-sm-2 col-form-label">Length (meters):</label>
+	    <div class="col-sm-2"><input type="text" class="form-control" id="length"></div>
+	    <label for="border" class="col-sm-2 col-form-label">Border width:</label>
+	    <div class="col-sm-2"><input type="text" class="form-control" value="1" id="border"></div>
+	  </div>
+	  <h3>Choose tile decor</h3>
+	  <table id="types">
+	    <tbody>
+	    </tbody>
+	  </table>
+	  <h3>Choose filler color</h3>
+	  <table id="fondi">
+	    <tbody>
+	    </tbody>
+	  </table>
+	  <label for="filler" class="col-sm-2 col-form-label">Filler color:</label>
+	  <div class="col-sm-4"><input type="text" class="form-control" id="filler"></div>
+
+	  <hr />
+	  <button id="go" type="button" class="btn btn-primary">Go!</button>
+	  
+	</form>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function(){
+      var deferreds = [
+	  $.get('/decori.json', function(d){
+	      var imgs = d;
+	      var types = imgs.filter(function(e, i){ return e.match(/\d\d-150x150/) }).map(function(e, i){ return e.replace(/\-150x150.jpg/, '') });
+	      types.forEach(function(e, i){
+		  var t = e
+		  var r = $('#types tbody').get(0).insertRow();
+		  // var c = r.insertCell();
+		  
+		  $(r.insertCell()).html(e)
+		  $(r.insertCell()).append($('<input class="decor" type="radio" name="exampleRadios" id="exampleRadios1" value="' + e +'">'))
+		  var vars = imgs.filter(function(e, i){ return e.startsWith(t) })
+		  // console.log(vars);
+		  vars.forEach(function(e, i){
+		      var c = r.insertCell();
+		      var img = new Image(50, 50);
+		      img.src = './img/' + e;
+		      c.appendChild(img)
+		  })
+	      })
+	  }),
+	  $.get('./fondi.json', function(d){
+	      var imgs = d;
+	      var r;
+	      imgs.forEach(function(e, i){
+		  if ((i % 16) == 0) { r = $('#fondi tbody').get(0).insertRow() }
+		  var c = r.insertCell();
+		  var img = new Image(50, 50);
+		  img.src = './img/' + e;
+		  c.appendChild(img)
+	      })
+	  })
+      ];
+      $.when(deferreds).done(function() {
+	  $('button#go').click(function(){
+	      console.log($('input.decor:checked').length);
+	      if (
+		  parseFloat($('#width').val()) > 0 &&
+		      parseFloat($('#length').val()) > 0 &&
+		      $('input.decor:checked').length > 0 
+		  
+	      ) {
+		  var u = new URI ('design.html');
+		  u.search({
+		      width: Math.floor(parseFloat($('#width').val()) / 0.25),
+		      length: Math.floor(parseFloat($('#length').val()) / 0.25),
+		      type: $('input.decor:checked').first().val(),
+		      filler: $('#filler').first().val(),
+		      border: $('#border').first().val()		      		      
+		  });
+		  console.log(u.toString())
+		  window.location.href = u.toString();
+	      } else {
+		  console.log('no go')
+	      }
+	  })
+	  $('#fondi').on('click', function(e){
+	      var sel = new URI($(e.target).attr('src'));
+	      console.log(sel.segment(-1));
+	      $('#filler').val(sel.segment(-1).replace(/\.jpg$/, ''));
+	  })
+      })
+  })
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+
