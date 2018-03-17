@@ -90,7 +90,7 @@ input.decor { margin-left: 1em }
 <script>
   $(function(){
       var deferreds = [
-	  $.get('/decori.json', function(d){
+	  $.get('./decori.json', function(d){
 	      var imgs = d;
 	      var types = imgs.filter(function(e, i){ return e.match(/\d\d-150x150/) }).map(function(e, i){ return e.replace(/\-150x150.jpg/, '') });
 	      types.forEach(function(e, i){
