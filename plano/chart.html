@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" /> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+  <style>
+  </style>
+  <div class="container">
+    <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="data_dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Data
+        </a>
+        <div  id="data_dropdown_menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item save" href="#">Save</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+	</ul>
+	<form class="form-inline my-2 my-lg-0">
+	  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	</form>
+      </div>
+    </nav>
+
+      <div id="chart" style="border: thin solid grey" class="col-md-8 col-md-offset-0">
+      </div>
+      <div id="sidebar" class="col-md-4 col-md-offset-0">
+	<div id="detail">
+	</div>
+	<div id="debug">
+	  <pre>
+	  </pre>
+	</div>
+	<div id="changed">
+	  <pre>
+	  </pre>
+	</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function(){
+      var u = new URI;
+      var s = u.search(true);
+      // I am foobar
+var q = {};
+// console.log(s);
+Object.keys(s)
+    .filter(function(e, i){ return e.match(/_var$/) })
+    .forEach(function(e, i){
+	var k = e.replace(/_var$/, '');
+	console.log(k);
+	q[k] = q[k] || {};
+	q[k].bounds = [];
+	q[k].name = s[e]
+	
+	if (s[k + '_list']) { q[k].list = s[k + '_list'].split(/;\s*|\n/) }
+	if (s[k + '_min'] !== undefined) { q[k].bounds[0] = s[k + '_min'] }
+	if (s[k + '_max'] !== undefined) { q[k].bounds[1] = s[k + '_max'] }
+    });
+
+// $('#changed pre').html(JSON.stringify(q, undefined, ' '));
+
+ 
+
+      var source   = document.getElementById("sidebar-template").innerHTML;
+      var template = Handlebars.compile(source);
+      $('#detail').html(template({ data : q }));
+      $('.slider').each(function(i, e){
+	  $(e).slider({ formatter: function(value) { return 'Current value: ' + value; }, value: 0 })
+	      .on('change', function(e){ $(this).next().html(e.value.newValue) })
+      })
+      
+      // console.log($('#chart').height(),
+      // 		  $('#chart').position().top,
+      // 		  window.innerHeight)
+      
+      var w = $('#chart').width(),
+	  h = window.innerHeight - $('#chart').position().top - $(window).height() * 0.30,
+	  pad = 50; // defining width and height of the SVG element; and a little padding for the plot
+
+      var svg = d3.select("#chart") // Select the plot element from the DOM
+	  .append("svg") // Append an SVG element to it
+	  .attr("height", h)
+	  .attr("width", w);
+
+      const dataset = [
+	  {"x_size":30,"x_val":5,"y_val":20},
+	  {"x_size":20,"x_val":48,"y_val":90},
+	  {"x_size":100,"x_val":25,"y_val":50},
+	  {"x_size":40,"x_val":10,"y_val":33},
+	  {"x_size":60,"x_val":33,"y_val":85}
+      ];
+
+      // Create the scales and axes.
+      
+      // Scales
+      var xScale = d3.scaleLinear() // For the X axis
+	  .domain([s.x_min, s.x_max])
+	  .range([pad, w - pad]);
+      
+      var yScale = d3.scaleLinear() // For the Y axis
+	  .domain([s.x_min, s.y_max])
+	  .range([h - pad, pad]);
+      
+      var rScale = d3.scaleLinear() // Custom scale for the radii
+	  .domain([s.x_size_min, s.x_size_max])
+	  .range([1, 100]); // Custom range, change it to see the effects!
+      
+      // Axes
+      var xAxis = d3.axisBottom(xScale); // handy axes for any orientation
+      var yAxis = d3.axisLeft(yScale);
+      
+
+      //-----------------------------------------------------------------
+      // dragging
+      //-----------------------------------------------------------------
+
+      var u = new URI;
+      function dragstarted(d, i) {
+	  console.log(d)
+	  d3.select(this).raise().classed("active", true);
+      }
+      
+      function dragged(d, i) {
+	  // console.log(d3.event);
+	  console.log(i);
+	  var s = u.search(true);
+	  if (d3.event.sourceEvent.shiftKey) {
+	      var r = Math.min(s.x_size_max, Math.max(s.x_size_min, Math.abs(d3.select(this).attr("cx") - d3.event.x)));
+	      d3.select(this).attr("r", r)
+	      d.x_size = rScale.invert($(this).attr('r'));	      
+	      $('#x_size_val').slider('setValue', d.x_size).next().html(parseInt(d.x_size));
+	  } else {
+	      d3.select(this).attr("cx", d3.event.x).attr("cy", d3.event.y);
+	      d.x_val = xScale.invert($(this).attr('cx'));
+	      $('#x_val').slider('setValue', d.x_val).next().html(parseInt(d.x_val));
+	      d.y_val = yScale.invert($(this).attr('cy'));	      
+	      $('#y_val').slider('setValue', d.y_val).next().html(parseInt(d.y_val));
+	  }
+	  console.log(d)
+	  var h = Object.assign(s, d)
+	  history.replaceState(h, "page", u.search(h).toString());
+      }
+      
+      function dragended(d, i) {
+	  d3.select(this).classed("active", false);
+	  console.log(d)
+      }
+
+      function itemclick(d, i){
+	  $('#x_size_val').slider('setValue', d.x_size).next().html(parseInt(d.x_size));
+	  $('#x_val').slider('setValue', d.x_val).next().html(parseInt(d.x_val));
+	  $('#y_val').slider('setValue', d.y_val).next().html(parseInt(d.y_val));
+      }
+      
+      //-----------------------------------------------------------------
+      // Plotting the data.
+      //-----------------------------------------------------------------
+	  
+      var circ = svg.selectAll("circle") // Returns ALL matching elements
+	  .data(dataset)                 // Bind data to DOM
+	  .enter()                       // Add one circle per such data point
+	  .append("circle")
+	  .attr("cx", function(d) { return xScale(d.x_val); })
+	  .attr("cy", function(d) { return yScale(d.y_val); })
+	  .attr("r", function(d)  { return rScale(d.x_size); })
+	  .attr("fill", "blue").attr("opacity", 0.5)
+	  .on('click', itemclick)
+	  .call(d3.drag()
+		.on("start", dragstarted)
+		.on("drag", dragged)
+		.on("end", dragended));
+      
+      //-----------------------------------------------------------------
+      // dumping the data
+      //-----------------------------------------------------------------
+
+      $('#data_dropdown_menu .save').click(function(e){
+	  svg.selectAll("circle").each(function(e){
+	      console.log(e);
+	      console.log([
+		  xScale.invert($(this).attr('cx')),
+		  yScale.invert($(this).attr('cy')),
+		  rScale.invert($(this).attr('r'))
+	      ]);
+	  })
+      })
+      ;      
+  })
+</script>
+<style>
+  #sidebar label { font-size: 12px; }
+  #sidebar .form-group > label { font-weight: bold; }
+  .slider { width: 100% }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" media="screen" />
+<script id="sidebar-template" type="text/x-handlebars-template">
+  <form id="sidebar">
+    {{#each data as |value key|}}
+    <div class="form-group">
+      <label for="{{key}}">{{value.name}}</label>
+      {{#if this.list }}
+      <br />
+      {{#each this.list }}
+      <div class="form-check form-check-inline">
+	<input class="form-check-input" id="{{key}}_{{@index}}" name="{{key}}" type="radio" value="{{this}}">
+	<label class="form-check-label" for="{{key}}_{{@index}}">{{this}}</label>
+      </div>
+      {{/each}}
+      {{else}}
+      <p style="width=100%; padding-left:1em">
+	<input class="slider" id="{{@key}}_val" data-provide="slider" data-slider-id="{{@key}}_val_slider"
+	       type="text" data-slider-min="{{ this.bounds.[0] }}" data-slider-max="{{ this.bounds.[1] }}"
+	       data-slider-step="1" data-slider-value="{{ this.bounds.[0] }}"/>
+	<span style="padding-left:1em">{{ this.bounds.[0] }}</span>
+      </p>
+      {{/if}}
+    </div>
+  {{/each}}
+</form>
+</script>
+<script id="foobar-template" type="text/x-handlebars-template">
+  	<input class="form-control form-control-sm" id="{{@key}}_val" name="{{@key}}_val"
+	       type="text" value="{{ this.bounds.[0] }}-{{ this.bounds.[1] }}">
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+</html>
