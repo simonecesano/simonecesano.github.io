@@ -16,18 +16,17 @@
     function makeApiCall() {
       var params = {
         // The ID of the spreadsheet to update.
-        spreadsheetId: 'my-spreadsheet-id',  // TODO: Update placeholder value.
+        spreadsheetId: 'my-spreadsheet-id1jZjYbUggWEhvr2r5sMRtfTjiaIQayW62F1JW2RhsqUs',  // TODO: Update placeholder value.
 
         // The A1 notation of the values to update.
-        range: 'my-range',  // TODO: Update placeholder value.
+        range: 'A1',  // TODO: Update placeholder value.
 
         // How the input data should be interpreted.
-        valueInputOption: '',  // TODO: Update placeholder value.
+        valueInputOption: 'RAW',  // TODO: Update placeholder value.
       };
 
       var valueRangeBody = {
-        // TODO: Add desired properties to the request body. All existing properties
-        // will be replaced.
+	  values: [[ new Date() ]]
       };
 
       var request = gapi.client.sheets.spreadsheets.values.update(params, valueRangeBody);
@@ -39,16 +38,15 @@
       });
     }
 
-    function initClient() {
-      var API_KEY = '';  // TODO: Update placeholder with desired API key.
-
-      var CLIENT_ID = '';  // TODO: Update placeholder with desired client ID.
+function initClient() {
+      var CLIENT_ID = '937190049395-h207v6s86sudk908lierurbb8co8r20t.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyDmpuQ13XG4XlvdcgMitKwl55BbeQl8wZc';
 
       // TODO: Authorize using one of the following scopes:
       //   'https://www.googleapis.com/auth/drive'
       //   'https://www.googleapis.com/auth/drive.file'
       //   'https://www.googleapis.com/auth/spreadsheets'
-      var SCOPE = '';
+      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
       gapi.client.init({
         'apiKey': API_KEY,
