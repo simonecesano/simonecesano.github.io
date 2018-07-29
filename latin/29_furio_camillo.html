@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" type="text/css" />
+  <link href="../font.css" rel="stylesheet" type="text/css" />
+  <title>furio camillo</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9 col-md-offset-1 col-sm-12">
+        <h1 id="">furio camillo</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1 col-sm-12">
+	<p class="clickable">
+	  Post viginti annos Veientani rebellaverunt. Dictator contra ipsos
+missus est Furius Camillus, qui primum eos vicit acie, mox etiam
+civitatem diu obsidens cepit antiquissimam Italiae atque ditissimam.
+Post eam cepit et Faliscos, non minus nobilem civitatem. Sed commota
+est ei invidia, quasi praedam male divisisset, damnatusque ob eam
+causam et expulsus civitate. Statim Galli Senones ad urbem venerunt
+et victos Romanos undecimo miliario a Roma apud flumen Alliam
+secuti etiam urbem occupaverunt. Neque defendi quicquam nisi
+Capitolium potuit; quod cum diu obsedissent et iam Romani fame
+laborarent, a Camillo qui in vicina civitate exulabat Gallis superventum
+est gravissimeque victi sunt. Postea tamen etiam accepto auro, ne
+Capitolium obsiderent, recesserunt, sed secutus eos Camillus ita cecidit,
+ut et aurum quod iis datum fuerat et omnia quae ceperant militaria
+signa revocaret. I ta tertio triumphans urbem ingressus est et appellatus
+secundus Romulus quasi et ipse patriae conditor.
+	</p>
+      </div>
+      <div class="col-md-5 col-sm-12">
+	<textarea class="form-control" rows="18"></textarea>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function(){
+	var pons_url = 'https://en.pons.com/translate?l=dela&in=la&lf=la&q=';
+	$(".clickable").click(function(e) {
+	    s = window.getSelection();
+	    var range = s.getRangeAt(0);
+	    var node = s.anchorNode;
+	    while (range.toString().indexOf(' ') != 0) {
+		range.setStart(node, (range.startOffset - 1));
+	    }
+	    range.setStart(node, range.startOffset + 1);
+	    do {
+		range.setEnd(node, range.endOffset + 1);
+	    } while (range.toString().indexOf(' ') == -1 && range.toString().trim() != '' && range.endOffset < node.length);
+	var str = range.toString().trim();
+	    str = str.replace(/[;.:,]/, '')
+	    window.open(pons_url + str);
+	});
+    })
+  </script>
+</body>
+</html>
+
