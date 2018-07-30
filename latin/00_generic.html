@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="https://cdn.rawgit.com/ddallala/325209/raw/8909d32bcd4af24acca32442793ddbfa25b2225c/stopwatch.js"></script>
+  <script src="https://cdn.rawgit.com/krasimir/navigo/e8674ba8/lib/navigo.js"></script>
+
+  <link href="../font.css" rel="stylesheet" type="text/css" />
+  <title></title>
+  <style>
+    #translation { font-family: courier; font-size: 0.85em }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9 offset-1 col-sm-12">
+        <h1 id="title"></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 offset-1 col-sm-12">
+	<span id="stopwatch">Start</span>: <span id="time">00:00</span>
+      </div>
+      <div class="col-md-2 col-sm-12">
+	checked words: <span id="wordcount">0</span>
+      </div>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-5 offset-1 col-sm-12">
+	<p id="latin">
+	</p>
+	<a href="index.html">Back to list</a>
+      </div>
+      <div class="col-md-5 col-sm-12">
+	<textarea id="translation" class="form-control" rows="18"></textarea>
+      </div>
+      <div id="words" class="col-md-3 col-md-offset-1">
+	
+      </div>
+    </div>
+  </div>
+    <script>
+    $(function(){
+	var pons_url = 'https://en.pons.com/translate?l=dela&in=la&lf=la&q=';
+	var router = new Navigo(null, true, '#')
+	router.on('/:file', function (p, q) {
+	    $.get('/latin/' + p.file, function(d){
+		d = d.replace(/\n/g, " ")
+		var title = p.file.replace(/^\d+_/, ' ').replace(/\.txt$/, '').replace(/_/g, ' ')
+		$('#translation').val(d);
+		$('#title').html(title);
+		var words = d.split(/\b/)
+		    .map(function(e, i){
+			if (e.match(/\w/)) {
+			    return '<span>' + e + '</span>' 
+			} else {
+			    return e;
+			}
+		    })
+		$('#latin').html(words.join(''))
+		$("#latin span").click(function(e) {
+		    window.open(pons_url + $(e.target).text());
+		    $('#wordcount').html(parseInt($('#wordcount').html()) + 1);
+		});
+	    })
+	}).resolve();
+
+	var stopwatch = new Stopwatch(function(runtime) {
+	    // format time as m:ss.d
+	    var minutes = Math.floor(runtime / 60000);
+	    var seconds = Math.floor(runtime % 60000 / 1000);
+	    var decimals = Math.floor(runtime % 1000 / 100);
+	    var displayText = (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+            
+	    // writing output to screen
+	    $("#time").html(displayText);
+	});	
+	$('#stopwatch').click(function(){
+	    if ($(this).html().match(/start/i)) {
+		$(this).html('Stop')
+	    } else {
+		$(this).html('Start')
+	    }
+	    stopwatch.startStop();
+	})
+	
+    })
+  </script>
+
+  
+</body>
+</html>
+
