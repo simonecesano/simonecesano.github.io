@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
   <link href="../font.css" rel="stylesheet" type="text/css" />
   <title>Traduzioni di Latino</title>
 </head>
@@ -21,7 +23,7 @@
       </div>
     </div>
     <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-sm-12">
+    <div id="toc" class="col-md-10 col-md-offset-1 col-sm-12">
       <ol>
 	<li><a href="221_la_moltiplicazione_dei_pani.html">la moltiplicazione dei pani</a></li>
 	<li><a href="222_gesu_cammina_sulle_acque.html">gesu cammina sulle acque</a></li>
@@ -37,7 +39,29 @@
   </div>
   <script>
     $(function(){
+	$.get('./index.txt', function(d){
+	    var listing = d
+		.split(/\n/)
+		.map(function(e, i){
+		    return {
+			file: e,
+			name: e.replace(/\.txt$/, '').replace(/^\d+_/, '').replace(/_/g, ' ')
+		    }
+		})
+		.filter(function(e, i){
+		    return e.file.match(/^\d+.+\.txt$/)
+		})
+	    console.log(listing)
+	    var template = Handlebars.compile(document.getElementById("listing-template").innerHTML);
+	    $('#toc').html(template({ items: listing }))
+	})
     })
+  </script>
+  <script id="listing-template" type="text/x-handlebars-template">
+    <ol>
+      {{#each items}}
+      <li><a href="./00_generic.html#/{{ this.file }}">{{ this.name }}</a></li>
+      {{/each}}
   </script>
 </body>
 </html>
