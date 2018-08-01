@@ -4,7 +4,7 @@
   <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org" />
   <meta name="viewport" content="width=device-width" />
   <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -17,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
   <script src="https://cdn.rawgit.com/ddallala/325209/raw/8909d32bcd4af24acca32442793ddbfa25b2225c/stopwatch.js"></script>
   <script src="https://cdn.rawgit.com/krasimir/navigo/e8674ba8/lib/navigo.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <link href="../font.css" rel="stylesheet" type="text/css" />
   <title></title>
@@ -50,7 +51,7 @@
       <div class="col-md-5 col-sm-12">
 	<textarea id="translation" class="form-control" rows="18"></textarea>
       </div>
-      <div id="words" class="col-md-3 col-md-offset-1">
+      <div id="words" class="col-md-10 offset-1">
 	
       </div>
     </div>
@@ -75,7 +76,33 @@
 		    })
 		$('#latin').html(words.join(''))
 		$("#latin span").click(function(e) {
-		    window.open(pons_url + $(e.target).text());
+		    $.get(pons_url + $(e.target).text(),
+			  function(d) {
+			      var t;
+			      var l = $(d).find('.translations dl:nth-of-type(1) .target, .translations dl:nth-of-type(1) .source').length
+			      if (l) {
+				  t = $(d)
+				      .find('.translations dl:nth-of-type(1) .target, .translations dl:nth-of-type(1) .source')
+				      .map(function(i, e){
+					  return $(e).text().replace(/^\s+|\s+$/g, '').replace(/\n/g, ' ').replace(/\s+/g, ' ')
+				      }).toArray();
+				  t = _.chain(t).chunk(2).value()
+			      } else {
+				  console.log($(d).find('div#la.lang .results .source, div#la.lang .results .target'));
+				  t = $(d).find('div#la .source, div#la .target')
+				      .map(function(i, e){
+					  console.log($(e).text())
+					  return $(e).text()
+					      .replace(/^\s+|\s+$/g, '')
+					      .replace(/\n/g, ' ')
+					      .replace(/\s+/g, ' ')
+				      }).toArray();
+				  t = _.chain(t).chunk(2).value()
+			      }
+			      console.log(t);
+			      var template = Handlebars.compile(document.getElementById("words-template").innerHTML);
+			      $('#words').html(template({ word: $(e.target).text(), words: t, url: pons_url + $(e.target).text() }))
+			  })
 		    $('#wordcount').html(parseInt($('#wordcount').html()) + 1);
 		});
 	    })
@@ -100,8 +127,16 @@
 	    stopwatch.startStop();
 	})
 	
-    })
-  </script>
+    });
+										     </script>
+    <script id="words-template" type="text/x-handlebars-template">
+      <p><h4>{{ word }}&emsp;<a target="_blank" rel="noopener noreferrer" href="{{ url }}"><i class="fa fa-book" aria-hidden="true"></i></a></h4></p>
+      <ol>
+      {{#each words}}
+      <li><strong>{{ this.[0] }}</strong>: {{ this.[1] }}</li>
+      {{/each}}
+      </ol>
+    </script>
 
   
 </body>
