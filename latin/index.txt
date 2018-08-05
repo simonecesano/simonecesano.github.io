@@ -16,3 +16,5 @@
 84_morte_di_orgetorige.txt
 de_bello_gallico.txt
 notes.txt
+26_pieta_di_karl.txt
+30_eredita_e_morte_di_karl.txt
