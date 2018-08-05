@@ -1,7 +1,9 @@
 .row { font-family: 'Proza Libre', sans-serif; color: #0D1F30 }
-h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', serif; }
 h1 { color: #3B6670 }
-h2, h3 { color: #DB6C0F }
+h2 { color: #BD4932 }
+h3, h4 { color: #2980B9}
+
 body { background-color: #F0E3C0; font-family: 'Lato', sans }
 
 @media (max-width: 480px) {
