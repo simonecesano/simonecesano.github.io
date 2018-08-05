@@ -1,3 +1,5 @@
+169_gara_di_valore.txt
+170_il_sacrificio_di_leonida.txt
 144_un_valoroso_centurione.txt
 60_lisandro_accusatore_di_se_stesso.txt
 61_alcibiade.txt
@@ -8,13 +10,13 @@
 87_cesare_contro_gli_elvezi.txt
 221_la_moltiplicazione_dei_pani.txt
 222_gesu_cammina_sulle_acque.txt
+231_il_buon_pastore.txt
+232_risurrezione_di_lazzaro.txt
 26_coriolano.txt
 29_furio_camillo.txt
 30_il_tribunato_militare.txt
 51_dario_contro_la_grecia.txt
 83_orgetorige.txt
 84_morte_di_orgetorige.txt
-de_bello_gallico.txt
-notes.txt
 26_pieta_di_karl.txt
 30_eredita_e_morte_di_karl.txt
