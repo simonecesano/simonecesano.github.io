@@ -1,0 +1,103 @@
+## Element
+
+Ein Chemisches Element ist ein Reinstoff, der mit chemischen Methoden nicht mehr in andere Stoffe zerlegt werden kann. Die Elemente sind die Grundstoffe der chemischen Reaktionen. Die kleinste mögliche Menge eines Elements ist das Atom. Seine Teilchen (Atome oder Moleküle) bestehen aus einer einzigen Atomsorte und haben die gleiche Ordnungszahl.
+
+https://de.wikipedia.org/wiki/Chemisches_Element
+
+## Verbindung
+
+Als chemische Verbindung bezeichnet man einen Reinstoff, der aus Atomen von zwei oder mehreren chemischen Elementen besteht, wobei die Atomarten
+zueinander in einem festen Verhältnis stehen.
+
+Die Verbindung kann _chemisch_ in Elemente zerlegt werden.
+
+Die Verbindung besteht aus Teilchen (Moleküle, Ionen), die mindestens zwei unterschiedliche Atomsorten beinhalten.
+
+https://de.wikipedia.org/wiki/Chemische_Verbindung
+
+## Reinstoff
+
+Als Reinstoff bezeichnet man in der Chemie einen Stoff, der einheitlich aus nur einer chemischen Verbindung oder einem chemischen Element zusammengesetzt ist.
+
+Er kann durch _physikalische_ Trennmethoden _nicht_ weiter zerlegt werden
+
+Reinstoffe sind:
+
+- Reine Chemische Elemente: z. B. reiner Wasserstoff, Sauerstoff oder Gold.
+- Reine Chemische Verbindungen: z. B. reines, destilliertes Wasser, reines Kohlenstoffdioxid oder reines Natriumchlorid (Kochsalz).
+
+https://de.wikipedia.org/wiki/Reinstoff
+
+## Gemisch
+
+Unter einem Gemisch (Stoffgemisch) versteht man einen Stoff, der aus mindestens zwei Reinstoffen besteht.
+
+Sie unterscheiden sich nach dem Aussehen in homogene (einheitliche) und heterogene (uneinheitliche) Gemische.
+
+Wenn man will Gemische in ihre Reinstoffe auftrennen, so nutzt man die unterschiedlichen physikalischen Eigenschaften aus, mit den jeweiligen Trennmethode (thermische, mechanische).
+
+Beispiele sind:
+
+- Legierung, wie Bronze
+- Haufwerk, wie Kies
+- Lösung, wie Wein
+- Emulsion, wie Milch
+- Rauch, Staub, wie Zigarettenrauch
+- Dampf, Nebel
+
+https://de.wikipedia.org/wiki/Gemisch
+
+## Chemische Reaktion
+
+Eine chemische Reaktion ist ein Vorgang, bei dem eine oder meist mehrere chemische Verbindungen in andere umgewandelt werden und Energie freigesetzt oder aufgenommen wird.
+
+In einer chemische Reaktion finden Stoffumwandlungen statt: Bindungen werden gebrochen und neu geknüpft, und Teilchen werden umgruppiert.
+
+https://de.wikipedia.org/wiki/Chemische_Reaktion
+
+### Art der Reaktionen
+
+#### Synthese
+
+Die Synthese ist eine Reaktion von zwei oder mehr Elementen zu einer Verbindung.
+
+In der Chemie bezeichnet die Synthese (von griechisch synthesis ‚Zusammenstellung‘) den Vorgang, bei dem aus Elementen eine Verbindung oder aus einfach gebauten Verbindungen ein komplizierter zusammengesetzter neuer Stoff hergestellt wird.
+
+A &plus; B &Rightarrow; AB
+
+#### Analyse
+
+Die Analyse ist Zersetzung von einer Verbindung in ihre Elemente
+
+AB &Rightarrow; A &plus; B
+
+#### Umsetzung
+
+Die Umsetzung ist Kopplung von Analyse und Synthese
+
+AB &plus; C &Rightarrow; AC &plus; B 
+
+### Energie
+
+#### Endotherme
+
+Endotherme Reaktionen sind die, bei denen Energie zugeführt werden muss. Die innere Energie der Produkte (die entstehenden
+Stoffen) ist höher als die der Edukte (der zugefuhrte Stoffen).
+
+<img alt="Enthalpieprofil einer endothermen Reaktion" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Enthalpy_profile_endothermic_reaction-DE.svg/400px-Enthalpy_profile_endothermic_reaction-DE.svg.png" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Enthalpy_profile_endothermic_reaction-DE.svg/600px-Enthalpy_profile_endothermic_reaction-DE.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Enthalpy_profile_endothermic_reaction-DE.svg/800px-Enthalpy_profile_endothermic_reaction-DE.svg.png 2x" data-file-width="516" data-file-height="340" width="400" height="264">
+
+
+#### Exotherme
+
+Exotherme Reaktionen sind die, in denen Energie wird in Form von W&auml;rme abgegeben. Die innere Energie der Produkte ist geringer als die der Edukte.
+
+## Verhältnisformel
+
+Die Verhältnisformel gibt die kleinstmöglichen Zahlenverhältnisse der Atome der beteiligten chemischen Elemente in einer chemischen Verbindung an
+
+Beispiele:
+
+- Wasser: H<sub>2</sub>O - zwei Atome Wasserstoff, ein Atom Sauerstoff
+- Propan: C<sub>3</sub>H<sub>8</sub> - drei Atome Kohlenstoff, acht Atome Wasserstoff
+- Methan: CH<sub>4</sub> - ein Atom Kohlenstoff, 4 Atome Wasserstoff
+- Essigsäure: CH<sub>2</sub>O - ein Atom Kohlenstoff, 2 Atome Wasserstoff, ein Atom Sauerstoff
