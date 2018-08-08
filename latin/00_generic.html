@@ -61,8 +61,8 @@
 	var router = new Navigo(null, true, '#')
 	router.on('/:file', function (p, q) {
 	    $.get('/latin/' + p.file, function(d){
-		d = d.replace(/\n/g, " ")
 		var title = p.file.replace(/^\d+_/, ' ').replace(/\.txt$/, '').replace(/_/g, ' ')
+		d = d.replace(/(\S)\n{1,1}(\S)/g, "$1 $2")
 		$('#translation').val(d);
 		$('#title').html(title);
 		var words = d.split(/\b/)
