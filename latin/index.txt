@@ -8,6 +8,8 @@
 72_imprese_di_annibale.txt
 86_partenza_degli_elvezi.txt
 87_cesare_contro_gli_elvezi.txt
+88_tentativo_fallito_degli_elvezi.txt
+89_l_eduo_dumnorige.txt
 221_la_moltiplicazione_dei_pani.txt
 222_gesu_cammina_sulle_acque.txt
 231_il_buon_pastore.txt
