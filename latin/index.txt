@@ -26,3 +26,6 @@
 155_la_razza_germanica.txt
 156_costumi_dei_germani.txt
 96_cesare_provoca_a_battaglia_ariovisto.txt
+129_la_religione_dei_germani.txt
+130_occupazioni_dei_germani.txt
+131_costumi_dei_germani.txt
