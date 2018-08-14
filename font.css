@@ -4,7 +4,7 @@ h1 { color: #3B6670 }
 h2 { color: #BD4932 }
 h3, h4 { color: #2980B9}
 
-body { background-color: Gainsboro; font-family: 'Lato', sans }
+body { background-color: #F0E3C0; font-family: 'Lato', sans }
 
 @media (max-width: 480px) {
   body { font-size: 3em; }
