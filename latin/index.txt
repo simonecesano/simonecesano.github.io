@@ -29,3 +29,5 @@
 129_la_religione_dei_germani.txt
 130_occupazioni_dei_germani.txt
 131_costumi_dei_germani.txt
+156_costumi_dei_germani.txt
+157_la_religione_dei_germani.txt
