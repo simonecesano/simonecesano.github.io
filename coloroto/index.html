@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	  integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+	    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+	    crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+	    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+	    crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/krasimir/navigo/e8674ba8/lib/navigo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdn.rawgit.com/dankogai/js-combinatorics/32e4edd9/combinatorics.js"></script>
+    <script src="/colorot.js"></script>    
+    <meta charset="utf-8" /> 
+    <style>
+      .swatchgroup { display: inline-block }
+      .caption { font-size: small; margin-left: 6px }
+      .swatch { width:4em; height: 4em; display: inline-block; margin: 6px; border: thin solid grey }
+      #output div { display: inline-block; margin: 1em }
+      #output div.icons { display: block; margin: 1em }
+      #output div.icons i { margin: 3px }      
+      .selected .caption { text-decoration-line: line-through; };
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+	<h1>Welcome to ColoRoto!</h1>
+	<div id="color">
+	  <button type="button" id="blockb" class="btn btn-primary">Paste block</button>
+	  <button type="button" id="paletteb" class="btn btn-primary">Paste palette</button>
+	  <button type="button" id="combinb" class="btn btn-primary">Create combinations</button>
+	  <button type="button" id="clearb" class="btn btn-primary">Clear combinations</button>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="img" class="col-6">
+      </div>
+      <div id="blocks" class="col-3">
+      </div>
+      <div id="palettes" class="col-3">
+      </div>
+    </div>
+    <div class="row">
+      <div id="output" class="col-12">
+      </div>
+    </div>
+    </div>
+</body>
+<script id="palette-template" type="text/x-handlebars-template">
+  {{#each swatches}}
+  <div class="swatchgroup">
+    <div style="background-color:{{ this }}" class="swatch"></div>
+    <div class="caption">{{ this }}</div>    
+  </div>
+  {{/each}}
+</script>
+<script id="block-template" type="text/x-handlebars-template">
+</script>
+<script id="cw-template" type="text/x-handlebars-template">
+  <div id="{{ id }}">
+    {{{ svg }}}
+  </div>;
+</script>
+</html>
