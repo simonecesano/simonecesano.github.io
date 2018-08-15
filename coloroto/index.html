@@ -34,6 +34,7 @@
       #output div.icons { display: block; margin: 1em }
       #output div.icons i { margin: 3px }      
       .selected .caption { text-decoration-line: line-through; };
+      .fa-heart.liked svg, .fa-heart.liked { color: red }
     </style>
 </head>
 
@@ -81,8 +82,10 @@
       {{#each swatches}}
       <div data-color="{{ this }}" style="background-color:{{ this }}" class="swatch small"></div>
       {{/each}} | 
-      <i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i>
+      <i class="fas fa-trash-alt"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-search"></i>
     </div>
-  </div>;
+  </div>
 </script>
 </html>
