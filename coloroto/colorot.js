@@ -8,7 +8,9 @@ $(function(){
 	navigator.clipboard.readText()
 	    .then(text => {
 		$('#img').html(text)
-		var m = text.match(/fill:(#[0-9a-f]{6,6})/ig).map(function(e){ return e.replace(/fill:/g, '') });
+		var m = text.match(/fill:#[0-9a-f]{6,6}|fill="#[0-9a-f]{6,6}/ig)
+		    .map(function(e){ return e.replace(/fill:/g, '').replace(/fill="/g, '') });
+		console.log(m);
 		m = _.uniq(m);
 		v.blocks = m;
 		v.img = text;
@@ -25,7 +27,8 @@ $(function(){
     $('#paletteb').click(function(e){
 	navigator.clipboard.readText()
 	    .then(text => {
-		var m = text.match(/fill:(#[0-9a-f]{6,6})/ig).map(function(e){ return e.replace(/fill:/g, '') });
+		var m = text.match(/fill:#[0-9a-f]{6,6}|fill="#[0-9a-f]{6,6}/ig)
+		    .map(function(e){ return e.replace(/fill:/g, '').replace(/fill="/g, '') });
 		m = _.uniq(m);
 		v.palette = m;
   		var palette_template = Handlebars.compile(document.getElementById("palette-template").innerHTML);
@@ -60,20 +63,19 @@ $(function(){
 			var id = 'svg' + i;
 			
 			var img = v.img;
-			var s = cw_template({ id: id, svg: img, swatches: _.uniq(a) })
-			$('#output').append(s);
-			
-			var css = $('#' + id + ' svg style').html();
-			
+
+			console.log(img);
 			b.forEach(function(e){
 			    var g = a.shift();
 			    var r = new RegExp(e, 'gi');
-			    css = css.replace(r, g);
+			    img = img.replace(r, g);
 			    a.push(g);
 			});
 			
-			css = css.replace(/\.st/g, '#' + id + ' .st')
-			$('#' + id + ' svg style').html(css);
+			img = img.replace(/\.st/g, '#' + id + ' .st')
+			var s = cw_template({ id: id, svg: img, swatches: _.uniq(a) })
+			$('#output').append(s);
+
 			// $('#' + id).append('<div class="icons"><i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i></div>')
 			i++;
 		    }
