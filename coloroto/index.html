@@ -29,7 +29,8 @@
       .swatchgroup { display: inline-block }
       .caption { font-size: small; margin-left: 6px }
       .swatch { width:4em; height: 4em; display: inline-block; margin: 6px; border: thin solid grey }
-      #output div { display: inline-block; margin: 1em }
+      .swatch.small { width:1em; height: 1em; display: inline-block; margin: 2px; border: thin solid grey }
+      #output div.cw { display: inline-block; margin: 1em }
       #output div.icons { display: block; margin: 1em }
       #output div.icons i { margin: 3px }      
       .selected .caption { text-decoration-line: line-through; };
@@ -74,8 +75,14 @@
 <script id="block-template" type="text/x-handlebars-template">
 </script>
 <script id="cw-template" type="text/x-handlebars-template">
-  <div id="{{ id }}">
+  <div class="cw" id="{{ id }}">
     {{{ svg }}}
+    <div class="icons">
+      {{#each swatches}}
+      <div data-color="{{ this }}" style="background-color:{{ this }}" class="swatch small"></div>
+      {{/each}} | 
+      <i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i>
+    </div>
   </div>;
 </script>
 </html>

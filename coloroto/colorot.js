@@ -1,5 +1,6 @@
 var v = { palette: [], blocks: [], img: "" };
 $(function(){
+    var cw_template = Handlebars.compile(document.getElementById("cw-template").innerHTML);
     $('#clearb').click(function(e){
 	$('#output').html('');
     })
@@ -46,39 +47,40 @@ $(function(){
 	    .map(function(i, e){ return $(e).html() }).get()
 	console.log(v);
 	if (v.palette.length) {
-	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 3);
+	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 4);
 	    console.log(cmb.length);
 	    var t = 1 - (10 / cmb.length);
 	    console.log(t);
 	    var i = 1;
 	    while(a = cmb.next()) {
-		if (Math.random() > 0) {
-		    var b = _.shuffle(v.blocks);
-		    var id = 'svg' + i;
-		    
-		    var s = $('<div class="cw" id="' + id + '"></div>');
-		    var img = v.img;
-		    
-		    s.append(img);
-		    $('#output').append(s);
-		    
-		    var css = $('#' + id + ' svg style').html();
-		    
-		    b.forEach(function(e){
-			var g = a.shift();
-			var r = new RegExp(e, 'gi');
-			css = css.replace(r, g);
-			a.push(g);
-		    });
-		    
-		    css = css.replace(/\.st/g, '#' + id + ' .st')
-		    $('#' + id + ' svg style').html(css);
-		    $('#' + id).append('<div class="icons"><i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i></div>')
-		    i++;
+		var l = _.chain(a).uniq().size()
+		if (l > 0) {
+		    if (Math.random() > 0) {
+			var b = _.shuffle(v.blocks);
+			var id = 'svg' + i;
+			
+			var img = v.img;
+			var s = cw_template({ id: id, svg: img, swatches: _.uniq(a) })
+			$('#output').append(s);
+			
+			var css = $('#' + id + ' svg style').html();
+			
+			b.forEach(function(e){
+			    var g = a.shift();
+			    var r = new RegExp(e, 'gi');
+			    css = css.replace(r, g);
+			    a.push(g);
+			});
+			
+			css = css.replace(/\.st/g, '#' + id + ' .st')
+			$('#' + id + ' svg style').html(css);
+			// $('#' + id).append('<div class="icons"><i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i></div>')
+			i++;
+		    }
+		    $('.fa-trash-alt').click(function(e){
+			$(e.target).parents('div.cw').fadeOut()
+		    })
 		}
-		$('.fa-trash-alt').click(function(e){
-		    $(e.target).parents('div.cw').fadeOut()
-		})
 		if (i > 100) break;
 	    };
 	}
