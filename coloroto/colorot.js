@@ -77,12 +77,18 @@ $(function(){
 			// $('#' + id).append('<div class="icons"><i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i></div>')
 			i++;
 		    }
-		    $('.fa-trash-alt').click(function(e){
-			$(e.target).parents('div.cw').fadeOut()
-		    })
 		}
 		if (i > 100) break;
 	    };
+	    $('.fa-trash-alt').click(function(e){
+		console.log('trash');
+		$(e.target).parents('div.cw').fadeOut()
+	    })
+	    $('.fa-heart').click(function(e){
+		console.log('like');
+		$(e.target).parents('div.cw').toggleClass('liked')
+		$(e.target).css('color', 'Crimson')
+	    })
 	}
     });
 })
