@@ -1,5 +1,10 @@
 function Grid(width, height, cols, rows, h_gutter, v_gutter) {
-
+    if (rows == 'sq') {
+	var t = cols;
+	cols = Math.ceil(Math.sqrt(cols));
+	rows = Math.ceil(t / cols);
+    }
+    
     this.width = width
     this.height = height
     this.cols = cols
@@ -26,7 +31,6 @@ Grid.prototype.positions = function(x_offset, y_offset){
     var pos = []
     x_offset = x_offset ? x_offset : 0;
     y_offset = y_offset ? y_offset : 0;    
-    // my ($gw, $gh, $iw, $ih, $gt, $pb) = map { $self->$_ } qw/grid_width grid_height item_width item_height gutter border/; 
 
     var g = this
     var seq = this.sequence();
@@ -37,4 +41,12 @@ Grid.prototype.positions = function(x_offset, y_offset){
 	])
     })
     return pos
+}
+
+Grid.prototype.bbox = function(){
+    return [
+	0, 0,
+	this.width * this.cols + this.h_gutter * (this.cols - 1),
+	this.height * this.rows + this.v_gutter * (this.rows - 1)
+    ]
 }
