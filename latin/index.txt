@@ -31,3 +31,7 @@
 131_costumi_dei_germani.txt
 157_la_religione_dei_germani.txt
 158_la_giustizia_presso_i_germani.txt
+114_preparativi_per_lo_sbarco_in_britannia.txt
+115_missione_di_commio_in_britannia.txt
+116_sbarco_di_cesare_in_britannia.txt
+117_difficolta_dello_sbarco_in_britannia.txt
