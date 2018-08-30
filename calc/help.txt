@@ -19,7 +19,7 @@ tab. Other output formats (Excel, PowerPoint) will be coming soon.
 	  
 - numbers followed by k, M, B get replaced by same number multiplied by thousand, million, billion respectively: 23k results in 23000
 - numbers followed by % get replaced by same number divided by 100
-- " @ " , " x " (watch surrounding spaces) get replaced by multiplication "12 @ 15" results in 12 * 15 => 180 
+- " @ " , " x " (watch surrounding spaces) get replaced by multiplication: "12 @ 15" results in 12 * 15 which results in 180 
 - '_' gets replaced by the result of the previous line
 - a line ending in '=' gets added to the subtotal
 - a line beginning in '=' outputs the running subtotal and resets it
