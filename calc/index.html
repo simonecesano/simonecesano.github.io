@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" /> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+  <style>
+    table { border-collapse: collapse; }
+    td { border: 1px solid white; min-width:50px; white-space: nowrap; }
+    input.decor { margin-left: 1em }
+    tr { line-height:50px }
+    tr.total { font-size: 1.1em; font-weight: bold }
+    tr.subtotal { font-weight: bold }
+    .value { text-align: right }
+  </style>
+  
+  <div class="container">
+    <div class="col">
+      <ul class="nav nav-tabs">
+	<li class="nav-item" >
+	  <a class="nav-link active" href="#input_tab" data-toggle="tab" role="tab">Input</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" id="calc" href="#table_tab" data-toggle="tab" role="tab">Table</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link disabled" href="#" data-toggle="tab" role="tab">Powerpoint</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link disabled" href="#" data-toggle="tab" role="tab">Excel</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" id="help" href="#help_tab" data-toggle="tab" role="tab">Help</a>
+	</li>
+      </ul>
+      <div class="tab-content" id="output_tabs">
+	<div class="tab-pane fade show active" id="input_tab" role="tabpanel" aria-labelledby="home-tab">
+	  <textarea class="form-control" id="calctext" rows="16"></textarea>
+	</div>
+	<div class="tab-pane fade" id="table_tab" role="tabpanel" aria-labelledby="home-tab">
+	  <div id="table">
+	  </div>
+	</div>
+	<div class="tab-pane fade" id="help_tab" role="tabpanel" aria-labelledby="home-tab">
+# Help
+	  
+## purpose
+
+With this tool xou can write complex calculations in a narrative text
+format so you can annotate their logic, have the tool perform
+calculations, and output them indifferent formats (tabular, text and
+Powerpoint).
+
+## how does it work
+
+Type up your calculations in markdown format (see [full documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+and [a
+cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+in the "Input" tab. To see the calculated output use the "Table"
+tab. Other output formats (Excel, PowerPoint) will be coming soon.
+
+## input format
+	  
+- numbers followed by k, M, B get replaced by same number multiplied by thousand, million, billion respectively: 23k results in 23000
+- numbers followed by % get replaced by same number divided by 100
+- " @ " , " x " (watch surrounding spaces) get replaced by multiplication "12 @ 15" results in 12 * 15 => 180 
+- '_' gets replaced by the result of the previous line
+- a line ending in '=' gets added to the subtotal
+- a line beginning in '=' outputs the running subtotal and resets it
+- a line beginning in '==' outputs the grandtotal
+	</div>
+    </div>
+  </div>
+  <script>
+    $(function(){
+	var converter = new showdown.Converter();
+	$('#ppt').click(function(){
+	    var converter = new showdown.Converter();
+	    var t = new Calc();
+	    var l = $("#calctext").val().split(/\n/);
+
+	    l.forEach(function(line, i){
+		if (!line.match(/^\s+$/)) { t.append(line) }
+	    })
+	    var html = $('<div>' + converter.makeHtml(t.markdown()) + '</div>');
+	    // console.log(html);
+	    console.clear()
+	    // console.log(converter.makeHtml(t.markdown()));
+	    var pptx = new PptxGenJS();
+	    html.find('h1, h2, h3, li, p').each(function(i, e){
+		var t = e.nodeName.toLowerCase();
+		console.log(e.nodeName.toLowerCase())
+		console.log($(e).text())
+		var slide;
+		if (t == 'h1') {
+		    var slide = pptx.addNewSlide();
+		    
+		} else if (t == 'h2') {
+		    
+		} else if (t == 'h3') {
+		
+		} else if (t == 'h4') {
+		    
+		} else if (t == 'li') {
+		    
+		} else if (t == 'p') {
+		    
+		}
+	    })
+	    pptx.save('PptxGenJS-Demo');
+	})
+	$('#help').click(function(){
+	    $.get('./help.txt', function(d){
+		console.log(d);
+		$('#help_tab').html(converter.makeHtml(d))
+	    })
+	    
+	})
+	$('#calc').click(function(){
+	    var t = new Calc();
+	    var l = $("#calctext").val().split(/\n/);
+	    l.forEach(function(line, i){
+		if (!line.match(/^\s*$/)) {
+		    t.append(line);
+		}
+	    })
+	    var source   = document.getElementById("entry-template").innerHTML;
+	    var template = Handlebars.compile(source);
+	    // console.log(template({ items: t.lines }));
+
+	    $("#table").html(template({ items: t.lines }))
+	    $('.value').each(function(i, e){
+		$(e).html(numeral($(e).html()).format('0,0.00'))
+	    })
+	    $('.header :first-child').each(function(i, e){
+		$(e).attr('colspan', 4).siblings().remove();
+		$(e).html(converter.makeHtml($(e).html()));
+	    })
+	})
+    })
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.1/URI.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="./Calc.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script lang="javascript" src="https://cdn.rawgit.com/gitbrent/PptxGenJS/v2.0.0/dist/pptxgen.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <table class="table table-striped">
+      <tbody>
+	{{#each items}}
+	<tr class="{{ this.class }}">
+	  <td>{{ this.line }}</td>
+	  <td>{{ this.calc }}</td>
+	  <td class="value">{{ this.value }}</td>	  
+	  <td>{{ this.purpose }}</td>
+	</tr>
+	{{/each}}
+      </tbody>
+    </table>
+  </script>
+  </body>
+</html>
+
