@@ -1,0 +1,41 @@
+# help
+
+## purpose
+
+With this tool xou can write complex calculations in a narrative text
+format so you can annotate their logic, have the tool perform
+calculations, and output them indifferent formats (tabular, text and
+Powerpoint).
+
+## how does it work
+
+Type up your calculations in markdown format (see [full documentation](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+and [a
+cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+in the "Input" tab. To see the calculated output use the "Table"
+tab. Other output formats (Excel, PowerPoint) will be coming soon.
+
+## input format
+	  
+- numbers followed by k, M, B get replaced by same number multiplied by thousand, million, billion respectively: 23k results in 23000
+- numbers followed by % get replaced by same number divided by 100
+- " @ " , " x " (watch surrounding spaces) get replaced by multiplication "12 @ 15" results in 12 * 15 => 180 
+- '_' gets replaced by the result of the previous line
+- a line ending in '=' gets added to the subtotal
+- a line beginning in '=' outputs the running subtotal and resets it
+- a line beginning in '==' outputs the grandtotal
+
+## example
+
+    # Food and drinks
+    
+    - 10 cokes @ 1 EUR => drinks =
+    - 8 beers @ 1.6 EUR => drinks =
+    - 1 bottle rum @ 13 EUR => drinks =
+    = drinks
+    
+    - 6 steaks @ 2.4 EUR => food =
+    - 0.5 kg salad @ 2 EUR => food =
+    = food
+
+    == grand total
