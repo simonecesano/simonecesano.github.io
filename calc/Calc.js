@@ -50,8 +50,8 @@ CalcLine = function(text) {
 var readable = function(t) {
     var s = function(string, power, suffix) {
 	var n = parseFloat(string)
-	console.log(string);
-	console.log(n);
+	// console.log(string);
+	// console.log(n);
 	var f = Math.floor(Math.log10(n));
 
 	if (f >= 9) {
