@@ -1,16 +1,33 @@
 var v = { palette: [], blocks: [], img: "" };
 $(function(){
+    if (!window.navigator.userAgent.match(/Chrome/)) {
+	// alert browser not supported
+	$('#browser_not_supported').modal();
+    } else {
+	navigator.permissions.query({name: 'clipboard-read'})
+	    .then(function(result) {
+		console.log(result.state);
+		if (result.state == "granted" || result.state == "prompt") {
+		} else {
+		    // alert clipboard permissions
+		    $('#enable_clipboard').modal();
+		}
+	    })
+	    .catch(function(e){
+		console.log(e);
+	    });
+    }
     var cw_template = Handlebars.compile(document.getElementById("cw-template").innerHTML);
     $('#clearb').click(function(e){
 	$('#output').html('');
     })
+
     $('#blockb').click(function(e){
 	navigator.clipboard.readText()
 	    .then(text => {
 		$('#img').html(text)
 		var m = text.match(/fill:#[0-9a-f]{6,6}|fill="#[0-9a-f]{6,6}/ig)
 		    .map(function(e){ return e.replace(/fill:/g, '').replace(/fill="/g, '') });
-		console.log(m);
 		m = _.uniq(m);
 		v.blocks = m;
 		v.img = text;
@@ -24,6 +41,7 @@ $(function(){
 		console.error('Failed to read clipboard contents: ', err);
 	    });
     })
+
     $('#paletteb').click(function(e){
 	navigator.clipboard.readText()
 	    .then(text => {
