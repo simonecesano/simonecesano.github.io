@@ -69,7 +69,49 @@
       <div id="output" class="col-12">
       </div>
     </div>
+  </div>
+  <div id="browser_not_supported" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+	<div class="modal-header">
+          <h5 class="modal-title">Browser not supported</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+	</div>
+	<div class="modal-body">
+          <p>Sorry! Your browser is not supported.<br />This only works on Chrome</p>
+	</div>
+	<div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	</div>
+      </div>
     </div>
+  </div>
+  <div id="enable_clipboard" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+	<div class="modal-header">
+          <h5 class="modal-title">Clipboard not accessible</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+	</div>
+	<div class="modal-body">
+          <p>
+	    Sorry! You need to allow read access to the clipboard.
+	    <br />
+	    Copy this: "chrome://settings/content/clipboard" into your address bar,
+	    and change your settings there.
+	  </p>
+	</div>
+	<div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	</div>
+      </div>
+    </div>
+  </div>
+
 </body>
 <script id="palette-template" type="text/x-handlebars-template">
   {{#each swatches}}
