@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="Layer_1" style="enable-background:new 0 0 7089.5 8192;" version="1.1" viewBox="0 0 7089.5 8192" x="0px"
+     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+  <script xlink:href="./tile.js" />
+  <defs>
+    <g id="line_element_10">
+      <image height="60" style="" transform="translate(0 120) rotate(-180)" width="60" xlink:href="./img/DC-20-10_lineare-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(-60 0)" width="60" xlink:href="./img/DC-20-10_lineare-150x150.jpg"></image>
+    </g>
+    <g id="corner_element_10">
+      <image height="60" style="" transform="translate(0 0) rotate(0)" width="60" xlink:href="./img/DC-20-10_angolare-est-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(60 60) rotate(0)" width="60" xlink:href="./img/DC-20-10_angolare-int-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(0 120) rotate(-90)" width="60" xlink:href="./img/DC-20-10_lineare-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(60 0)" width="60" xlink:href="./img/DC-20-10_lineare-150x150.jpg"></image>
+    </g>
+    <g id="line_element_13">
+      <image height="60" style="" transform="translate(0 120) rotate(-180)" width="60" xlink:href="./img/DC-20-13_lineare-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(-60 0)" width="60" xlink:href="./img/DC-20-13_lineare-150x150.jpg"></image>
+    </g>
+    <g id="corner_element_13">
+      <image height="60" style="" transform="translate(0 0) rotate(0)" width="60" xlink:href="./img/DC-20-13_angolare-est-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(60 60) rotate(0)" width="60" xlink:href="./img/DC-20-13_angolare-int-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(0 120) rotate(-90)" width="60" xlink:href="./img/DC-20-13_lineare-150x150.jpg"></image>
+      <image height="60" style="" transform="translate(60 0)" width="60" xlink:href="./img/DC-20-13_lineare-150x150.jpg"></image>
+    </g>
+  </defs>
+  <image x="0" y="0" width="7089" height="8192" xlink:href="floorplan.svg" />
+
+<g id="tiles" style="display:">
+  <g id="cucina">
+    <g transform="translate(2070 4250)">
+      <image transform="translate(0 0)" data-tile="22 24 60 60" height="60" width="60" href="./img/GN-13-150x150.jpg"></image>
+    </g>
+    
+    <g id="top_left_corner" transform="translate(2250 4430)">
+      <use xlink:href="#corner_element_10" />
+    </g>
+    
+    <g id="top_right_corner" transform="translate(3210 4430) rotate(90)" >
+      <use xlink:href="#corner_element_10" />
+    </g>
+    
+    <g id="bottom_left_corner" transform="translate(2250 5510) rotate(-90)" >
+      <use xlink:href="#corner_element_10" />
+    </g>
+    
+    <g id="bottom_right_corner" transform="translate(3210 5510) rotate(180)" >
+      <use xlink:href="#corner_element_10" />
+    </g>
+    
+    <g id="bottom_line" transform="translate(2430 5390) rotate(0)" >
+      <use xlink:href="#line_element_10" data-tile="12 1 60 60" />
+    </g>
+    
+    <g id="top_line" transform="translate(2430 4430) rotate(0)" >
+      <use xlink:href="#line_element_10" data-tile="12 1 60 60" />
+    </g>
+    
+    <g id="left_line" transform="translate(2370 4610) rotate(90)" >
+      <use xlink:href="#line_element_10" data-tile="14 1 60 60" />
+    </g>
+    
+    <g id="right_line" transform="translate(3210 4610) rotate(90)" >
+      <use xlink:href="#line_element_10" data-tile="14 1 60 60" />
+    </g>
+  </g>
+  
+  <g id="corridoio_cucina_nord" transform="translate(2580 3890)">
+    <image transform="translate(0 0)" data-tile="4 6 60 60" height="60" width="60" xlink:href="./img/GN-13-150x150.jpg"></image>
+  </g>
+
+  <g id="stanza_1" transform="translate(2050 5880)">
+    <image transform="translate(0 0)" data-tile="26 21 60 60" height="60" width="60" xlink:href="./img/GN-13-150x150.jpg"></image>
+  </g>
+  <g id="stanza_1_conn" transform="translate(3010 5700)">
+    <image transform="translate(0 0)" data-tile="6 4 60 60" height="60" width="60" href="./img/GN-13-150x150.jpg"></image>
+  </g>
+</g>
+<clipPath id="stanza_3_clip">
+  <polygon points="1330.4,0.5 1330.4,1001 56.3,1001 0.5,0.5"/>
+</clipPath>
+
+<g id="stanza_3_tiles" clip-path="url(#stanza_3_clip)" transform="translate(1479 2920)">
+  <image transform="translate(0 0)" height="60" width="60" data-tile="23 18 60 60" xlink:href="./img/GN-13-150x150.jpg"></image>
+</g>
+<g>
+  <g id="top_left_corner_2" transform="translate(2230 6060)">
+    <use xlink:href="#corner_element_13" />
+  </g>
+  <g id="top_right_corner_2" transform="translate(3430 6060) rotate(90)" >
+    <use xlink:href="#corner_element_13" />
+  </g>
+  
+  <g id="bottom_left_corner_2" transform="translate(2230 6960) rotate(-90)" >
+    <use xlink:href="#corner_element_13" />
+  </g>
+  
+  <g id="bottom_right_corner_1" transform="translate(3430 6960) rotate(180)" >
+    <use xlink:href="#corner_element_13" />
+  </g>
+  <g id="line_st_1_top" transform="translate(2410 6060)">
+    <use transform="translate(0 0)" data-tile="16 1 60 60" xlink:href="#line_element_13" />
+  </g>
+  <g transform="translate(2410 6840)">
+    <use transform="translate(0 0)" data-tile="16 1 60 60" xlink:href="#line_element_13" />
+  </g>
+  <g transform="translate(2350 6240)">
+    <use transform="translate(0 0) rotate(90)" data-tile="1 11 60 60" xlink:href="#line_element_13" />
+  </g>
+  <g transform="translate(3430 6240)">
+    <use transform="translate(0 0) rotate(90)" data-tile="1 11 60 60" xlink:href="#line_element_13" />
+  </g>
+</g>
+
+</svg>
