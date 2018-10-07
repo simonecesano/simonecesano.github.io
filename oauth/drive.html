@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Sheets API Quickstart</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+	    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+	    crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+	    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+	    crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/krasimir/navigo/e8674ba8/lib/navigo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <meta charset='utf-8' />
+    <style>
+      * { font-family: 'Lato', sans-serif; }
+      .file { display: inline-block; padding: 12px }
+      .fileSize, .modifiedDate { font-size: small }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+      <div id="content">
+      </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    var foo = function(){
+	console.log('there');
+	// Client ID and API key from the Developer Console
+	var CLIENT_ID = '937190049395-h207v6s86sudk908lierurbb8co8r20t.apps.googleusercontent.com';
+	var API_KEY = 'AIzaSyDmpuQ13XG4XlvdcgMitKwl55BbeQl8wZc';
+	  
+	// Array of API discovery doc URLs for APIs used by the quickstart
+	var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+	
+	// Authorization scopes required by the API; multiple scopes can be
+	// included, separated by spaces.
+	var SCOPES = "https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive";
+	
+	
+	gapi.load('client:auth2', function(){
+	    console.log('here');
+            gapi.client.init({
+		apiKey: API_KEY,
+		clientId: CLIENT_ID,
+		discoveryDocs: DISCOVERY_DOCS,
+		scope: SCOPES
+            })
+		.then(function () {
+		    var drive_template = Handlebars.compile($('#drive-template').html());
+		    var q = {
+			q: "title contains 'scan' and trashed = false",
+			orderBy: "modifiedDate desc,title"
+		    }
+		    
+		    gapi.client.load('drive', 'v2', function() {
+			var retrievePageOfFiles = function(request, result) {
+			    request.execute(function(resp) {
+				result = result.concat(resp.items);
+				$('#content').append(drive_template({ files: resp.items }));
+				
+				var nextPageToken = resp.nextPageToken;
+				if (nextPageToken) {
+				    q.pageToken = nextPageToken;
+				    request = gapi.client.drive.files.list(q);
+				    retrievePageOfFiles(request, result);
+				} else {
+				    console.log(result);
+				}
+			    });
+			}
+			var initialRequest = gapi.client.drive.files.list(q);
+			retrievePageOfFiles(initialRequest, []);
+		    });
+		})
+	});
+    };
+					</script>
+        <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};foo()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
+</body>
+    <script id="drive-template" type="text/x-handlebars-template">
+      {{#each files}}
+      <div class="file">
+	<div><a href="{{ embedLink }}"><img src="{{ thumbnailLink }}" /></a></div>
+	<div class="originalFilename"><a href="{{ embedLink }}">{{ originalFilename }}</a></div>
+	<div class="modifiedDate">{{ modifiedDate }}</div>
+	<div class="fileSize">{{ fileSize }}</div>
+      </div>
+      {{/each}}
+    </script>
+</html>
