@@ -77,7 +77,6 @@ $(function(){
 
 	if (v.palette.length) {
 	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 4);
-	    console.log(cmb.length);
 	    var t = 1 - (10 / cmb.length);
 	    console.log(t);
 	    var i = 1;
@@ -89,16 +88,19 @@ $(function(){
 		if (l > 0) {
 		    if (Math.random() > 0) {
 			var b = _.shuffle(v.blocks);
-			var id = 'svg' + i;
 			
 			var img = v.img;
 
 			seen[b.join('::')] = seen[b.join('::')] ? seen[b.join('::')] + 1 : 1;
-			// console.log(b.join('::'), seen[b.join('::')] > 1);
-
+			console.log(b.join('::'), seen[b.join('::')] > 1);
+			var id = 'svg' + md5(b.join('::')); 
+			// var id = 'svg' + i;
+			console.log(id);
 			b.forEach(function(e){
+			    
 			    var g = a.shift();
 			    var r = new RegExp(e, 'gi');
+			    console.log(e, g);
 			    img = img.replace(r, g);
 			    a.push(g);
 			});
@@ -127,7 +129,7 @@ $(function(){
 			var l = rgb.get('hsl.l');
 			if (l < 0.2) {
 			    // styleObj.setProperty('stroke', 'grey');
-			    $(e).attr('stroke', '#cccccc');
+			    $(e).attr('stroke', '#333333');
 			}
 		    }
 		    // styleObj.removeProperty(nameString);
@@ -140,8 +142,9 @@ $(function(){
 	    })
 	    $('.fa-heart').click(function(e){
 		console.log('like');
-		$(e.target).parents('div.cw').toggleClass('liked')
 		$(e.target).css('color', 'Crimson')
+		el = $(e.target).parents('div.cw').toggleClass('liked').detach()
+		$('#likes').append(el);
 	    })
 	}
     });
