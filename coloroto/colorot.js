@@ -59,20 +59,31 @@ $(function(){
 		console.error('Failed to read clipboard contents: ', err);
 	    });
     })
+
+    // ------------------------------------
+    // create combinations
+    // ------------------------------------
+
     $('#combinb').click(function(e){
 	v.blocks = $('#blocks .caption')
 	    .filter(function(i, e){ return !($(e).parent().hasClass('selected')) })
 	    .map(function(i, e){ return $(e).html() }).get()
+	
 	v.palette = $('#palettes .caption')
 	    .filter(function(i, e){ return !($(e).parent().hasClass('selected')) })
 	    .map(function(i, e){ return $(e).html() }).get()
+
 	console.log(v);
+
 	if (v.palette.length) {
 	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 4);
 	    console.log(cmb.length);
 	    var t = 1 - (10 / cmb.length);
 	    console.log(t);
 	    var i = 1;
+
+	    var seen = {};
+	    
 	    while(a = cmb.next()) {
 		var l = _.chain(a).uniq().size()
 		if (l > 0) {
@@ -82,7 +93,9 @@ $(function(){
 			
 			var img = v.img;
 
-			console.log(img);
+			seen[b.join('::')] = seen[b.join('::')] ? seen[b.join('::')] + 1 : 1;
+			// console.log(b.join('::'), seen[b.join('::')] > 1);
+
 			b.forEach(function(e){
 			    var g = a.shift();
 			    var r = new RegExp(e, 'gi');
@@ -94,12 +107,33 @@ $(function(){
 			var s = cw_template({ id: id, svg: img, swatches: _.uniq(a) })
 			$('#output').append(s);
 
-			// $('#' + id).append('<div class="icons"><i class="fas fa-trash-alt"></i><i class="fas fa-heart"></i></div>')
 			i++;
 		    }
 		}
-		if (i > 100) break;
+		if (i > 10) break;
 	    };
+
+	    $('.cw svg path').each(function(i, e){
+		var styleObj = getComputedStyle(e);
+
+		for (var i = styleObj.length; i--;) {
+		    var nameString = styleObj[i];
+		    var cssValue = styleObj.getPropertyValue(nameString)
+		    if (nameString.match(/^fill$/i) && cssValue.match(/^rgb/)) {
+			// console.log(nameString);
+			// console.log(cssValue);
+			var rgb = cssValue.replace(/rgb\s*\(/, '').replace(/\)/, '').split(/,\s*/)
+			rgb = chroma(rgb);
+			var l = rgb.get('hsl.l');
+			if (l < 0.2) {
+			    // styleObj.setProperty('stroke', 'grey');
+			    $(e).attr('stroke', '#cccccc');
+			}
+		    }
+		    // styleObj.removeProperty(nameString);
+		}		
+	    })
+	    
 	    $('.fa-trash-alt').click(function(e){
 		console.log('trash');
 		$(e.target).parents('div.cw').fadeOut()
