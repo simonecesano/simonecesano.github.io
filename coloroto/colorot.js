@@ -112,7 +112,7 @@ $(function(){
 			i++;
 		    }
 		}
-		if (i > 10) break;
+		if (i > 40) break;
 	    };
 
 	    $('.cw svg path').each(function(i, e){
