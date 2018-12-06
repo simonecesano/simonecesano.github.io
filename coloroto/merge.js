@@ -45,17 +45,17 @@ $(function(){
 	console.log(s.activeElement);
 	console.log(s.getElementsByTagName);	
 
-	var doc = new PDFDocument;
-	doc.addSVG(s, 0, 0, {useCSS:true})
+	// var doc = new PDFDocument;
+	// doc.addSVG(s, 0, 0, {useCSS:true})
 	
 	var svg_filename = 'randomshoes' + '-' + Math.random().toString(36).substring(7) + '-' + moment().format('YYYYMMDDHHMM') + '.svg';
 
-	let stream = doc.pipe(blobStream());
-	stream.on('finish', function() {
-	    // let blob = stream.toBlob('application/pdf');
-	    // saveAs(blob, svg_filename.replace(/svg$/i, 'pdf'));
-	});
-	doc.end();
+	// let stream = doc.pipe(blobStream());
+	// stream.on('finish', function() {
+	//     // let blob = stream.toBlob('application/pdf');
+	//     // saveAs(blob, svg_filename.replace(/svg$/i, 'pdf'));
+	// });
+	// doc.end();
 
 	
 	var blob = new Blob([s.outerHTML], {type: "image/svg+xml"});
