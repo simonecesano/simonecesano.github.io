@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.18.1), see www.w3.org">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+    <style>
+      * { font-family: Lato, sans} 
+@media (min-width: 600px) {
+    #output {
+	width: 80vw;
+	margin-left: 20vw;
+    }
+}
+</style>
+    
+  <title></title>
+</head>
+
+<body>
+  <pre id="text">
+# mappe di napoli
+
+- [pasticcerie](./index.html#pasticcerie)
+- [friggitorie](./index.html#friggitorie)
+- [pizzerie](./index.html#pizzerie)
+- [trattorie](./index.html#trattorie)
+- [monumenti](./index.html#monumenti)
+    
+  </pre>
+  <div id="output">
+  </div>
+  
+</body>
+<script>
+    $(function(){
+	console.log($('text').text())
+	var converter = new showdown.Converter();
+	$('#output').html(converter.makeHtml($('#text').text()));
+	$('#text').empty()
+  })
+  
+</script>
+
+</html>
