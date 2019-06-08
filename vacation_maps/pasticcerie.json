@@ -187,22 +187,17 @@
     "city": "Napoli",
     "name": "Varriale",
     "phone": null,
-    "street": "Via Filangieri 75"
+      "street": "Via Filangieri 75",
+      "lat": "40.835458", "lon": "14.242284"
   },
   {
-    "boundingbox": [
-      "41.4613827",
-      "41.461574",
-      "15.5528415",
-      "15.5528765"
-    ],
     "city": "133",
     "class": "highway",
-    "display_name": "Piazza Cavour, Foggia, FG, PUG, 71100, Italia",
+    "display_name": "Piazza Cavour, 80137 Napoli NA, Italy",
     "importance": 0.3,
-    "lat": "41.4613827",
+    "lat": "40.855178",
     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-    "lon": "15.5528765",
+    "lon": "14.253826",
     "name": "Di Costanzo",
     "osm_id": 86634383,
     "osm_type": "way",
