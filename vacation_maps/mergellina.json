@@ -1,0 +1,205 @@
+[
+  {
+    "boundingbox": [
+      "40.8304113",
+      "40.8316309",
+      "14.2502981",
+      "14.2509644"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Nazario Sauro, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.700180073808303,
+    "lat": "40.830841",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2505324",
+    "name": "B-FACTORY",
+    "osm_id": 334881929,
+    "osm_type": "way",
+    "place_id": 153132054,
+    "street": "Via Nazario Sauro 8",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "33.619631333333",
+      "33.619731333333",
+      "-117.84608266667",
+      "-117.84598266667"
+    ],
+    "city": "Napoli",
+    "class": "place",
+    "display_name": "42, Napoli, Newport Center, Newport Beach, Orange County, California, 92660, USA",
+    "importance": 0.221,
+    "lat": "33.6196813333333",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "-117.846032666667",
+    "name": "LA CANTINELLA  Via Cuma",
+    "osm_id": 172599513,
+    "osm_type": "way",
+    "place_id": 205157410,
+    "street": "42",
+    "type": "house"
+  },
+  {
+    "boundingbox": [
+      "40.8298602",
+      "40.8304276",
+      "14.2487224",
+      "14.2487783"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Santa Lucia, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.600180073808303,
+    "lat": "40.8299336",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.248723",
+    "name": "IL RISTORANTINO DELLâAVVOCATO",
+    "osm_id": 183555384,
+    "osm_type": "way",
+    "place_id": 118337051,
+    "street": "Via Santa Lucia 115",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8298602",
+      "40.8304276",
+      "14.2487224",
+      "14.2487783"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Santa Lucia, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.600180073808303,
+    "lat": "40.8299336",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.248723",
+    "name": "LA CANTINA DEI LAZZARI",
+    "osm_id": 183555384,
+    "osm_type": "way",
+    "place_id": 118337051,
+    "street": "Via Santa Lucia 145",
+    "type": "residential"
+  },
+  {
+    "city": "Napoli",
+    "lat": "40.829542",
+    "lon": "14.248163",
+    "name": "ZÌ TERESA",
+    "street": "Borgo Marinaro 1"
+  },
+  {
+    "city": "Napoli",
+    "lat": "40.829528",
+    "lon": "14.248477",
+    "name": "LA BERSAGLIERA",
+    "street": "Borgo Marinari 10/11"
+  },
+  {
+    "boundingbox": [
+      "40.8281004",
+      "40.8284947",
+      "14.2481629",
+      "14.2486488"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Piazzetta del Borgo Marinari, Municipalità 1, Napoli, NA, CAM, Italia",
+    "importance": 0.41,
+    "lat": "40.82832285",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2484778694009",
+    "name": "LA SCIALUPPA",
+    "osm_id": 338163349,
+    "osm_type": "way",
+    "place_id": 155036480,
+    "street": "Piazzetta Marinari 5",
+    "type": "pedestrian"
+  },
+  {
+    "boundingbox": [
+      "40.8281004",
+      "40.8284947",
+      "14.2481629",
+      "14.2486488"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Piazzetta del Borgo Marinari, Municipalità 1, Napoli, NA, CAM, Italia",
+    "importance": 0.41,
+    "lat": "40.82832285",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2484778694009",
+    "name": "OFFICINA DEL MARE",
+    "osm_id": 338163349,
+    "osm_type": "way",
+    "place_id": 155036480,
+    "street": "Piazzetta Marinari 20",
+    "type": "pedestrian"
+  },
+  {
+    "boundingbox": [
+      "40.8298377",
+      "40.8298871",
+      "14.2486962",
+      "14.2499827"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Partenope, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.500180073808303,
+    "lat": "40.8298444",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2494485",
+    "name": "MUU MUUZZARELLA",
+    "osm_id": 334878898,
+    "osm_type": "way",
+    "place_id": 152215441,
+    "street": "Via Partenope 18",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8298377",
+      "40.8298871",
+      "14.2486962",
+      "14.2499827"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Partenope, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.500180073808303,
+    "lat": "40.8298444",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2494485",
+    "name": "MAMMINA",
+    "osm_id": 334878898,
+    "osm_type": "way",
+    "place_id": 152215441,
+    "street": "Via Partenope 15/17",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8298636",
+      "40.8316349",
+      "14.2408285",
+      "14.2486962"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Partenope, Municipalità 1, Napoli, NA, CAM, 80121, Italia",
+    "importance": 0.600180073808303,
+    "lat": "40.8303573",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2447533",
+    "name": "FOR O'MAR",
+    "osm_id": 18791347,
+    "osm_type": "way",
+    "place_id": 77694299,
+    "street": "Via Partenope 12",
+    "type": "pedestrian"
+  }
+]

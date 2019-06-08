@@ -1,0 +1,214 @@
+[
+  {
+    "boundingbox": [
+      "40.8428065",
+      "40.8439314",
+      "14.2489077",
+      "14.2490391"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Toledo, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80134, Italia",
+    "importance": 0.621755768709167,
+    "lat": "40.8434929",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2489876",
+    "name": "Pintauro",
+    "osm_id": 554073056,
+    "osm_type": "way",
+    "phone": "081 402218",
+    "place_id": 188960317,
+    "street": "via Toledo 66",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8482153",
+      "40.8487978",
+      "14.2545058",
+      "14.255309"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Piazza San Domenico Maggiore, Rione Carità, Municipalità 2, Napoli, NA, CAM, Italia",
+    "importance": 0.771239300279338,
+    "lat": "40.8484955",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2549046404417",
+    "name": "Scaturchio",
+    "osm_id": 3507438,
+    "osm_type": "relation",
+    "phone": "081 5517031",
+    "place_id": 198581263,
+    "street": "Piazza San Domenico Maggiore 19",
+    "type": "pedestrian"
+  },
+  {
+    "city": "Napoli",
+    "name": "Colmayer",
+    "phone": "0817517469",
+    "street": "via Pietro Giannone 14/16/17"
+  },
+  {
+    "boundingbox": [
+      "40.8573848",
+      "40.8574848",
+      "14.2530807",
+      "14.2531807"
+    ],
+    "city": "Napoli",
+    "class": "shop",
+    "display_name": "Pasticceria Poppella, 24, Via Arena della Sanità, Municipalità 3, Napoli, NA, CAM, 80137, Italia",
+    "importance": 0.521,
+    "lat": "40.8574348",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2531307",
+    "name": "Poppella",
+    "osm_id": 4318435140,
+    "osm_type": "node",
+    "phone": "081455309",
+    "place_id": 53653680,
+    "street": "via Arena della SanitÃ  24",
+    "type": "confectionery"
+  },
+  {
+    "city": "Napoli",
+    "name": "Sfogliatella Mary",
+    "phone": "081402218",
+    "street": "Galleria Principe Umberto 66"
+  },
+  {
+    "city": "Napoli",
+    "name": "Pasticceria PiterÃ ",
+    "phone": "081417426",
+    "street": "via San Pasquale a Chiaia 30/31"
+  },
+  {
+    "city": "Napoli",
+    "name": "Chalet Ciro",
+    "phone": "081669928",
+    "street": "Mergellina fronte via Orazio"
+  },
+  {
+    "boundingbox": [
+      "40.8531756",
+      "40.8539286",
+      "14.2682931",
+      "14.2691004"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Vico Ferrovia, Municipalità 4, Napoli, NA, CAM, 80142, Italia",
+    "importance": 0.71,
+    "lat": "40.8534611",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2686001",
+    "name": "Attanasio",
+    "osm_id": 325054962,
+    "osm_type": "way",
+    "phone": "081 285675",
+    "place_id": 151060799,
+    "street": "vico Ferrovia 1/2/3/4",
+    "type": "residential"
+  },
+  {
+    "city": "Napoli",
+    "name": "Scamardella",
+    "phone": "0815600882",
+    "street": "via Fracanzano 41"
+  },
+  {
+    "boundingbox": [
+      "40.8519444",
+      "40.8520011",
+      "14.2601753",
+      "14.2603475"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via dei Tribunali, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+    "importance": 0.51,
+    "lat": "40.8520011",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2603475",
+    "name": "Pasticceria Capparelli",
+    "osm_id": 286936181,
+    "osm_type": "way",
+    "phone": "081454310",
+    "place_id": 142265983,
+    "street": "via dei Tribunali 325/327",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8298214",
+      "40.8300192",
+      "14.1959047",
+      "14.1965076"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Giacomo Leopardi, Municipalità 10, Napoli, NA, CAM, 80125, Italia",
+    "importance": 0.51,
+    "lat": "40.8298817",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.1963237",
+    "name": "Bellavia",
+    "osm_id": 225234258,
+    "osm_type": "way",
+    "phone": null,
+    "place_id": 128383839,
+    "street": "Via Giacomo Leopardi 158",
+    "type": "tertiary"
+  },
+  {
+    "boundingbox": [
+      "40.8570844",
+      "40.8576937",
+      "14.2710407",
+      "14.2723287"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Casanova, Rione Luzzati, Municipalità 4, Napoli, NA, CAM, 80142, Italia",
+    "importance": 0.41,
+    "lat": "40.8574025",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2717169",
+    "name": "Carraturo",
+    "osm_id": 504784587,
+    "osm_type": "way",
+    "phone": null,
+    "place_id": 184615287,
+    "street": "Via Casanova 97",
+    "type": "secondary"
+  },
+  {
+    "city": "Napoli",
+    "name": "Varriale",
+    "phone": null,
+    "street": "Via Filangieri 75"
+  },
+  {
+    "boundingbox": [
+      "41.4613827",
+      "41.461574",
+      "15.5528415",
+      "15.5528765"
+    ],
+    "city": "133",
+    "class": "highway",
+    "display_name": "Piazza Cavour, Foggia, FG, PUG, 71100, Italia",
+    "importance": 0.3,
+    "lat": "41.4613827",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "15.5528765",
+    "name": "Di Costanzo",
+    "osm_id": 86634383,
+    "osm_type": "way",
+    "phone": "Napoli",
+    "place_id": 95470621,
+    "street": "Piazza Cavour",
+    "type": "tertiary"
+  }
+]

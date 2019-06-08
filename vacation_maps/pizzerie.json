@@ -1,0 +1,308 @@
+[
+    {
+	    "name": "50 Kalo",
+
+	"street": "Via Sannazaro 201",
+	"city": "Napoli",
+	"lat": "40.828493", "lon": "14.220333"
+
+    },
+    
+  {
+    "boundingbox": [
+      "40.8327555",
+      "40.8338232",
+      "14.2268906",
+      "14.2350755"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Riviera di Chiaia, Municipalità 1, Napoli, NA, CAM, 80122, Italia",
+    "importance": 0.51,
+    "lat": "40.8335725",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2309957",
+    "name": "Pizzeria Salvo Francesco & Salvatore",
+    "osm_id": 414418046,
+    "osm_type": "way",
+    "place_id": 167549141,
+    "street": "via Riviera di Chiaia, 271",
+    "type": "primary"
+  },
+  {
+    "boundingbox": [
+      "40.845175",
+      "40.845275",
+      "14.2483222",
+      "14.2484222"
+    ],
+    "city": "Napoli",
+    "class": "amenity",
+    "display_name": "Da Attilio, 17, Via Pignasecca, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80134, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/food_restaurant.p.20.png",
+    "importance": 0.421,
+    "lat": "40.845225",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2483722",
+    "name": "Da Attilio alla Pignasecca",
+    "osm_id": 4319054790,
+    "osm_type": "node",
+    "place_id": 54264108,
+    "street": "via Pignasecca, 17",
+    "type": "restaurant"
+  },
+  {
+    "boundingbox": [
+      "40.8510717",
+      "40.8537049",
+      "14.2840043",
+      "14.2886571"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Brin, Rione Luzzati, Municipalità 4, Napoli, NA, CAM, 80142, Italia",
+    "importance": 0.41,
+    "lat": "40.8534282",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2853892",
+    "name": "Eccellenze Campane",
+    "osm_id": 508367067,
+    "osm_type": "way",
+    "place_id": 182928180,
+    "street": "via Brin, 69",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8480398",
+      "40.8483569",
+      "14.2596058",
+      "14.2597645"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via del Grande Archivio, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+    "importance": 0.61,
+    "lat": "40.8483569",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2596058",
+    "name": "La Figlia del Presidente",
+    "osm_id": 267311315,
+    "osm_type": "way",
+    "place_id": 139029967,
+    "street": "via del Grande Archivio, 23 ",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8298377",
+      "40.8298871",
+      "14.2486962",
+      "14.2499827"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Partenope, Municipalità 1, Napoli, NA, CAM, 80132, Italia",
+    "importance": 0.600180073808303,
+    "lat": "40.8298444",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2494485",
+    "name": "Lievito Madre al Mare",
+    "osm_id": 334878898,
+    "osm_type": "way",
+    "place_id": 152215441,
+    "street": "via Partenope, 1 ",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8315699",
+      "40.8318073",
+      "14.2409933",
+      "14.2416983"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Piazza Vittoria, Municipalità 1, Napoli, NA, CAM, Italia",
+    "importance": 0.51,
+    "lat": "40.83168685",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.241570921071",
+    "name": "Masardona",
+    "osm_id": 339324886,
+    "osm_type": "way",
+    "place_id": 153359662,
+    "street": "p.zza Vittoria, 5",
+    "type": "pedestrian"
+  },
+  {
+    "boundingbox": [
+      "40.8326937",
+      "40.8358572",
+      "14.2003577",
+      "14.2115049"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Michelangelo da Caravaggio, Municipalità 1, Napoli, NA, CAM, 80125, Italia",
+    "importance": 0.61,
+    "lat": "40.8346351",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2075896",
+    "name": "La Notizia",
+    "osm_id": 285044229,
+    "osm_type": "way",
+    "place_id": 141915656,
+    "street": "via Michelangelo da Caravaggio, 94a",
+    "type": "secondary"
+  },
+  {
+    "boundingbox": [
+      "40.8356222",
+      "40.8357222",
+      "14.2097453",
+      "14.2098453"
+    ],
+    "city": "Napoli",
+    "class": "amenity",
+    "display_name": "La Notizia, 53, Via Michelangelo da Caravaggio, Municipalità 1, Napoli, NA, CAM, 80126, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/food_restaurant.p.20.png",
+    "importance": 0.621,
+    "lat": "40.8356722",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2097953",
+    "name": "La Notizia",
+    "osm_id": 4318362857,
+    "osm_type": "node",
+    "place_id": 53976405,
+    "street": "via Michelangelo da Caravaggio, 53",
+    "type": "restaurant"
+  },
+  {
+    "boundingbox": [
+      "40.8572664",
+      "40.8573868",
+      "14.2529983",
+      "14.2538444"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Arena della Sanità, Municipalità 3, Napoli, NA, CAM, 80137, Italia",
+    "importance": 0.51,
+    "lat": "40.8573017",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2535961",
+    "name": "Oliva da Concettina ai Tre Santi",
+    "osm_id": 394916979,
+    "osm_type": "way",
+    "place_id": 164132203,
+    "street": "via Arena della Sanita, 7bis",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8326937",
+      "40.8358572",
+      "14.2003577",
+      "14.2115049"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Michelangelo da Caravaggio, Municipalità 1, Napoli, NA, CAM, 80125, Italia",
+    "importance": 0.61,
+    "lat": "40.8346351",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2075896",
+    "name": "'O Sfizio d' 'a Notizia",
+    "osm_id": 285044229,
+    "osm_type": "way",
+    "place_id": 141915656,
+    "street": "via Michelangelo da Caravaggio, 49",
+    "type": "secondary"
+  },
+  {
+    "boundingbox": [
+      "40.8503378",
+      "40.8504378",
+      "14.2552901",
+      "14.2553901"
+    ],
+    "city": "Napoli",
+    "class": "amenity",
+    "display_name": "Gino Sorbillo, 32, Via dei Tribunali, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/food_restaurant.p.20.png",
+    "importance": 0.521,
+    "lat": "40.8503878",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2553401",
+    "name": "Sorbillo",
+    "osm_id": 3106299632,
+    "osm_type": "node",
+    "place_id": 41784345,
+    "street": "via dei Tribunali, 32 ",
+    "type": "restaurant"
+  },
+  {
+    "boundingbox": [
+      "40.855882",
+      "40.8562238",
+      "14.2456293",
+      "14.248388"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Via Materdei, Quartieri Spagnoli, Municipalità 2, Napoli, NA, CAM, 80136, Italia",
+    "importance": 0.41,
+    "lat": "40.8560589",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2471909",
+    "name": "Starita",
+    "osm_id": 414217409,
+    "osm_type": "way",
+    "place_id": 167722759,
+    "street": "via Materdei, 27 ",
+    "type": "residential"
+  },
+  {
+    "boundingbox": [
+      "40.8366092",
+      "40.837623",
+      "14.2482958",
+      "14.2496215"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Piazza Trieste e Trento, Municipalità 1, Napoli, NA, CAM, Italia",
+    "importance": 0.726067753329433,
+    "lat": "40.83710455",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2490154767552",
+    "name": "Antica Pizza Fritta Da Zia Esterina",
+    "osm_id": 4616889,
+    "osm_type": "relation",
+    "place_id": 199049807,
+    "street": "piazza Trieste e Trento, 53",
+    "type": "pedestrian"
+  },
+  {
+    "boundingbox": [
+      "40.8327555",
+      "40.8338232",
+      "14.2268906",
+      "14.2350755"
+    ],
+    "city": "Napoli",
+    "class": "highway",
+    "display_name": "Riviera di Chiaia, Municipalità 1, Napoli, NA, CAM, 80122, Italia",
+    "importance": 0.51,
+    "lat": "40.8335725",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "14.2309957",
+    "name": "Pizzeria Salvo Francesco & Salvatore",
+    "osm_id": 414418046,
+    "osm_type": "way",
+    "place_id": 167549141,
+    "street": "via Riviera di Chiaia, 271 ",
+    "type": "primary"
+  }
+]
