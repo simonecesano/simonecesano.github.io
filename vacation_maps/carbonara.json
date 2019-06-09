@@ -1,0 +1,132 @@
+[
+  {
+    "city": "Rome",
+    "lat": "41.905128",
+    "lon": "12.468699",
+    "name": "L'Arcangelo",
+    "street": "Via Gioacchino Belli, 59, 00193 Roma RM, Italy"
+  },
+  {
+    "boundingbox": [
+      "41.6556417",
+      "42.1410285",
+      "12.2344669",
+      "12.8557603"
+    ],
+    "city": "Rome",
+    "class": "place",
+    "display_name": "Roma, RM, LAZ, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_city.p.20.png",
+    "importance": 0.826863686886622,
+    "lat": "41.894802",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "12.4853384",
+    "name": "Da Enzo",
+    "osm_id": 41485,
+    "osm_type": "relation",
+    "place_id": 198718695,
+    "street": "",
+    "type": "city"
+  },
+  {
+    "city": "Rome",
+    "lat": "41.876568",
+    "lon": "12.475936",
+    "name": "Flavio al Velavevodetto",
+    "street": "Via Testaccio, 97, 00153 Roma RM, Italy"
+  },
+  {
+    "boundingbox": [
+      "41.6556417",
+      "42.1410285",
+      "12.2344669",
+      "12.8557603"
+    ],
+    "city": "Rome",
+    "class": "place",
+    "display_name": "Roma, RM, LAZ, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_city.p.20.png",
+    "importance": 0.826863686886622,
+    "lat": "41.894802",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "12.4853384",
+    "name": "La Carbonara",
+    "osm_id": 41485,
+    "osm_type": "relation",
+    "place_id": 198718695,
+    "street": "",
+    "type": "city"
+  },
+  {
+    "boundingbox": [
+      "41.6556417",
+      "42.1410285",
+      "12.2344669",
+      "12.8557603"
+    ],
+    "city": "Rome",
+    "class": "place",
+    "display_name": "Roma, RM, LAZ, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_city.p.20.png",
+    "importance": 0.826863686886622,
+    "lat": "41.894802",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "12.4853384",
+    "name": "Pipero",
+    "osm_id": 41485,
+    "osm_type": "relation",
+    "place_id": 198718695,
+    "street": "",
+    "type": "city"
+  },
+  {
+    "boundingbox": [
+      "41.6556417",
+      "42.1410285",
+      "12.2344669",
+      "12.8557603"
+    ],
+    "city": "Rome",
+    "class": "place",
+    "display_name": "Roma, RM, LAZ, Italia",
+    "icon": "https://nominatim.openstreetmap.org/images/mapicons/poi_place_city.p.20.png",
+    "importance": 0.826863686886622,
+    "lat": "41.894802",
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "lon": "12.4853384",
+    "name": "Mamma Angelina",
+    "osm_id": 41485,
+    "osm_type": "relation",
+    "place_id": 198718695,
+    "street": "",
+    "type": "city"
+  },
+  {
+    "city": "Rome",
+    "lat": "41.861274",
+    "lon": "12.490949",
+    "name": "Tanto peâ magnaâ",
+    "street": "Via Giustino de Jacobis, 9, 00154 Roma RM, Italy"
+  },
+  {
+    "city": "Rome",
+    "lat": "41.899138",
+    "lon": "12.476182",
+    "name": "Armando al Pantheon",
+    "street": "Salita dei Crescenzi, 31, 00186 Roma RM, Italy"
+  },
+  {
+    "city": "Rome",
+    "lat": "41.942053",
+    "lon": "12.472039",
+    "name": "Il Quinto Quarto",
+    "street": "Via Flaminia, 638, 00191 Roma RM, Italy"
+  },
+  {
+    "city": "Rome",
+    "lat": "",
+    "lon": "",
+    "name": "Roscioli Salumeria con Cucina",
+    "street": "Via dei Giubbonari, 21/22, 00186 Roma RM, Italy"
+  }
+]
