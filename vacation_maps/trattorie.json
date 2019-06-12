@@ -484,5 +484,13 @@
     "name": "Vinarium",
     "phone": "Tel. 081.7644114",
     "street": "Vicolo Santa Maria a Cappella Vecchia"
+  },
+  {
+    "city": "Napoli",
+    "lat": "40.8593125",
+    "lon": "14.2620625",
+    "name": "A Figlia d' o Marinaro",
+    "phone": "Tel. 081 440827",
+    "street": "Via Foria, 180/182, 80137 Napoli NA"
   }
 ]
