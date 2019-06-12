@@ -1,0 +1,276 @@
+[
+   {
+      "street" : "Via Mezzocannone, 81, 80134 Napoli NA",
+      "boundingbox" : [
+         "40.8447332",
+         "40.8448454",
+         "14.2572136",
+         "14.2572656"
+      ],
+      "type" : "secondary",
+      "city" : "Napoli",
+      "place_id" : 81378406,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "display_name" : "Via Mezzocannone, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "lon" : "14.2572136",
+      "class" : "highway",
+      "osm_type" : "way",
+      "name" : "Pop 21 Vintage Store",
+      "importance" : 0.63,
+      "lat" : "40.8448454",
+      "osm_id" : 27179690
+   },
+   {
+      "display_name" : "Via Mezzocannone, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "lon" : "14.2572136",
+      "name" : "Dada vintage",
+      "class" : "highway",
+      "osm_type" : "way",
+      "importance" : 0.63,
+      "lat" : "40.8448454",
+      "osm_id" : 27179690,
+      "boundingbox" : [
+         "40.8447332",
+         "40.8448454",
+         "14.2572136",
+         "14.2572656"
+      ],
+      "street" : "Via Mezzocannone, 81, 80134 Napoli NA",
+      "type" : "secondary",
+      "city" : "Napoli",
+      "place_id" : 81378406,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright"
+   },
+   {
+      "lon" : "14.2537054",
+      "display_name" : "Via Santa Chiara, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80133, Italia",
+      "importance" : 0.73,
+      "name" : "Mode e Costume Vintage",
+      "class" : "highway",
+      "osm_type" : "way",
+      "osm_id" : 21582145,
+      "lat" : "40.8464985",
+      "boundingbox" : [
+         "40.8455706",
+         "40.8476389",
+         "14.2530544",
+         "14.2546911"
+      ],
+      "street" : "Via Santa Chiara, 12, 80134 Napoli NA",
+      "type" : "residential",
+      "city" : "Napoli",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 79584548
+   },
+   {
+      "type" : "secondary",
+      "street" : "Via Mezzocannone, 71, 80134 Napoli NA",
+      "boundingbox" : [
+         "40.8447332",
+         "40.8448454",
+         "14.2572136",
+         "14.2572656"
+      ],
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 81378406,
+      "city" : "Napoli",
+      "display_name" : "Via Mezzocannone, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "lon" : "14.2572136",
+      "lat" : "40.8448454",
+      "osm_id" : 27179690,
+      "class" : "highway",
+      "osm_type" : "way",
+      "name" : "Retrophilia Vintage Clothing",
+      "importance" : 0.63
+   },
+   {
+      "importance" : 1.04,
+      "osm_type" : "way",
+      "name" : "Baule Volante",
+      "class" : "highway",
+      "osm_id" : 270148200,
+      "lat" : "40.8499072",
+      "lon" : "14.2598203",
+      "display_name" : "Via San Biagio dei Librai, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "city" : "Napoli",
+      "place_id" : 139535779,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "boundingbox" : [
+         "40.849868",
+         "40.8500642",
+         "14.2596948",
+         "14.2602963"
+      ],
+      "street" : "Via San Biagio Dei Librai, 106, 80138 Napoli NA",
+      "type" : "residential"
+   },
+   {
+      "osm_id" : 183292042,
+      "lat" : "40.8505984",
+      "importance" : 0.73,
+      "name" : "Les Belles Choses",
+      "osm_type" : "way",
+      "class" : "highway",
+      "lon" : "14.250634",
+      "display_name" : "Via Vincenzo Bellini, Municipalità 4, Napoli, NA, CAM, 80134, Italia",
+      "place_id" : 118525897,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "city" : "Napoli",
+      "type" : "residential",
+      "street" : "Via Vincenzo Bellini, 38, 80135 Napoli NA",
+      "boundingbox" : [
+         "40.8500433",
+         "40.851121",
+         "14.2505806",
+         "14.2506907"
+      ]
+   },
+   {
+      "lon" : "14.2524583",
+      "display_name" : "Via San Sebastiano, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "importance" : 0.73,
+      "class" : "highway",
+      "osm_type" : "way",
+      "name" : "Oblomova",
+      "osm_id" : 21582251,
+      "lat" : "40.8486462",
+      "boundingbox" : [
+         "40.8476389",
+         "40.8496659",
+         "14.2519392",
+         "14.2530544"
+      ],
+      "street" : "Via S. Sebastiano, 20, Napoli NA",
+      "type" : "residential",
+      "city" : "Napoli",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 79396351
+   },
+   {
+      "display_name" : "Via Mezzocannone, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "lon" : "14.2572136",
+      "lat" : "40.8448454",
+      "osm_id" : 27179690,
+      "name" : "Dada Vintage",
+      "class" : "highway",
+      "osm_type" : "way",
+      "importance" : 0.41,
+      "type" : "secondary",
+      "boundingbox" : [
+         "40.8447332",
+         "40.8448454",
+         "14.2572136",
+         "14.2572656"
+      ],
+      "street" : "Via Mezzocannone, 71",
+      "place_id" : 81378406,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "city" : "Napoli"
+   },
+   {
+      "type" : "residential",
+      "boundingbox" : [
+         "40.8476389",
+         "40.8496659",
+         "14.2519392",
+         "14.2530544"
+      ],
+      "street" : "Via San Sebastiano 39",
+      "place_id" : 79396351,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "city" : "Napoli",
+      "display_name" : "Via San Sebastiano, Rione Carità, Municipalità 2, Napoli, NA, CAM, 80138, Italia",
+      "lon" : "14.2524583",
+      "lat" : "40.8486462",
+      "osm_id" : 21582251,
+      "name" : "Pop 21 Vintage Store",
+      "class" : "highway",
+      "osm_type" : "way",
+      "importance" : 0.51
+   },
+   {
+      "class" : "highway",
+      "name" : "Il Baule del Vintage",
+      "osm_type" : "way",
+      "importance" : 0.52,
+      "lat" : "40.847022",
+      "osm_id" : 43662129,
+      "display_name" : "Via Rossellini, Municipalità 6, Napoli, NA, CAM, 80147, Italia",
+      "lon" : "14.3298502",
+      "city" : "Napoli",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 87368075,
+      "boundingbox" : [
+         "40.8456549",
+         "40.8477145",
+         "14.3294635",
+         "14.3305652"
+      ],
+      "street" : "Via Rossellini 9 Napoli",
+      "type" : "residential"
+   },
+   {
+      "city" : "Napoli",
+      "place_id" : 158071103,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "street" : "Via Giuseppe Martucci 109",
+      "boundingbox" : [
+         "40.8349362",
+         "40.8368526",
+         "14.231227",
+         "14.233759"
+      ],
+      "type" : "tertiary",
+      "class" : "highway",
+      "name" : "Silvi l'Usato d'Autore",
+      "osm_type" : "way",
+      "importance" : 0.51,
+      "lat" : "40.83622",
+      "osm_id" : 356825185,
+      "display_name" : "Via Giuseppe Martucci, Municipalità 1, Napoli, NA, CAM, 80121, Italia",
+      "lon" : "14.2324803"
+   },
+   {
+      "display_name" : "Via Pugliano, Ercolano, NA, CAM, 80056, Italia",
+      "lon" : "14.3499938",
+      "lat" : "40.8099427",
+      "osm_id" : 328927305,
+      "name" : "Resina Market",
+      "osm_type" : "way",
+      "class" : "highway",
+      "importance" : 0.41,
+      "type" : "residential",
+      "boundingbox" : [
+         "40.8082916",
+         "40.8118004",
+         "14.3486182",
+         "14.3516189"
+      ],
+      "street" : "Via Pugliano, Ercolano",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 151287509,
+      "city" : "Napoli"
+   },
+   {
+      "lon" : "14.2514253",
+      "display_name" : "Via Santa Maria di Costantinopoli, Municipalità 3, Napoli, NA, CAM, 80137, Italia",
+      "importance" : 0.71,
+      "name" : "Antichità Grossi",
+      "osm_type" : "way",
+      "class" : "highway",
+      "osm_id" : 504613632,
+      "lat" : "40.8531978",
+      "street" : "Via Santa Maria di Costantinopoli",
+      "boundingbox" : [
+         "40.8531504",
+         "40.8532127",
+         "14.2513311",
+         "14.2515216"
+      ],
+      "type" : "primary",
+      "city" : "Napoli",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "place_id" : 182006099
+   }
+]
+

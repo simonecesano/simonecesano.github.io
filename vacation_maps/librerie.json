@@ -1,0 +1,99 @@
+[
+    {
+	"lat" : "40.8494375",
+	"lon" : "14.2508125",
+	"street": "Via Port'Alba, 28, 80134 Napoli NA",
+	"name": "Berisio"
+    },
+    {
+	"lat": "40.8539375",
+	"lon": "14.2529375",
+	"street": "Piazza Cavour, 57, 80137 Napoli NA",
+	"name": "Pironti"
+    },
+    {
+	"lat" : "40.8345625",
+	"city" : "Napoli",
+	"name" : "feltrinelli",
+	"street" : "via S. Caterina a Chaia 23",
+	"lon" : "14.2423125"
+   },
+   {
+      "osm_type" : "way",
+      "street" : "Loffredo",
+      "importance" : 0.31,
+      "name" : "libreria",
+      "class" : "highway",
+      "display_name" : "Via Ferrante Loffredo, Rione Luzzati, Municipalità 4, Napoli, NA, CAM, 80142, Italia",
+      "lat" : "40.8604192",
+      "boundingbox" : [
+         "40.8597228",
+         "40.8616815",
+         "14.2722163",
+         "14.2725569"
+      ],
+      "osm_id" : 330259049,
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "lon" : "14.2724358",
+      "city" : "Napoli",
+      "place_id" : 151606202,
+      "type" : "residential"
+   },
+   {
+       "lat" : 40.8480625,
+       "lon" : 14.2543125,
+       "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "type" : "tertiary",
+      "place_id" : 99776168,
+      "city" : "Napoli",
+      "class" : "highway",
+      "display_name" : "Via Benedetto Croce, Napoli, NA, CAM, Italia",
+      "street" : " via Benedetto Croce 28",
+      "importance" : 0.4,
+      "name" : "Ubik",
+      "osm_type" : "way"
+   },
+   {
+      "osm_type" : "way",
+      "importance" : 0.73,
+      "name" : "raffaello vomero",
+      "street" : "Via Michele Kerbaker, 35, 80128 Napoli NA",
+      "boundingbox" : [
+         "40.8456213",
+         "40.8465008",
+         "14.2323988",
+         "14.2325259"
+      ],
+      "osm_id" : 184146428,
+      "class" : "highway",
+      "lat" : "40.8465008",
+      "display_name" : "Via Michele Kerbaker, Municipalità 5, Napoli, NA, CAM, 80127, Italia",
+      "place_id" : 118468622,
+      "city" : "Napoli",
+      "type" : "residential",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "lon" : "14.2323988"
+   },
+   {
+      "name" : "riviera",
+      "importance" : 0.84,
+      "street" : "  Riviera di Chiaia, 202, 80121 Napoli NA",
+      "osm_type" : "way",
+      "place_id" : 166586991,
+      "type" : "primary",
+      "city" : "Napoli",
+      "licence" : "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "lon" : "14.2354146",
+      "osm_id" : 414416874,
+      "boundingbox" : [
+         "40.8334793",
+         "40.8338189",
+         "14.2350755",
+         "14.2358275"
+      ],
+      "lat" : "40.8336119",
+      "display_name" : "Riviera di Chiaia, Municipalità 1, Napoli, NA, CAM, 80121, Italia",
+      "class" : "highway"
+   }
+]
+
