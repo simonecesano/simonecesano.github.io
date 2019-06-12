@@ -1,6 +1,19 @@
 var token = "pk.eyJ1Ijoic2ltb25lY2VzYW5vIiwiYSI6ImNqdDR0eHY0cDA2cm80M255dmR6OHk5N3kifQ.GgSBPOLgJkbgvtOYQebzpA"
 var mymap;
 
+// var colors = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928'];
+var colors = ['red', 'darkred', 'orange', 'green', 'darkgreen', 'blue', 'purple', 'darkpurple', 'cadetblue'];
+
+var icons = {
+    "pizzerie": "fire",
+    "librerie": "book",
+    "pasticcerie": "coffee",
+    "mergellina": "cutlery",
+    "trattorie": "cutlery",
+    "friggitorie": "beer",
+    "vestiti_usati": "shopping-bag",
+}
+
 var template = `
 {{#if href}}
 <a href="{{href}}">{{ name }}</a>
@@ -45,8 +58,10 @@ var refresh = function(json) {
 	    // console.log(mymap.getPane('markerPane').remove())
 	}
 
-
-	
+	var colorMap = {};
+	d.forEach(i => { if (i.type && !colorMap[i.type]) {
+	    colorMap[i.type] = colors.shift() } })
+	console.log(colorMap);
 
 	mymap.setView([c.latitude, c.longitude ], 13)
 	
@@ -58,10 +73,12 @@ var refresh = function(json) {
 	}).addTo(mymap)
 
 	markers.forEach(m => { m.remove() })
-
+	
 	d.forEach(e => {
 	    try {
-		var marker = L.marker([e.latitude, e.longitude]).addTo(mymap);
+		var redMarker = L.AwesomeMarkers.icon({ icon: icons[e.type] || 'dot-circle-o', prefix: 'fa', markerColor: 'red' });
+		var marker = L.marker([e.latitude, e.longitude], { icon: redMarker }).addTo(mymap);
+
 		markers.push(marker);
 		marker.bindPopup(template(e))
 	    } catch (err){
@@ -69,9 +86,8 @@ var refresh = function(json) {
 		// console.log(JSON.stringify(e));
 	    }
 	})
-
 	var group = new L.featureGroup(markers);
-	    mymap.fitBounds(group.getBounds());
+	mymap.fitBounds(group.getBounds());
     })
 }
 
