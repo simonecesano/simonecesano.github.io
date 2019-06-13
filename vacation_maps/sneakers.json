@@ -1,0 +1,44 @@
+[
+    {
+	"lon": "",
+	"lat": "",
+	"name": "",
+	"street": ""
+    },
+    {
+	"lat" : 40.8501875,
+	"lon" : 14.2554375,
+	"name": "London Store Napoli",
+	"street": "Via Nilo, 33, 80135 Napoli NA"
+    },
+    {
+	"lat" : 40.8520625,
+	"lon" : 14.3348125,
+	"name": "Dribbling SporTrend",
+	"street": "Via Angelo Camillo de Meis, 145, 80147 Napoli NA"
+    },
+    {
+	"lat" : 40.8320625,
+	"lon" : 14.2424375,
+	"name": "Started1",
+	"street": "Via Giorgio Arcoleo, 26, 80121 Napoli NA"
+    },
+    {
+	"lat" : 40.8464375,
+	"lon" : 14.2495625,
+	"name": "Urban Jungle Naples",
+	"street": "Via Toledo, 39, 80134 Napoli NA"
+    },
+    {
+	"lon" : 14.2486875,
+	"lat" : 40.8419375,
+	"name": "Urban Jungle Naples",
+	"street": "Via Toledo, 326, 80134 Napoli NA"
+    },
+    {
+	"lon" : 14.2241875,
+	"lat" : 40.8421875,
+	"name": "Capo Horn",
+	"street": "Via Belvedere, 59, 80127 Napoli NA"
+    }
+]
