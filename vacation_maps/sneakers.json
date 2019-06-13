@@ -1,10 +1,18 @@
 [
     {
-	"lon": "",
-	"lat": "",
-	"name": "",
-	"street": ""
+	"lat" : 40.8498125,
+	"lon" : 14.2540625,
+	"name": "Pepi Vintage Room",
+	"street": "Vico San Domenico Maggiore, 23, 80134 Napoli NA"
     },
+    {
+	"lon" : 14.2391875,
+	"lat" : 40.8339375,
+	"name": "Nennapop",
+	"street": "Via Carlo Poerio, 31, 80121 Napoli NA"
+	
+    },
+
     {
 	"lat" : 40.8501875,
 	"lon" : 14.2554375,
