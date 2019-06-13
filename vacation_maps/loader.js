@@ -4,6 +4,16 @@ var mymap;
 // var colors = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928'];
 var colors = ['red', 'darkred', 'orange', 'green', 'darkgreen', 'blue', 'purple', 'darkpurple', 'cadetblue'];
 
+// var icons = {
+//     "pizzerie": "pizza",
+//     "librerie": "book-open-variant",
+//     "pasticcerie": "coffee",
+//     "mergellina": "silverware-fork-knife",
+//     "trattorie": "silverware-fork-knife",
+//     "friggitorie": "pot",
+//     "vestiti_usati": "tshirt-crew",
+// }
+
 var icons = {
     "pizzerie": "fire",
     "librerie": "book",
@@ -12,6 +22,7 @@ var icons = {
     "trattorie": "cutlery",
     "friggitorie": "beer",
     "vestiti_usati": "shopping-bag",
+    "sneakers": "shopping-bag"
 }
 
 var template = `
@@ -77,7 +88,10 @@ var refresh = function(json) {
 	d.forEach(e => {
 	    try {
 		var redMarker = L.AwesomeMarkers.icon({ icon: icons[e.type] || 'dot-circle-o', prefix: 'fa', markerColor: 'red' });
-		var marker = L.marker([e.latitude, e.longitude], { icon: redMarker }).addTo(mymap);
+		// var marker = L.marker([e.latitude, e.longitude], {icon: L.icon.glyph({ prefix: 'mdi', glyph: icons[e.type] }) }).addTo(mymap);
+		var marker = L.marker([e.latitude, e.longitude], {icon: redMarker }).addTo(mymap);
+
+		// var marker = L.marker([e.latitude, e.longitude]).addTo(mymap);
 
 		markers.push(marker);
 		marker.bindPopup(template(e))
