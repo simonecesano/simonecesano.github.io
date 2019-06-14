@@ -1,7 +1,7 @@
 [
     {
 	"name": "Magazzini Fotografici",
-	"street": "Via S. Giovanni in Porta, 32, 80138 Napoli NA"
+	"street": "Via S. Giovanni in Porta, 32, 80138 Napoli NA",
 	"lat" : 40.8530625,
 	"lon" : 14.2570625
     },
@@ -18,7 +18,6 @@
 	"street": "Via Carlo Poerio, 31, 80121 Napoli NA"
 	
     },
-
     {
 	"lat" : 40.8501875,
 	"lon" : 14.2554375,
