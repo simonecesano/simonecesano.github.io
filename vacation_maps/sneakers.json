@@ -1,5 +1,11 @@
 [
     {
+	"name": "Magazzini Fotografici",
+	"street": "Via S. Giovanni in Porta, 32, 80138 Napoli NA"
+	"lat" : 40.8530625,
+	"lon" : 14.2570625
+    },
+    {
 	"lat" : 40.8498125,
 	"lon" : 14.2540625,
 	"name": "Pepi Vintage Room",
