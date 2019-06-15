@@ -504,5 +504,11 @@
 	"lat" : 40.8476875,
 	"name": "Fish Experience",
 	"street": "Via Antignano, 10/12, 80128 Napoli NA"
+    },
+    {
+	"lat" : 40.8428125,
+	"lon" : 14.2325625,
+	"street": "Via Domenico Cimarosa, 56, 80129 Napoli NA",
+	"name": "Osteria Partenope"
     }
 ]
