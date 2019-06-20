@@ -51,7 +51,7 @@ var parseCoord = function(s) {
     return sign * (parseFloat(coord[0]) + parseFloat(coord[1] / 60) + parseFloat(coord[2] / (60*60)));
 }
 
-var url = 'marker_dynamic.svg';
+var url = 'marker_clean_no.svg';
 var request = new XMLHttpRequest();
 request.open('GET', url, false);  // `false` makes the request synchronous
 request.send(null);
