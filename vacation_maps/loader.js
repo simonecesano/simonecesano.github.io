@@ -2,7 +2,7 @@ var token = "pk.eyJ1Ijoic2ltb25lY2VzYW5vIiwiYSI6ImNqdDR0eHY0cDA2cm80M255dmR6OHk5
 var mymap;
 
 // var colors = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928'];
-var colors = ['red', 'darkred', 'orange', 'green', 'darkgreen', 'blue', 'purple', 'darkpurple', 'cadetblue'];
+var colors = ['Crimson', 'darkred', 'Maroon', 'OliveDrab', 'darkgreen', 'DarkOrange', 'Teal', 'Indigo', 'DarkGoldenrod'];
 
 // var icons = {
 //     "pizzerie": "pizza",
@@ -51,7 +51,56 @@ var parseCoord = function(s) {
     return sign * (parseFloat(coord[0]) + parseFloat(coord[1] / 60) + parseFloat(coord[2] / (60*60)));
 }
 
-var refresh = function(json) {
+var url = 'marker_dynamic.svg';
+var request = new XMLHttpRequest();
+request.open('GET', url, false);  // `false` makes the request synchronous
+request.send(null);
+var doc;
+
+var domparser = new DOMParser();
+if (request.status === 200) {
+    doc = domparser.parseFromString(request.responseText, 'image/svg+xml')
+} else {
+    throw("could not load marker icon")
+}
+
+
+var changeIconColor = function(svgdoc, color) {
+
+    color = chroma(color || 'DarkRed');
+
+    var base = chroma(svgdoc.querySelector('[stop-color]').getAttribute('stop-color'));
+    var [hb, sb, lb, ab] = base.hsl()
+    var [hn, sn, ln, an] = color.hsl()
+    svgdoc.querySelectorAll('[stop-color]').forEach(e => {
+	var c = chroma(e.getAttribute('stop-color'));
+	var [h1, s1, l1, a1] = c.hsl()
+
+	var c = chroma.hsl( h1 - hb + hn, s1 - sb + sn, l1 - lb + ln, a1 - ab + an );
+	e.setAttribute('stop-color', c.hex())
+	      
+    });
+    var svg = (new XMLSerializer()).serializeToString(svgdoc.documentElement);
+    var src = 'data:image/svg+xml;charset=utf8,' + encodeURIComponent(svg);
+    return src;
+}
+
+var icon = function (color) {
+
+    var src = changeIconColor(doc, color);
+    return new L.Icon({
+	iconUrl: src,
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+    })
+};
+
+
+var refresh = function(hash) {
+    var json = hash.replace(/^#/, '' ) + '.json'
+    
     $.get(json, function(d){
 	d = d.filter(e => {
 	    return !(e.lon === 'N/A') && !(e.lat === 'N/A') && e.lon && e.lat
@@ -60,6 +109,15 @@ var refresh = function(json) {
 	    e.latitude  = e.lat
 	    return e
 	});
+
+	var colorLookup = {};
+	Array.from(new Set(d.map(e => { return e.type || hash.replace(/#/, '') })))
+	    .sort() // unique and sorted
+	    .forEach(e => {
+		colorLookup[e] = colors.shift();
+		colors.push(colorLookup[e]);
+	    })
+	console.log(colorLookup);
 	
 	var c = d[0]
 	if (!mymap) {
@@ -70,8 +128,11 @@ var refresh = function(json) {
 	}
 
 	var colorMap = {};
-	d.forEach(i => { if (i.type && !colorMap[i.type]) {
-	    colorMap[i.type] = colors.shift() } })
+	d.forEach(i => {
+	    if (i.type && !colorMap[i.type]) {
+		colorMap[i.type] = colors.shift()
+	    }
+	})
 	console.log(colorMap);
 
 	mymap.setView([c.latitude, c.longitude ], 13)
@@ -87,17 +148,13 @@ var refresh = function(json) {
 	
 	d.forEach(e => {
 	    try {
-		var redMarker = L.AwesomeMarkers.icon({ icon: icons[e.type] || 'dot-circle-o', prefix: 'fa', markerColor: 'red' });
-		// var marker = L.marker([e.latitude, e.longitude], {icon: L.icon.glyph({ prefix: 'mdi', glyph: icons[e.type] }) }).addTo(mymap);
-		var marker = L.marker([e.latitude, e.longitude], {icon: redMarker }).addTo(mymap);
-
-		// var marker = L.marker([e.latitude, e.longitude]).addTo(mymap);
-
+		var color = colorLookup[e.type];
+		var marker = L.marker([e.latitude, e.longitude], { icon: icon(color) }).addTo(mymap);
+		
 		markers.push(marker);
 		marker.bindPopup(template(e))
 	    } catch (err){
 		console.log(err);
-		// console.log(JSON.stringify(e));
 	    }
 	})
 	var group = new L.featureGroup(markers);
@@ -106,10 +163,9 @@ var refresh = function(json) {
 }
 
 window.onhashchange = function(e){
-    var json = location.hash.replace(/^#/, '' ) + '.json';
-    refresh(json);
+    refresh(location.hash);
 }
 
 $(function(){
-    refresh(location.hash.replace(/^#/, '' ) + '.json');
+    refresh(location.hash || '#all' );
 })
