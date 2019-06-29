@@ -1,0 +1,121 @@
+[
+    {
+	"street" : "Palaispl. 11, 01097 Dresden",
+	"name" : "Museum of Ethnology Dresden",
+	"lon" : 13.7380625,
+	"lat" : 51.0596875
+    },
+    {
+	"lat" : 51.0444375,
+	"name" : "BOT Botanical Garden",
+	"lon" : 13.7585625,
+	"street" : "Stübelallee 2, 01307 Dresden"
+    },
+    {
+	"lat" : 51.1134375,
+	"name" : "Hellerau",
+	"lon" : 13.7521875,
+	"street" : "Karl-Liebknecht-Straße 56, 01109 Dresden"
+    },
+    {
+	"lon" : 13.7600625,
+	"name" : "Museum of Military History",
+	"lat" : 51.0785625,
+	"street" : "Olbrichtpl. 2, 01099 Dresden"
+    },
+    {
+	"lat" : 51.0534375,
+	"name" : "Old Masters Picture Gallery",
+	"street" : "Theaterplatz 1, 01067 Dresden",
+	"lon" : 13.7346875
+    },
+    {
+	"name" : "Technische Sammlungen Dresden",
+	"street" : "Junghansstraße 1-3, 01277 Dresden",
+	"lon" : 13.7976875,
+	"lat" : 51.0420625
+    },
+    {
+	"lat" : 51.0520625,
+	"name" : "Albertinum - Galerie Neue Meister",
+	"street" : "Tzschirnerpl. 2, 01067 Dresden",
+	"lon" : 13.7443125
+    },
+    {
+	"lon" : 13.7329375,
+	"lat" : 51.0533125,
+	"street" : "Zwinger, 01067 Dresden",
+	"name" : "Mathematisch-Physikalischer Salon"
+    },
+    {
+	"lon" : 13.7638125,
+	"street" : "Querallee 7, 01219 Dresden",
+	"name" : "Carolaschlösschen",
+	"lat" : 51.0334375
+    },
+    
+    {
+	"street" : "Martin-Luther-Straße 17, 01099 Dresden",
+	"lat" : 51.0641875,
+	"lon" : 13.7555625,
+	"name" : "Lloyd´s Café und Bar"
+    },
+    
+    {
+	"lat" : 51.0671875,
+	"lon" : 13.7501875,
+	"name" : "Planwirtschaft",
+	"street" : "Louisenstraße 20, 01099 Dresden"
+    },
+    {
+	"name" : "Max Neustadt",
+	"street" : "Louisenstraße 65, 01099 Dresden",
+	"lat" : 51.0660625,
+	"lon" : 13.7555625
+    },
+    {
+	"lon" : 13.7355625,
+	"lat" : 51.0476875,
+	"name" : "Watzkes Wurstküche",
+	"street" : "Dr.-Külz-Ring 11, 01067 Dresden"
+    },
+    {
+	"lon" : 13.7348125,
+	"lat" : 51.0510625,
+	"street" : "Wilsdruffer Str. 24, 01067 Dresden",
+	"name" : "Imbiss Curry24"
+    },
+    {
+	"name" : "Dresdner Kaffeestübchen",
+	"lat" : 51.0515625,
+	"street" : "Salzgasse 8, 01067 Dresden",
+	"lon" : 13.7438125
+    },
+    
+    {
+	"street" : "An der Frauenkirche 13, Zugang über Salzgasse 2, 01067 Dresden",
+	"lon" : 13.7426875,
+	"lat" : 51.0519375,
+	"name" : "Gasthaus Am Neumarkt"
+    },
+
+    {
+	"lat" : 51.0679375,
+	"street" : "Am Brauhaus 8B, 01099 Dresden",
+	"lon" : 13.7780625,
+	"name" : "Brauhaus am Waldschlösschen"
+    },
+    {
+	"lat" : 51.0494375,
+	"lon" : 13.7390625,
+	"street" : "Altmarkt 4, 01067 Dresden",
+	"name" : "Altmarktkeller - Dresdner Bierhaus"
+    },
+    {
+	"lon" : 13.7378125,
+	"name" : "Hyperion Dresden",
+	"street" : "Schloßstraße 16, 01067 Dresden",
+	"lat" : 51.0520625
+    }
+]
+
