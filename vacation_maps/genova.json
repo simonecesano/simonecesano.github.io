@@ -1,0 +1,110 @@
+[
+    {
+	"street" : "via Caprera 70R",
+	"name" : "Fonnesu",
+	"phone": "+39 010 3760011", 
+	"lon" : 8.9779375,
+	"lat" : 44.3949375
+    },
+    {
+	"name" : "",
+	"lat" : 44.4091875,
+	"lon" : "8.9330625",
+	"street" : ""
+    },
+    {
+	"name" : "Al Forno ",
+	"lon" : 8.95881249999999,
+	"lat" : 44.4003125,
+	"street" : "Via Albaro, 24, 16145 Genova GE, Italy"
+    },
+    {
+	"street" : "Via della Posta Vecchia, 12, 16123 Genova GE, Italy",
+	"lon" : 8.93093750000003,
+	"name" : "Claretta",
+	"lat" : 44.4105625
+    },
+    {
+	"lon" : 8.9324375,
+	"street" : "Via di Canneto Il Lungo, 78R, 16123 Genova GE, Italy",
+	"lat" : 44.4066875,
+	"name" : "Bottiglieria La Marchesa"
+    },
+    {
+	"lat" : 44.4091875,
+	"street" : "Vico della Casana, 17, 16123 Genova GE, Italy",
+	"name" : "Antico Forno della Casana",
+	"lon" : "8.9330625"
+    },
+    {
+	"street" : "Via di Porta Soprana, 61r, 16123 Genova GE, Italy",
+	"lat" : 44.4058125,
+	"lon" : "8.9339375",
+	"name" : "Buratto"
+    },
+    {
+	"lon" : "8.9436875",
+	"name" : "Panificio Mario",
+	"lat" : 44.4070625,
+	"street" : "Via S. Vincenzo, 61r, 16121 Genova GE, Italy"
+    },
+    {
+	"name" : "Trattoria Rosmarino",
+	"lon" : "8.9336875",
+	"street" : "Salita del Fondaco, 30, 16100 Genova GE, Italy",
+	"lat" : 44.4075625
+    },
+    {
+	"name" : "Trattoria dell'Acciughetta",
+	"street" : "Piazza Sant'Elena, 16126 Genova GE, Italy",
+	"lon" : 8.92481250000003,
+	"lat" : 44.4146875
+    },
+    {
+	"lon" : 8.92956250000003,
+	"lat" : 44.4071875,
+	"name" : "Sa Pesta",
+	"street" : "Via dei Giustiniani, 16/R, 16123 Genova GE, Italy"
+    },
+    {
+	"lon" : "8.9289375",
+	"street" : "Via di Sottoripa, 113 r, 16124 Genova GE, Italy",
+	"lat" : 44.4108125,
+	"name" : "Antica Friggitoria Carega"
+    },
+    {
+	"lon" : 8.92593750000003,
+	"name" : "Osteria di Vico Palla",
+	"street" : "Vico Palla, 15, 16128 Genova GE, Italy",
+	"lat" : 44.4071875
+    },
+    {
+	"lon" : 8.9428125,
+	"street" : "Via Galata, 35r, 16121 Genova GE, Italy",
+	"lat" : 44.4056875,
+	"name" : "Il Genovese"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+
+
+
+
+]
+
