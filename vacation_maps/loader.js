@@ -2,7 +2,7 @@ var token = "pk.eyJ1Ijoic2ltb25lY2VzYW5vIiwiYSI6ImNqdDR0eHY0cDA2cm80M255dmR6OHk5
 var mymap;
 
 // var colors = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928'];
-var colors = ['Crimson', 'darkred', 'Maroon', 'OliveDrab', 'darkgreen', 'DarkOrange', 'Teal', 'Indigo', 'DarkGoldenrod'];
+var colors = ['OliveDrab', 'darkgreen', 'DarkOrange', 'Teal', 'Indigo', 'DarkGoldenrod', 'Crimson', 'darkred', 'Maroon'];
 
 // var icons = {
 //     "pizzerie": "pizza",
@@ -75,15 +75,15 @@ var changeIconColor = function(svgdoc, color) {
     svgdoc.querySelectorAll('[stop-color]').forEach(e => {
 	var c = chroma(e.getAttribute('stop-color'));
 	var [h1, s1, l1, a1] = c.hsl()
-
 	var c = chroma.hsl( h1 - hb + hn, s1 - sb + sn, l1 - lb + ln, a1 - ab + an );
 	e.setAttribute('stop-color', c.hex())
-	      
     });
     var svg = (new XMLSerializer()).serializeToString(svgdoc.documentElement);
     var src = 'data:image/svg+xml;charset=utf8,' + encodeURIComponent(svg);
     return src;
 }
+
+
 
 var icon = function (color) {
 
@@ -167,5 +167,18 @@ window.onhashchange = function(e){
 }
 
 $(function(){
+    mymap = L.map('mapid')
     refresh(location.hash || '#all' );
+    L.easyButton('<span>&starf;</span>', function(btn, map){
+	console.log(navigator.geolocation);
+	if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(function(position) {
+		map.setView([ position.coords.latitude, position.coords.longitude ]);
+	    });
+	} else {
+	    /* geolocation IS NOT available */
+	}
+
+	console.log('this')
+    }).addTo( mymap );
 })
