@@ -83,28 +83,54 @@
 	"street" : "Via Galata, 35r, 16121 Genova GE, Italy",
 	"lat" : 44.4056875,
 	"name" : "Il Genovese"
+    },
+    {
+	"street" : "Via Luccoli, 98, 16123 Genova GE, Italy",
+	"lon" : 8.9348125,
+	"name" : "L'amico Ritrovato",
+	"lat" : 44.4101875
+    },
+    {
+	"lon" : 8.9366875,
+	"street" : "Via Ceccardo Roccatagliata Ceccardi, 18r, 16121 Genova GE, Italy",
+	"name" : "laFeltrinelli Books and Music",
+	"lat" : 44.4060625
+    },
+    {
+	"street" : "Via S. Giorgio, 14/R, 16128 Genova GE, Italy",
+	"lon" : 8.9288125,
+	"name" : "Antica Sciamadda",
+	"lat" : 44.4074375
+    },
+    {
+	"lat" : 44.4119375,
+	"name" : "Libraccio",
+	"street" : "Via Cairoli, 6r, 16124 Genova GE, Italy",
+	"lon" : 8.93068750000003
+    },
+    {
+	"name" : "Corderia Nazionale",
+	"lon" : 8.9274375,
+	"lat" : 44.4125625,
+	"street" : "Via Antonio Gramsci, 53r, 16126 Genova GE, Italy"
+    },
+    {
+	"street" : "Vico della Casana, 17, 16123 Genova GE, Italy",
+	"lat" : 44.4091875,
+	"lon" : 8.9330625,
+	"name" : "Antico Forno della Casana"
+    },
+    {
+	"lat" : 44.4056875,
+	"lon" : 8.9428125,
+	"name" : "il Genovese",
+	"street" : "Via Galata, 35r, 16121 Genova GE, Italy"
+    },
+    {
+	"street" : "Via XX Settembre, 75r, 16121 Genova GE, Italy",
+	"name" : "Mercato orientale",
+	"lat" : 44.4054375,
+	"lon" : 8.9419375
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
-
-
-
-
-
 ]
 
