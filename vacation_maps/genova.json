@@ -1,136 +1,1269 @@
 [
-    {
-	"street" : "via Caprera 70R",
-	"name" : "Fonnesu",
-	"phone": "+39 010 3760011", 
-	"lon" : 8.9779375,
-	"lat" : 44.3949375
-    },
-    {
-	"name" : "",
-	"lat" : 44.4091875,
-	"lon" : "8.9330625",
-	"street" : ""
-    },
-    {
-	"name" : "Al Forno ",
-	"lon" : 8.95881249999999,
-	"lat" : 44.4003125,
-	"street" : "Via Albaro, 24, 16145 Genova GE, Italy"
-    },
-    {
-	"street" : "Via della Posta Vecchia, 12, 16123 Genova GE, Italy",
-	"lon" : 8.93093750000003,
-	"name" : "Claretta",
-	"lat" : 44.4105625
-    },
-    {
-	"lon" : 8.9324375,
-	"street" : "Via di Canneto Il Lungo, 78R, 16123 Genova GE, Italy",
-	"lat" : 44.4066875,
-	"name" : "Bottiglieria La Marchesa"
-    },
-    {
-	"lat" : 44.4091875,
-	"street" : "Vico della Casana, 17, 16123 Genova GE, Italy",
-	"name" : "Antico Forno della Casana",
-	"lon" : "8.9330625"
-    },
-    {
-	"street" : "Via di Porta Soprana, 61r, 16123 Genova GE, Italy",
-	"lat" : 44.4058125,
-	"lon" : "8.9339375",
-	"name" : "Buratto"
-    },
-    {
-	"lon" : "8.9436875",
-	"name" : "Panificio Mario",
-	"lat" : 44.4070625,
-	"street" : "Via S. Vincenzo, 61r, 16121 Genova GE, Italy"
-    },
-    {
-	"name" : "Trattoria Rosmarino",
-	"lon" : "8.9336875",
-	"street" : "Salita del Fondaco, 30, 16100 Genova GE, Italy",
-	"lat" : 44.4075625
-    },
-    {
-	"name" : "Trattoria dell'Acciughetta",
-	"street" : "Piazza Sant'Elena, 16126 Genova GE, Italy",
-	"lon" : 8.92481250000003,
-	"lat" : 44.4146875
-    },
-    {
-	"lon" : 8.92956250000003,
-	"lat" : 44.4071875,
-	"name" : "Sa Pesta",
-	"street" : "Via dei Giustiniani, 16/R, 16123 Genova GE, Italy"
-    },
-    {
-	"lon" : "8.9289375",
-	"street" : "Via di Sottoripa, 113 r, 16124 Genova GE, Italy",
-	"lat" : 44.4108125,
-	"name" : "Antica Friggitoria Carega"
-    },
-    {
-	"lon" : 8.92593750000003,
-	"name" : "Osteria di Vico Palla",
-	"street" : "Vico Palla, 15, 16128 Genova GE, Italy",
-	"lat" : 44.4071875
-    },
-    {
-	"lon" : 8.9428125,
-	"street" : "Via Galata, 35r, 16121 Genova GE, Italy",
-	"lat" : 44.4056875,
-	"name" : "Il Genovese"
-    },
-    {
-	"street" : "Via Luccoli, 98, 16123 Genova GE, Italy",
-	"lon" : 8.9348125,
-	"name" : "L'amico Ritrovato",
-	"lat" : 44.4101875
-    },
-    {
-	"lon" : 8.9366875,
-	"street" : "Via Ceccardo Roccatagliata Ceccardi, 18r, 16121 Genova GE, Italy",
-	"name" : "laFeltrinelli Books and Music",
-	"lat" : 44.4060625
-    },
-    {
-	"street" : "Via S. Giorgio, 14/R, 16128 Genova GE, Italy",
-	"lon" : 8.9288125,
-	"name" : "Antica Sciamadda",
-	"lat" : 44.4074375
-    },
-    {
-	"lat" : 44.4119375,
-	"name" : "Libraccio",
-	"street" : "Via Cairoli, 6r, 16124 Genova GE, Italy",
-	"lon" : 8.93068750000003
-    },
-    {
-	"name" : "Corderia Nazionale",
-	"lon" : 8.9274375,
-	"lat" : 44.4125625,
-	"street" : "Via Antonio Gramsci, 53r, 16126 Genova GE, Italy"
-    },
-    {
-	"street" : "Vico della Casana, 17, 16123 Genova GE, Italy",
-	"lat" : 44.4091875,
-	"lon" : 8.9330625,
-	"name" : "Antico Forno della Casana"
-    },
-    {
-	"lat" : 44.4056875,
-	"lon" : 8.9428125,
-	"name" : "il Genovese",
-	"street" : "Via Galata, 35r, 16121 Genova GE, Italy"
-    },
-    {
-	"street" : "Via XX Settembre, 75r, 16121 Genova GE, Italy",
-	"name" : "Mercato orientale",
-	"lat" : 44.4054375,
-	"lon" : 8.9419375
-    }
+  {
+    "street": "via Caprera 70R",
+    "name": "Fonnesu",
+    "phone": "+39 010 3760011",
+    "lon": 8.9779375,
+    "lat": 44.3949375
+  },
+  {
+    "name": "",
+    "lat": 44.4091875,
+    "lon": "8.9330625",
+    "street": ""
+  },
+  {
+    "name": "Al Forno ",
+    "lon": 8.95881249999999,
+    "lat": 44.4003125,
+    "street": "Via Albaro, 24, 16145 Genova GE, Italy"
+  },
+  {
+    "street": "Via della Posta Vecchia, 12, 16123 Genova GE, Italy",
+    "lon": 8.93093750000003,
+    "name": "Claretta",
+    "lat": 44.4105625
+  },
+  {
+    "lon": 8.9324375,
+    "street": "Via di Canneto Il Lungo, 78R, 16123 Genova GE, Italy",
+    "lat": 44.4066875,
+    "name": "Bottiglieria La Marchesa"
+  },
+  {
+    "lat": 44.4091875,
+    "street": "Vico della Casana, 17, 16123 Genova GE, Italy",
+    "name": "Antico Forno della Casana",
+    "lon": "8.9330625"
+  },
+  {
+    "street": "Via di Porta Soprana, 61r, 16123 Genova GE, Italy",
+    "lat": 44.4058125,
+    "lon": "8.9339375",
+    "name": "Buratto"
+  },
+  {
+    "lon": "8.9436875",
+    "name": "Panificio Mario",
+    "lat": 44.4070625,
+    "street": "Via S. Vincenzo, 61r, 16121 Genova GE, Italy"
+  },
+  {
+    "name": "Trattoria Rosmarino",
+    "lon": "8.9336875",
+    "street": "Salita del Fondaco, 30, 16100 Genova GE, Italy",
+    "lat": 44.4075625
+  },
+  {
+    "name": "Trattoria dell'Acciughetta",
+    "street": "Piazza Sant'Elena, 16126 Genova GE, Italy",
+    "lon": 8.92481250000003,
+    "lat": 44.4146875
+  },
+  {
+    "lon": 8.92956250000003,
+    "lat": 44.4071875,
+    "name": "Sa Pesta",
+    "street": "Via dei Giustiniani, 16/R, 16123 Genova GE, Italy"
+  },
+  {
+    "lon": "8.9289375",
+    "street": "Via di Sottoripa, 113 r, 16124 Genova GE, Italy",
+    "lat": 44.4108125,
+    "name": "Antica Friggitoria Carega"
+  },
+  {
+    "lon": 8.92593750000003,
+    "name": "Osteria di Vico Palla",
+    "street": "Vico Palla, 15, 16128 Genova GE, Italy",
+    "lat": 44.4071875
+  },
+  {
+    "lon": 8.9428125,
+    "street": "Via Galata, 35r, 16121 Genova GE, Italy",
+    "lat": 44.4056875,
+    "name": "Il Genovese"
+  },
+  {
+    "street": "Via Luccoli, 98, 16123 Genova GE, Italy",
+    "lon": 8.9348125,
+    "name": "L'amico Ritrovato",
+    "lat": 44.4101875
+  },
+  {
+    "lon": 8.9366875,
+    "street": "Via Ceccardo Roccatagliata Ceccardi, 18r, 16121 Genova GE, Italy",
+    "name": "laFeltrinelli Books and Music",
+    "lat": 44.4060625
+  },
+  {
+    "street": "Via S. Giorgio, 14/R, 16128 Genova GE, Italy",
+    "lon": 8.9288125,
+    "name": "Antica Sciamadda",
+    "lat": 44.4074375
+  },
+  {
+    "lat": 44.4119375,
+    "name": "Libraccio",
+    "street": "Via Cairoli, 6r, 16124 Genova GE, Italy",
+    "lon": 8.93068750000003
+  },
+  {
+    "name": "Corderia Nazionale",
+    "lon": 8.9274375,
+    "lat": 44.4125625,
+    "street": "Via Antonio Gramsci, 53r, 16126 Genova GE, Italy"
+  },
+  {
+    "street": "Vico della Casana, 17, 16123 Genova GE, Italy",
+    "lat": 44.4091875,
+    "lon": 8.9330625,
+    "name": "Antico Forno della Casana"
+  },
+  {
+    "lat": 44.4056875,
+    "lon": 8.9428125,
+    "name": "il Genovese",
+    "street": "Via Galata, 35r, 16121 Genova GE, Italy"
+  },
+  {
+    "street": "Via XX Settembre, 75r, 16121 Genova GE, Italy",
+    "name": "Mercato orientale",
+    "lat": 44.4054375,
+    "lon": 8.9419375
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Tursi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Il_Palazzo_Doria-_Tursi_splendente.JPG/225px-Il_Palazzo_Doria-_Tursi_splendente.JPG",
+    "lat": 44.4113972222222,
+    "lon": 8.93278611111111,
+    "name": "Palazzo Doria-Tursi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lercari-Parodi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Palazzo_Lercari-Parodi_001.jpg/225px-Palazzo_Lercari-Parodi_001.jpg",
+    "lat": 44.4110055555556,
+    "lon": 8.93444166666667,
+    "name": "Palazzo Lercari-Parodi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Genova_12-8-05_006.jpg/260px-Genova_12-8-05_006.jpg",
+    "lat": 44.4094638888889,
+    "lon": 8.93725555555556,
+    "name": "Palazzo Doria-Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Clemente_Della_Rovere",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Palazzo_Clemente_Della_Rovere_Genova-1.jpg/225px-Palazzo_Clemente_Della_Rovere_Genova-1.jpg",
+    "lat": 44.409925,
+    "lon": 8.93611666666667,
+    "name": "Palazzo Clemente Della Rovere"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giorgio_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PalazzoGiorgioSpinola3.jpg/225px-PalazzoGiorgioSpinola3.jpg",
+    "lat": 44.4101861111111,
+    "lon": 8.93602222222222,
+    "name": "Palazzo Giorgio Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Tommaso_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/PalazzoTommasoSpinola2.jpg/260px-PalazzoTommasoSpinola2.jpg",
+    "lat": 44.4101833333333,
+    "lon": 8.93600277777778,
+    "name": "Palazzo Tommaso Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giacomo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Genova-Piazza_Fontane_Marose-DSCF7389.JPG/260px-Genova-Piazza_Fontane_Marose-DSCF7389.JPG",
+    "lat": 44.4099972222222,
+    "lon": 8.93550277777778,
+    "name": "Palazzo Giacomo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Negrone",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Palazzo_Negrone_Genoa.jpg/260px-Palazzo_Negrone_Genoa.jpg",
+    "lat": 44.4101694444444,
+    "lon": 8.93548888888889,
+    "name": "Palazzo Negrone"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Paolo_Battista_e_Niccol%C3%B2_Interiano",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Palazzo_Interiano_Pallavicini_Genoa.jpg/260px-Palazzo_Interiano_Pallavicini_Genoa.jpg",
+    "lat": 44.4105361111111,
+    "lon": 8.93509722222222,
+    "name": "Palazzo Paolo Battista e NiccolÃ² Interiano"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pallavicini-Cambiaso",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Palazzo_Pallavicini_Cambiaso_05.jpg/225px-Palazzo_Pallavicini_Cambiaso_05.jpg",
+    "lat": 44.4109083333333,
+    "lon": 8.93475277777778,
+    "name": "Palazzo Pallavicini-Cambiaso"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pantaleo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Palazzo_Pantaleo_Spinola03.jpg/225px-Palazzo_Pantaleo_Spinola03.jpg",
+    "lat": 44.4109,
+    "lon": 8.93473611111111,
+    "name": "Palazzo Pantaleo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lercari-Parodi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Palazzo_Lercari-Parodi_001.jpg/225px-Palazzo_Lercari-Parodi_001.jpg",
+    "lat": 44.4110055555556,
+    "lon": 8.93444166666667,
+    "name": "Palazzo Lercari-Parodi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Carrega-Cataldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Genova-DSCF7473.JPG/225px-Genova-DSCF7473.JPG",
+    "lat": 44.4108972222222,
+    "lon": 8.93431944444444,
+    "name": "Palazzo Carrega-Cataldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Angelo_Giovanni_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Palazzo_Angelo_Giovanni_Spinola_01.jpg/225px-Palazzo_Angelo_Giovanni_Spinola_01.jpg",
+    "lat": 44.4110027777778,
+    "lon": 8.9337,
+    "name": "Palazzo Angelo Giovanni Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palazzo_Doria_Andrea_Gio_Batta_Spinola_Genova_via_Garibaldi.png/232px-Palazzo_Doria_Andrea_Gio_Batta_Spinola_Genova_via_Garibaldi.png",
+    "lat": 44.4108444444444,
+    "lon": 8.93363888888889,
+    "name": "Palazzo Doria (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Podest%C3%A0",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Palazzo_nicolosio_lomellini%2C_ext._01.JPG/225px-Palazzo_nicolosio_lomellini%2C_ext._01.JPG",
+    "lat": 44.4110388888889,
+    "lon": 8.93328055555556,
+    "name": "Palazzo PodestÃ "
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cattaneo-Adorno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Palazzo_Cattaneo-Adorno01.jpg/225px-Palazzo_Cattaneo-Adorno01.jpg",
+    "lat": 44.4109888888889,
+    "lon": 8.93317222222222,
+    "name": "Palazzo Cattaneo-Adorno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Tursi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Il_Palazzo_Doria-_Tursi_splendente.JPG/225px-Il_Palazzo_Doria-_Tursi_splendente.JPG",
+    "lat": 44.4113972222222,
+    "lon": 8.93278611111111,
+    "name": "Palazzo Doria-Tursi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Baldassarre_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Genova-DSCF7470.JPG/260px-Genova-DSCF7470.JPG",
+    "lat": 44.4111194444444,
+    "lon": 8.93259722222222,
+    "name": "Palazzo Baldassarre Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bianco",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Palazzo_Bianco_-_Genova.jpg/200px-Palazzo_Bianco_-_Genova.jpg",
+    "lat": 44.4116083333333,
+    "lon": 8.93184166666667,
+    "name": "Palazzo Bianco"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Rosso_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Palazzo_Rosso.jpg/199px-Palazzo_Rosso.jpg",
+    "lat": 44.4111055555556,
+    "lon": 8.93212222222222,
+    "name": "Palazzo Rosso (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gerolamo_Grimaldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Palazzo_Meridiana_Genova.JPG/225px-Palazzo_Meridiana_Genova.JPG",
+    "lat": 44.41155,
+    "lon": 8.93189444444444,
+    "name": "Palazzo Gerolamo Grimaldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Carlo_Brignole",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PalazzoGioCarloBrignole.jpg/260px-PalazzoGioCarloBrignole.jpg",
+    "lat": 44.4115138888889,
+    "lon": 8.93144166666667,
+    "name": "Palazzo Gio Carlo Brignole"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bartolomeo_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Palazzo_Bartolomeo_Lomellini_02.jpg/260px-Palazzo_Bartolomeo_Lomellini_02.jpg",
+    "lat": 44.4136166666667,
+    "lon": 8.93040833333333,
+    "name": "Palazzo Bartolomeo Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lomellini-Doria_Lamba",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Palazzo_Lomellini-Doria_Lamba05.jpg/225px-Palazzo_Lomellini-Doria_Lamba05.jpg",
+    "lat": 44.4131305555556,
+    "lon": 8.92993888888889,
+    "name": "Palazzo Lomellini-Doria Lamba"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giacomo_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/PalazzoGiacomoLomellini.jpg/260px-PalazzoGiacomoLomellini.jpg",
+    "lat": 44.4132638888889,
+    "lon": 8.92998333333333,
+    "name": "Palazzo Giacomo Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_De_Marini-Spinola",
+    "img": "",
+    "lat": 44.4132638888889,
+    "lon": 8.92998333333333,
+    "name": "Palazzo De Marini-Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Belimbau",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Genova-palazzo_Belimbau.jpg/260px-Genova-palazzo_Belimbau.jpg",
+    "lat": 44.41345,
+    "lon": 8.92839444444444,
+    "name": "Palazzo Belimbau"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Durazzo-Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Palazzo_Durazzo_Pallavicini_%28Genoa%29_06.jpg/260px-Palazzo_Durazzo_Pallavicini_%28Genoa%29_06.jpg",
+    "lat": 44.4144222222222,
+    "lon": 8.92760833333333,
+    "name": "Palazzo Durazzo-Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Francesco_Balbi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Palazzo_Gio_Francesco_Balbi_03.jpg/225px-Palazzo_Gio_Francesco_Balbi_03.jpg",
+    "lat": 44.4142027777778,
+    "lon": 8.92793333333333,
+    "name": "Palazzo Gio Francesco Balbi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Balbi-Senarega",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Palazzo_Balbi-Senarega_02.jpg/225px-Palazzo_Balbi-Senarega_02.jpg",
+    "lat": 44.4143444444444,
+    "lon": 8.92768888888889,
+    "name": "Palazzo Balbi-Senarega"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Francesco_Maria_Balbi_Piovera",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Palazzo_Balbi_Raggio.jpg/225px-Palazzo_Balbi_Raggio.jpg",
+    "lat": 44.414625,
+    "lon": 8.92703611111111,
+    "name": "Palazzo Francesco Maria Balbi Piovera"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Reale_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Genova-palazzo_reale-esterno_via_Balbi1.jpg/260px-Genova-palazzo_reale-esterno_via_Balbi1.jpg",
+    "lat": 44.4149138888889,
+    "lon": 8.92616111111111,
+    "name": "Palazzo Reale (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cosma_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Genova-AP-1010522.jpg/260px-Genova-AP-1010522.jpg",
+    "lat": 44.4126333333333,
+    "lon": 8.92960277777778,
+    "name": "Palazzo Cosma Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giorgio_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Palazzo_Giorgio_Centurione_09.jpg/260px-Palazzo_Giorgio_Centurione_09.jpg",
+    "lat": 44.4123833333333,
+    "lon": 8.92943611111111,
+    "name": "Palazzo Giorgio Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Genova-Centro_storico-Piazza_Fossatello-DSCF7490.JPG/225px-Genova-Centro_storico-Piazza_Fossatello-DSCF7490.JPG",
+    "lat": 44.4121138888889,
+    "lon": 8.92898611111111,
+    "name": "Palazzo Gio Battista Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cipriano_Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/PalazzoCiprianoPallavicini.jpg/260px-PalazzoCiprianoPallavicini.jpg",
+    "lat": 44.4120055555556,
+    "lon": 8.92909444444444,
+    "name": "Palazzo Cipriano Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Nicol%C3%B2_Spinola_di_San_Luca",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/PalazzoNicoloSpinola.jpg/260px-PalazzoNicoloSpinola.jpg",
+    "lat": 44.4113194444444,
+    "lon": 8.92989166666667,
+    "name": "Palazzo NicolÃ² Spinola di San Luca"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_Pellicceria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Genova-Palazzo_Spinola-DSCF7485.JPG/225px-Genova-Palazzo_Spinola-DSCF7485.JPG",
+    "lat": 44.4106305555556,
+    "lon": 8.93090555555555,
+    "name": "Palazzo Spinola di Pellicceria"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Grimaldi_(vico_San_Luca)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Palazzo_Gio_Battista_Grimaldi_%28Vico_San_Luca%29_Genova_02.jpg/225px-Palazzo_Gio_Battista_Grimaldi_%28Vico_San_Luca%29_Genova_02.jpg",
+    "lat": 44.4090388888889,
+    "lon": 8.92982777777778,
+    "name": "Palazzo Gio Battista Grimaldi (vico San Luca)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Grimaldi_(piazza_San_Luca)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/PalazzoGioBattistaGrimaldi_PiazzaSLuca.jpg/225px-PalazzoGioBattistaGrimaldi_PiazzaSLuca.jpg",
+    "lat": 44.4103472222222,
+    "lon": 8.9301,
+    "name": "Palazzo Gio Battista Grimaldi (piazza San Luca)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Stefano_De_Mari",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PalazzoStefanoDeMari.jpg/225px-PalazzoStefanoDeMari.jpg",
+    "lat": 44.4088833333333,
+    "lon": 8.92999722222222,
+    "name": "Palazzo Stefano De Mari"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Ambrogio_Di_Negro",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Palazzo_Ambrogio_Di_Negro_Genova_02.jpg/225px-Palazzo_Ambrogio_Di_Negro_Genova_02.jpg",
+    "lat": 44.4094611111111,
+    "lon": 8.92983888888889,
+    "name": "Palazzo Ambrogio Di Negro"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Emanuele_Filiberto_Di_Negro",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PalazzoEmanueleFilibertoDiNegro2JPG.jpg/260px-PalazzoEmanueleFilibertoDiNegro2JPG.jpg",
+    "lat": 44.4094305555556,
+    "lon": 8.92960833333333,
+    "name": "Palazzo Emanuele Filiberto Di Negro"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_De_Marini-Croce",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Palazzo_De_Marini-Croce.jpg/225px-Palazzo_De_Marini-Croce.jpg",
+    "lat": 44.4088694444444,
+    "lon": 8.92983611111111,
+    "name": "Palazzo De Marini-Croce"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Ottavio_Imperiale",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Piazza_campetto_genova_02.jpg/260px-Piazza_campetto_genova_02.jpg",
+    "lat": 44.4090611111111,
+    "lon": 8.93159722222222,
+    "name": "Palazzo Ottavio Imperiale"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Vincenzo_Imperiale",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/PalazzoImperiale.jpg/225px-PalazzoImperiale.jpg",
+    "lat": 44.4090277777778,
+    "lon": 8.93170277777778,
+    "name": "Palazzo Gio Vincenzo Imperiale"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Senarega-Zoagli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PalazzoSenaregaZoagli.JPG/225px-PalazzoSenaregaZoagli.JPG",
+    "lat": 44.4078472222222,
+    "lon": 8.93026666666667,
+    "name": "Palazzo Senarega-Zoagli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cattaneo_Della_Volta",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/PalazzoCattaneoDellaVolta.JPG/225px-PalazzoCattaneoDellaVolta.JPG",
+    "lat": 44.4069916666667,
+    "lon": 8.92820555555556,
+    "name": "Palazzo Cattaneo Della Volta"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giulio_Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Palazzo_Giulio_Pallavicini_04.jpg/260px-Palazzo_Giulio_Pallavicini_04.jpg",
+    "lat": 44.4075861111111,
+    "lon": 8.93393611111111,
+    "name": "Palazzo Giulio Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Palazzo_Agostino_Spinola_%28Genoa%29_01.jpg/260px-Palazzo_Agostino_Spinola_%28Genoa%29_01.jpg",
+    "lat": 44.4076694444444,
+    "lon": 8.93410833333333,
+    "name": "Palazzo Agostino Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pietro_Durazzo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/PalazzoPietroDurazzo.JPG/260px-PalazzoPietroDurazzo.JPG",
+    "lat": 44.4087527777778,
+    "lon": 8.92995555555555,
+    "name": "Palazzo Pietro Durazzo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Nicol%C3%B2_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/PalazzoNicoloLomellini2.jpg/260px-PalazzoNicoloLomellini2.jpg",
+    "lat": 44.4139,
+    "lon": 8.92863333333333,
+    "name": "Palazzo NicolÃ² Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cristoforo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/PalazzoCristoforoSpinola.jpg/260px-PalazzoCristoforoSpinola.jpg",
+    "lat": 44.4137555555556,
+    "lon": 8.92888055555555,
+    "name": "Palazzo Cristoforo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bernardo_e_Giuseppe_De_Franchi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Palazzo_Bernardo_e_Giuseppe_De_Franchi_05.jpg/260px-Palazzo_Bernardo_e_Giuseppe_De_Franchi_05.jpg",
+    "lat": 44.4103916666667,
+    "lon": 8.93101111111111,
+    "name": "Palazzo Bernardo e Giuseppe De Franchi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_De_Franchi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Palazzo_Agostino_De_Franchi_02.jpg/260px-Palazzo_Agostino_De_Franchi_02.jpg",
+    "lat": 44.4106194444444,
+    "lon": 8.93103611111111,
+    "name": "Palazzo Agostino De Franchi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Domenico_Grillo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/PalazzoDomenicoGrillo.jpg/225px-PalazzoDomenicoGrillo.jpg",
+    "lat": 44.4094861111111,
+    "lon": 8.93099722222222,
+    "name": "Palazzo Domenico Grillo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_Doria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PalazzoAgostinoDoria.jpg/260px-PalazzoAgostinoDoria.jpg",
+    "lat": 44.4094555555556,
+    "lon": 8.93069722222222,
+    "name": "Palazzo Agostino Doria"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pietro_Spinola_di_San_Luca",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/PalazzoSpinolaDiSanLuca3.jpg/225px-PalazzoSpinolaDiSanLuca3.jpg",
+    "lat": 44.4106722222222,
+    "lon": 8.93051388888889,
+    "name": "Palazzo Pietro Spinola di San Luca"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giulio_Sale",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/PalazzoGiulioSale.jpg/225px-PalazzoGiulioSale.jpg",
+    "lat": 44.4058694444444,
+    "lon": 8.92925833333333,
+    "name": "Palazzo Giulio Sale"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_Luccoli-Balestrino",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Palazzo_Spinola_di_Luccoli-Balestrino_03.jpg/260px-Palazzo_Spinola_di_Luccoli-Balestrino_03.jpg",
+    "lat": 44.410125,
+    "lon": 8.93479722222222,
+    "name": "Palazzo Spinola di Luccoli-Balestrino"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Marcantonio_Giustiniani",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Palazzo_Marcantonio_Giustiniani_03.jpg/260px-Palazzo_Marcantonio_Giustiniani_03.jpg",
+    "lat": 44.407125,
+    "lon": 8.929975,
+    "name": "Palazzo Marcantonio Giustiniani"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lorenzo_Cattaneo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Palazzo_Lorenzo_Cattaneo_13.jpg/225px-Palazzo_Lorenzo_Cattaneo_13.jpg",
+    "lat": 44.40665,
+    "lon": 8.92916388888889,
+    "name": "Palazzo Lorenzo Cattaneo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lazzaro_Grimaldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Palazzo_Lazzaro_Grimaldi_Genova_01.jpg/225px-Palazzo_Lazzaro_Grimaldi_Genova_01.jpg",
+    "lat": 44.4106611111111,
+    "lon": 8.92989444444444,
+    "name": "Palazzo Lazzaro Grimaldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_De_Mari_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Palazzo_De_Mari%2C_Genova_01.jpg/225px-Palazzo_De_Mari%2C_Genova_01.jpg",
+    "lat": 44.4100055555556,
+    "lon": 8.934125,
+    "name": "Palazzo De Mari (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pinelli-Parodi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PalazzoPinelliParodi.jpg/225px-PalazzoPinelliParodi.jpg",
+    "lat": 44.4111138888889,
+    "lon": 8.928975,
+    "name": "Palazzo Pinelli-Parodi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_e_Giacomo_Salvago",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/PalazzoAgostinoEGiacomoSalvago.JPG/213px-PalazzoAgostinoEGiacomoSalvago.JPG",
+    "lat": 44.4062222222222,
+    "lon": 8.93071388888889,
+    "name": "Palazzo Agostino e Giacomo Salvago"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Paolo_De_Benedetti",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/PalazzoPaoloDeBenedetti.jpg/225px-PalazzoPaoloDeBenedetti.jpg",
+    "lat": 44.4057111111111,
+    "lon": 8.93127222222222,
+    "name": "Palazzo Paolo De Benedetti"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Basadonne",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/PalazzoBasadonne.JPG/225px-PalazzoBasadonne.JPG",
+    "lat": 44.407275,
+    "lon": 8.92893333333333,
+    "name": "Palazzo Basadonne"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giorgio_Doria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Palazzo_Giorgio_Doria01.jpg/225px-Palazzo_Giorgio_Doria01.jpg",
+    "lat": 44.4084722222222,
+    "lon": 8.93275,
+    "name": "Palazzo Giorgio Doria"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Marc%27Aurelio_Rebuffo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/PalazzoMarcAurelioRebuffo.jpg/260px-PalazzoMarcAurelioRebuffo.jpg",
+    "lat": 44.4077555555556,
+    "lon": 8.92765833333333,
+    "name": "Palazzo Marc'Aurelio Rebuffo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Antonio_Sauli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Palazzo_Antonio_Sauli_Genova_01.jpg/225px-Palazzo_Antonio_Sauli_Genova_01.jpg",
+    "lat": 44.4071805555556,
+    "lon": 8.92978055555555,
+    "name": "Palazzo Antonio Sauli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Batta_Senarega",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Palazzo_Gio._Batta_Senarega_02.jpg/225px-Palazzo_Gio._Batta_Senarega_02.jpg",
+    "lat": 44.4092972222222,
+    "lon": 8.93034722222222,
+    "name": "Palazzo Gio Batta Senarega"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Danovaro",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/PalazzoDoriaDanovaro.jpg/260px-PalazzoDoriaDanovaro.jpg",
+    "lat": 44.4082638888889,
+    "lon": 8.93301111111111,
+    "name": "Palazzo Doria-Danovaro"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_Luccoli-Cervetto",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Palazzo_Spinola_di_Luccoli-Cervetto_03.jpg/225px-Palazzo_Spinola_di_Luccoli-Cervetto_03.jpg",
+    "lat": 44.410075,
+    "lon": 8.93556666666667,
+    "name": "Palazzo Spinola di Luccoli-Cervetto"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Luciano_Spinola_di_Luccoli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Palazzo_Luciano_Spinola_di_Luccoli_01.jpg/225px-Palazzo_Luciano_Spinola_di_Luccoli_01.jpg",
+    "lat": 44.4102805555556,
+    "lon": 8.93541944444445,
+    "name": "Palazzo Luciano Spinola di Luccoli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola-Celesia",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Palazzo_Spinola_Celesia_Genova.png/260px-Palazzo_Spinola_Celesia_Genova.png",
+    "lat": 44.4098194444444,
+    "lon": 8.93591111111111,
+    "name": "Palazzo Spinola-Celesia"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_e_Benedetto_Viale",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/PalazzoAgostinoEBenedettoViale.jpg/225px-PalazzoAgostinoEBenedettoViale.jpg",
+    "lat": 44.4065888888889,
+    "lon": 8.93194166666667,
+    "name": "Palazzo Agostino e Benedetto Viale"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lomellini-Serra",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Palazzo_Lomellini-Serra_02.jpg/260px-Palazzo_Lomellini-Serra_02.jpg",
+    "lat": 44.4128833333333,
+    "lon": 8.92710555555555,
+    "name": "Palazzo Lomellini-Serra"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pallavicini-Fabiani",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PalazzoPallaviciniFabiani.jpg/225px-PalazzoPallaviciniFabiani.jpg",
+    "lat": 44.4116527777778,
+    "lon": 8.92829722222222,
+    "name": "Palazzo Pallavicini-Fabiani"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Adorno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PalazzoAdorno.jpg/225px-PalazzoAdorno.jpg",
+    "lat": 44.4091444444444,
+    "lon": 8.92921388888889,
+    "name": "Palazzo Adorno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Andrea_Cicala",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/PalazzoAndreaCicala.jpg/225px-PalazzoAndreaCicala.jpg",
+    "lat": 44.4074611111111,
+    "lon": 8.93058333333333,
+    "name": "Palazzo Gio Andrea Cicala"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Agostino_Calvi_Saluzzo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/PalazzoACalviSaluzzo.jpg/260px-PalazzoACalviSaluzzo.jpg",
+    "lat": 44.4073166666667,
+    "lon": 8.93096111111111,
+    "name": "Palazzo Agostino Calvi Saluzzo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Fieschi-Crosa_di_Vergagni",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PalazzoFieschiCrosa.jpg/260px-PalazzoFieschiCrosa.jpg",
+    "lat": 44.4070194444444,
+    "lon": 8.92845833333333,
+    "name": "Palazzo Fieschi-Crosa di Vergagni"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_De_Franchi-Pittaluga",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PalazzoDeFranchiPittaluga.JPG/260px-PalazzoDeFranchiPittaluga.JPG",
+    "lat": 44.4074611111111,
+    "lon": 8.93058333333333,
+    "name": "Palazzo De Franchi-Pittaluga"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Saluzzo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Palazzo_Gio_Battista_Saluzzo_02.jpg/225px-Palazzo_Gio_Battista_Saluzzo_02.jpg",
+    "lat": 44.4068777777778,
+    "lon": 8.93043055555555,
+    "name": "Palazzo Gio Battista Saluzzo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Serra",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Palazzo_Doria_Serra.jpg/225px-Palazzo_Doria_Serra.jpg",
+    "lat": 44.4084,
+    "lon": 8.93290277777778,
+    "name": "Palazzo Doria-Serra"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Grimaldi_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PalazzoGrimaldi.jpg/225px-PalazzoGrimaldi.jpg",
+    "lat": 44.4087972222222,
+    "lon": 8.93296666666667,
+    "name": "Palazzo Grimaldi (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lercari-Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Palazzo_Lercari_Spinola_Genova.png/260px-Palazzo_Lercari_Spinola_Genova.png",
+    "lat": 44.4089138888889,
+    "lon": 8.93085,
+    "name": "Palazzo Lercari-Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Vincenzo_Giustiniani_Banca",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PalazzoVincenzoGiustinianiBanca.JPG/225px-PalazzoVincenzoGiustinianiBanca.JPG",
+    "lat": 44.4068527777778,
+    "lon": 8.92974444444444,
+    "name": "Palazzo Vincenzo Giustiniani Banca"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gaspare_Basadonne",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PalazzoGaspareBasadonne.JPG/225px-PalazzoGaspareBasadonne.JPG",
+    "lat": 44.4067361111111,
+    "lon": 8.92935555555555,
+    "name": "Palazzo Gaspare Basadonne"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bartolomeo_Invrea",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Palazzo_Bartolomeo_Invrea_26.jpg/260px-Palazzo_Bartolomeo_Invrea_26.jpg",
+    "lat": 44.4122694444444,
+    "lon": 8.92781111111111,
+    "name": "Palazzo Bartolomeo Invrea"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Durazzo-Cattaneo_Adorno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Palazzo_Durazzo-Cattaneo_Adorno.jpg/225px-Palazzo_Durazzo-Cattaneo_Adorno.jpg",
+    "lat": 44.4126583333333,
+    "lon": 8.92751666666667,
+    "name": "Palazzo Durazzo-Cattaneo Adorno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Antonio_Doria_Invrea",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/PalazzoAntonioDoriaInvrea.jpg/225px-PalazzoAntonioDoriaInvrea.jpg",
+    "lat": 44.4123527777778,
+    "lon": 8.92828888888889,
+    "name": "Palazzo Antonio Doria Invrea"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Francesco_Borsotto",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/PalazzoFrancescoBorsotto.jpg/225px-PalazzoFrancescoBorsotto.jpg",
+    "lat": 44.4108083333333,
+    "lon": 8.93133333333333,
+    "name": "Palazzo Francesco Borsotto"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Jacopo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Palazzo_di_jacopo_spinola_di_san_luca%2C_portale_dei_gagini_con_trionfo_di_casa_spinola%2C_02.JPG/260px-Palazzo_di_jacopo_spinola_di_san_luca%2C_portale_dei_gagini_con_trionfo_di_casa_spinola%2C_02.JPG",
+    "lat": 44.4108083333333,
+    "lon": 8.93081944444444,
+    "name": "Palazzo Jacopo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Tommaso_Franzone",
+    "img": "",
+    "lat": 44.4095805555556,
+    "lon": 8.93325833333333,
+    "name": "Palazzo Tommaso Franzone"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Filippo_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/PalazzoFilippoLomellini.jpg/260px-PalazzoFilippoLomellini.jpg",
+    "lat": 44.4137083333333,
+    "lon": 8.92930833333333,
+    "name": "Palazzo Filippo Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Marcantonio_Sauli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/PalazzoMarcantonioSauli2.JPG/260px-PalazzoMarcantonioSauli2.JPG",
+    "lat": 44.4061611111111,
+    "lon": 8.93000833333333,
+    "name": "Palazzo di Marcantonio Sauli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Alessandro_Giustiniani",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/PalazzoGiustiniani%28Genova%29.JPG/225px-PalazzoGiustiniani%28Genova%29.JPG",
+    "lat": 44.4059333333333,
+    "lon": 8.93011666666667,
+    "name": "Palazzo Alessandro Giustiniani"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bendinelli_Sauli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/PalazzoBendinelliSauli.jpg/225px-PalazzoBendinelliSauli.jpg",
+    "lat": 44.4079638888889,
+    "lon": 8.93029722222222,
+    "name": "Palazzo Bendinelli Sauli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Sinibaldo_Fieschi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/PalazzoSinibaldoFieschi2.jpg/225px-PalazzoSinibaldoFieschi2.jpg",
+    "lat": 44.4076194444444,
+    "lon": 8.93091944444444,
+    "name": "Palazzo Sinibaldo Fieschi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Orazio_e_Gio_Francesco_De_Franceschi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/PalazzoDeFranceschi.jpg/225px-PalazzoDeFranceschi.jpg",
+    "lat": 44.40755,
+    "lon": 8.93104722222222,
+    "name": "Palazzo Orazio e Gio Francesco De Franceschi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Centurione-Gavotti",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Palazzo_Centurione-Gavotti_01.jpg/225px-Palazzo_Centurione-Gavotti_01.jpg",
+    "lat": 44.4081972222222,
+    "lon": 8.92966111111111,
+    "name": "Palazzo Centurione-Gavotti"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Durazzo-Zoagli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/PalazzoDurazzoZoagli.jpg/225px-PalazzoDurazzoZoagli.jpg",
+    "lat": 44.4081194444444,
+    "lon": 8.92981111111111,
+    "name": "Palazzo Durazzo-Zoagli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_San_Luca-Gentile",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Interno_di_palazzo_spinola_di_san_luca-gentile.jpg/224px-Interno_di_palazzo_spinola_di_san_luca-gentile.jpg",
+    "lat": 44.4109944444444,
+    "lon": 8.92968611111111,
+    "name": "Palazzo Spinola di San Luca-Gentile"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_San_Luca",
+    "img": "",
+    "lat": 44.4100055555556,
+    "lon": 8.92925555555555,
+    "name": "Palazzo Spinola di San Luca"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gerolamo_Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/PalazzoGerolamoPallavicini.jpg/260px-PalazzoGerolamoPallavicini.jpg",
+    "lat": 44.4095444444444,
+    "lon": 8.93425555555556,
+    "name": "Palazzo Gerolamo Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giovanni_Garibaldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PalazzoGiovanniGaribaldi2.jpg/225px-PalazzoGiovanniGaribaldi2.jpg",
+    "lat": 44.4091472222222,
+    "lon": 8.93425555555556,
+    "name": "Palazzo Giovanni Garibaldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Sauli",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PalazzoSauli.JPG/225px-PalazzoSauli.JPG",
+    "lat": 44.4084527777778,
+    "lon": 8.93111944444444,
+    "name": "Palazzo Sauli"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Chiavari-Calcagno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/PalazzoChiavariCalcagno.jpg/260px-PalazzoChiavariCalcagno.jpg",
+    "lat": 44.4092916666667,
+    "lon": 8.93242777777778,
+    "name": "Palazzo Chiavari-Calcagno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Brancaleone_Grillo",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/PalazzoBrancaleoneGrillo.JPG/260px-PalazzoBrancaleoneGrillo.JPG",
+    "lat": 44.4098472222222,
+    "lon": 8.93070277777778,
+    "name": "Palazzo Brancaleone Grillo"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Palazzo_Doria-Centurione01.jpg/225px-Palazzo_Doria-Centurione01.jpg",
+    "lat": 44.4083,
+    "lon": 8.93294166666667,
+    "name": "Palazzo Doria-Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Nicola_Grimaldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Palazzo_Nicola_Grimaldi%2C_Genoa.jpg/225px-Palazzo_Nicola_Grimaldi%2C_Genoa.jpg",
+    "lat": 44.4106694444444,
+    "lon": 8.92996388888889,
+    "name": "Palazzo Nicola Grimaldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cicala-Raggio",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PalazzoCicalaRaggio.JPG/225px-PalazzoCicalaRaggio.JPG",
+    "lat": 44.4087222222222,
+    "lon": 8.93019166666667,
+    "name": "Palazzo Cicala-Raggio"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lomellini-Dodero",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/029193_04_interni_palazzo.jpg/260px-029193_04_interni_palazzo.jpg",
+    "lat": 44.4126777777778,
+    "lon": 8.92951388888889,
+    "name": "Palazzo Lomellini-Dodero"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cattaneo-Adorno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Palazzo_Cattaneo-Adorno01.jpg/225px-Palazzo_Cattaneo-Adorno01.jpg",
+    "lat": 44.4109888888889,
+    "lon": 8.93317222222222,
+    "name": "Palazzo Cattaneo-Adorno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Francesco_Maria_Balbi_Piovera",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Palazzo_Balbi_Raggio.jpg/225px-Palazzo_Balbi_Raggio.jpg",
+    "lat": 44.414625,
+    "lon": 8.92703611111111,
+    "name": "Palazzo Francesco Maria Balbi Piovera"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Reggia_di_Caserta",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Campania_Caserta2_tango7174.jpg/260px-Campania_Caserta2_tango7174.jpg",
+    "lat": 41.0730083333333,
+    "lon": 14.3269833333333,
+    "name": "Reggia di Caserta"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Genova_12-8-05_006.jpg/260px-Genova_12-8-05_006.jpg",
+    "lat": 44.4094638888889,
+    "lon": 8.93725555555556,
+    "name": "Palazzo Doria-Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Clemente_Della_Rovere",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Palazzo_Clemente_Della_Rovere_Genova-1.jpg/225px-Palazzo_Clemente_Della_Rovere_Genova-1.jpg",
+    "lat": 44.409925,
+    "lon": 8.93611666666667,
+    "name": "Palazzo Clemente Della Rovere"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giorgio_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PalazzoGiorgioSpinola3.jpg/225px-PalazzoGiorgioSpinola3.jpg",
+    "lat": 44.4101861111111,
+    "lon": 8.93602222222222,
+    "name": "Palazzo Giorgio Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Tommaso_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/PalazzoTommasoSpinola2.jpg/260px-PalazzoTommasoSpinola2.jpg",
+    "lat": 44.4101833333333,
+    "lon": 8.93600277777778,
+    "name": "Palazzo Tommaso Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giacomo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Genova-Piazza_Fontane_Marose-DSCF7389.JPG/260px-Genova-Piazza_Fontane_Marose-DSCF7389.JPG",
+    "lat": 44.4099972222222,
+    "lon": 8.93550277777778,
+    "name": "Palazzo Giacomo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Negrone",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Palazzo_Negrone_Genoa.jpg/260px-Palazzo_Negrone_Genoa.jpg",
+    "lat": 44.4101694444444,
+    "lon": 8.93548888888889,
+    "name": "Palazzo Negrone"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Paolo_Battista_e_Niccol%C3%B2_Interiano",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Palazzo_Interiano_Pallavicini_Genoa.jpg/260px-Palazzo_Interiano_Pallavicini_Genoa.jpg",
+    "lat": 44.4105361111111,
+    "lon": 8.93509722222222,
+    "name": "Palazzo Paolo Battista e NiccolÃ² Interiano"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pallavicini-Cambiaso",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Palazzo_Pallavicini_Cambiaso_05.jpg/225px-Palazzo_Pallavicini_Cambiaso_05.jpg",
+    "lat": 44.4109083333333,
+    "lon": 8.93475277777778,
+    "name": "Palazzo Pallavicini-Cambiaso"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Pantaleo_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Palazzo_Pantaleo_Spinola03.jpg/225px-Palazzo_Pantaleo_Spinola03.jpg",
+    "lat": 44.4109,
+    "lon": 8.93473611111111,
+    "name": "Palazzo Pantaleo Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lercari-Parodi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Palazzo_Lercari-Parodi_001.jpg/225px-Palazzo_Lercari-Parodi_001.jpg",
+    "lat": 44.4110055555556,
+    "lon": 8.93444166666667,
+    "name": "Palazzo Lercari-Parodi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Carrega-Cataldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Genova-DSCF7473.JPG/225px-Genova-DSCF7473.JPG",
+    "lat": 44.4108972222222,
+    "lon": 8.93431944444444,
+    "name": "Palazzo Carrega-Cataldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Angelo_Giovanni_Spinola",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Palazzo_Angelo_Giovanni_Spinola_01.jpg/225px-Palazzo_Angelo_Giovanni_Spinola_01.jpg",
+    "lat": 44.4110027777778,
+    "lon": 8.9337,
+    "name": "Palazzo Angelo Giovanni Spinola"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palazzo_Doria_Andrea_Gio_Batta_Spinola_Genova_via_Garibaldi.png/232px-Palazzo_Doria_Andrea_Gio_Batta_Spinola_Genova_via_Garibaldi.png",
+    "lat": 44.4108444444444,
+    "lon": 8.93363888888889,
+    "name": "Palazzo Doria (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Podest%C3%A0",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Palazzo_nicolosio_lomellini%2C_ext._01.JPG/225px-Palazzo_nicolosio_lomellini%2C_ext._01.JPG",
+    "lat": 44.4110388888889,
+    "lon": 8.93328055555556,
+    "name": "Palazzo PodestÃ "
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cattaneo-Adorno",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Palazzo_Cattaneo-Adorno01.jpg/225px-Palazzo_Cattaneo-Adorno01.jpg",
+    "lat": 44.4109888888889,
+    "lon": 8.93317222222222,
+    "name": "Palazzo Cattaneo-Adorno"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Doria-Tursi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Il_Palazzo_Doria-_Tursi_splendente.JPG/225px-Il_Palazzo_Doria-_Tursi_splendente.JPG",
+    "lat": 44.4113972222222,
+    "lon": 8.93278611111111,
+    "name": "Palazzo Doria-Tursi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Baldassarre_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Genova-DSCF7470.JPG/260px-Genova-DSCF7470.JPG",
+    "lat": 44.4111194444444,
+    "lon": 8.93259722222222,
+    "name": "Palazzo Baldassarre Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bianco",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Palazzo_Bianco_-_Genova.jpg/200px-Palazzo_Bianco_-_Genova.jpg",
+    "lat": 44.4116083333333,
+    "lon": 8.93184166666667,
+    "name": "Palazzo Bianco"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Rosso_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Palazzo_Rosso.jpg/199px-Palazzo_Rosso.jpg",
+    "lat": 44.4111055555556,
+    "lon": 8.93212222222222,
+    "name": "Palazzo Rosso (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gerolamo_Grimaldi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Palazzo_Meridiana_Genova.JPG/225px-Palazzo_Meridiana_Genova.JPG",
+    "lat": 44.41155,
+    "lon": 8.93189444444444,
+    "name": "Palazzo Gerolamo Grimaldi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Carlo_Brignole",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PalazzoGioCarloBrignole.jpg/260px-PalazzoGioCarloBrignole.jpg",
+    "lat": 44.4115138888889,
+    "lon": 8.93144166666667,
+    "name": "Palazzo Gio Carlo Brignole"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Bartolomeo_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Palazzo_Bartolomeo_Lomellini_02.jpg/260px-Palazzo_Bartolomeo_Lomellini_02.jpg",
+    "lat": 44.4136166666667,
+    "lon": 8.93040833333333,
+    "name": "Palazzo Bartolomeo Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Lomellini-Doria_Lamba",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Palazzo_Lomellini-Doria_Lamba05.jpg/225px-Palazzo_Lomellini-Doria_Lamba05.jpg",
+    "lat": 44.4131305555556,
+    "lon": 8.92993888888889,
+    "name": "Palazzo Lomellini-Doria Lamba"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giacomo_Lomellini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/PalazzoGiacomoLomellini.jpg/260px-PalazzoGiacomoLomellini.jpg",
+    "lat": 44.4132638888889,
+    "lon": 8.92998333333333,
+    "name": "Palazzo Giacomo Lomellini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Belimbau",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Genova-palazzo_Belimbau.jpg/260px-Genova-palazzo_Belimbau.jpg",
+    "lat": 44.41345,
+    "lon": 8.92839444444444,
+    "name": "Palazzo Belimbau"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Durazzo-Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Palazzo_Durazzo_Pallavicini_%28Genoa%29_06.jpg/260px-Palazzo_Durazzo_Pallavicini_%28Genoa%29_06.jpg",
+    "lat": 44.4144222222222,
+    "lon": 8.92760833333333,
+    "name": "Palazzo Durazzo-Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Francesco_Balbi",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Palazzo_Gio_Francesco_Balbi_03.jpg/225px-Palazzo_Gio_Francesco_Balbi_03.jpg",
+    "lat": 44.4142027777778,
+    "lon": 8.92793333333333,
+    "name": "Palazzo Gio Francesco Balbi"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Balbi-Senarega",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Palazzo_Balbi-Senarega_02.jpg/225px-Palazzo_Balbi-Senarega_02.jpg",
+    "lat": 44.4143444444444,
+    "lon": 8.92768888888889,
+    "name": "Palazzo Balbi-Senarega"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Francesco_Maria_Balbi_Piovera",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Palazzo_Balbi_Raggio.jpg/225px-Palazzo_Balbi_Raggio.jpg",
+    "lat": 44.414625,
+    "lon": 8.92703611111111,
+    "name": "Palazzo Francesco Maria Balbi Piovera"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Reale_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Genova-palazzo_reale-esterno_via_Balbi1.jpg/260px-Genova-palazzo_reale-esterno_via_Balbi1.jpg",
+    "lat": 44.4149138888889,
+    "lon": 8.92616111111111,
+    "name": "Palazzo Reale (Genova)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_De_Marini-Croce",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Palazzo_De_Marini-Croce.jpg/225px-Palazzo_De_Marini-Croce.jpg",
+    "lat": 44.4088694444444,
+    "lon": 8.92983611111111,
+    "name": "Palazzo De Marini-Croce"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Emanuele_Filiberto_Di_Negro",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/PalazzoEmanueleFilibertoDiNegro2JPG.jpg/260px-PalazzoEmanueleFilibertoDiNegro2JPG.jpg",
+    "lat": 44.4094305555556,
+    "lon": 8.92960833333333,
+    "name": "Palazzo Emanuele Filiberto Di Negro"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Spinola_di_Pellicceria",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Genova-Palazzo_Spinola-DSCF7485.JPG/225px-Genova-Palazzo_Spinola-DSCF7485.JPG",
+    "lat": 44.4106305555556,
+    "lon": 8.93090555555555,
+    "name": "Palazzo Spinola di Pellicceria"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cipriano_Pallavicini",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/PalazzoCiprianoPallavicini.jpg/260px-PalazzoCiprianoPallavicini.jpg",
+    "lat": 44.4120055555556,
+    "lon": 8.92909444444444,
+    "name": "Palazzo Cipriano Pallavicini"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Genova-Centro_storico-Piazza_Fossatello-DSCF7490.JPG/225px-Genova-Centro_storico-Piazza_Fossatello-DSCF7490.JPG",
+    "lat": 44.4121138888889,
+    "lon": 8.92898611111111,
+    "name": "Palazzo Gio Battista Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Giorgio_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Palazzo_Giorgio_Centurione_09.jpg/260px-Palazzo_Giorgio_Centurione_09.jpg",
+    "lat": 44.4123833333333,
+    "lon": 8.92943611111111,
+    "name": "Palazzo Giorgio Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Cosma_Centurione",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Genova-AP-1010522.jpg/260px-Genova-AP-1010522.jpg",
+    "lat": 44.4126333333333,
+    "lon": 8.92960277777778,
+    "name": "Palazzo Cosma Centurione"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Grimaldi_(piazza_San_Luca)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/PalazzoGioBattistaGrimaldi_PiazzaSLuca.jpg/225px-PalazzoGioBattistaGrimaldi_PiazzaSLuca.jpg",
+    "lat": 44.4103472222222,
+    "lon": 8.9301,
+    "name": "Palazzo Gio Battista Grimaldi (piazza San Luca)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Gio_Battista_Grimaldi_(vico_San_Luca)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Palazzo_Gio_Battista_Grimaldi_%28Vico_San_Luca%29_Genova_02.jpg/225px-Palazzo_Gio_Battista_Grimaldi_%28Vico_San_Luca%29_Genova_02.jpg",
+    "lat": 44.4090388888889,
+    "lon": 8.92982777777778,
+    "name": "Palazzo Gio Battista Grimaldi (vico San Luca)"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Stefano_De_Mari",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PalazzoStefanoDeMari.jpg/225px-PalazzoStefanoDeMari.jpg",
+    "lat": 44.4088833333333,
+    "lon": 8.92999722222222,
+    "name": "Palazzo Stefano De Mari"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Nicol%C3%B2_Spinola_di_San_Luca",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/PalazzoNicoloSpinola.jpg/260px-PalazzoNicoloSpinola.jpg",
+    "lat": 44.4113194444444,
+    "lon": 8.92989166666667,
+    "name": "Palazzo NicolÃ² Spinola di San Luca"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Ambrogio_Di_Negro",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Palazzo_Ambrogio_Di_Negro_Genova_02.jpg/225px-Palazzo_Ambrogio_Di_Negro_Genova_02.jpg",
+    "lat": 44.4094611111111,
+    "lon": 8.92983888888889,
+    "name": "Palazzo Ambrogio Di Negro"
+  },
+  {
+    "href": "https://it.wikipedia.org/wiki/Palazzo_Ducale_(Genova)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Palazzo_Ducale_Genoa.jpg/260px-Palazzo_Ducale_Genoa.jpg",
+    "lat": 44.4071361111111,
+    "lon": 8.93274166666667,
+    "name": "Palazzo Ducale (Genova)"
+  }
 ]
-
