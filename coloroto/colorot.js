@@ -78,6 +78,7 @@ $(function(){
 	if (v.palette.length) {
 	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 4);
 	    var t = 1 - (10 / cmb.length);
+		console.log(cmb.length + " potential combinations);
 	    console.log(t);
 	    var i = 1;
 
