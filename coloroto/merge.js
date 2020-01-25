@@ -41,9 +41,9 @@ $(function(){
 	    s.append(g)
 	})
 
-	console.log(s);
-	console.log(s.activeElement);
-	console.log(s.getElementsByTagName);	
+	// console.log(s);
+	// console.log(s.activeElement);
+	// console.log(s.getElementsByTagName);	
 
 	// var doc = new PDFDocument;
 	// doc.addSVG(s, 0, 0, {useCSS:true})
