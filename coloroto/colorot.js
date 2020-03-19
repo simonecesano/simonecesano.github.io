@@ -113,13 +113,11 @@ $(function(){
 
 	if (v.palette.length) {
 	    cmb = Combinatorics.baseN(_.shuffle(v.palette), 4);
-<<<<<<< HEAD
-	    // var t = 1 - (10 / cmb.length);
-=======
+
 	    var t = 1 - (10 / cmb.length);
 		console.log(cmb.length + " potential combinations");
 	    console.log(t);
->>>>>>> 0faf5cf798f6da31e6d41d7ca072b5d33cb3a1eb
+
 	    var i = 1;
 
 	    var seen = {};
